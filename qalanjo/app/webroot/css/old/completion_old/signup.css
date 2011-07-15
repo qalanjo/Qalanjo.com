@@ -1,0 +1,18 @@
+@CHARSET "ISO-8859-1";
+
+.ui-form input, .ui-form select{
+	color: #444444;
+}
+#recaptcha_widget_div{
+	display:inline;
+	width:300px;
+	float:left;
+}
+
+div.col-1{
+	width:200px;
+}
+
+div.col-2{
+	width:300px;
+}

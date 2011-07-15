@@ -1,0 +1,238 @@
+@CHARSET "ISO-8859-1";
+
+/* GENERAL */
+body {
+	background: url(header.png) no-repeat center top #3565b1;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	font-size: 12px;
+}
+
+fieldset {
+	padding: 50px;
+	border: 0px;
+	margin-top: -60px;
+}
+
+fieldset p {
+	color: #0045b1;
+}
+
+form {
+	margin-left: -10px;
+}
+
+/* FORM WRAP BACKGROUND */
+#fielset-wrap {
+	width: 661px;
+	height: 532px;
+	margin: 0 auto;
+	background: url(form-bg.png) no-repeat center top;
+	clear: both;
+}
+
+/* HEADER AND THE BACGROUND WITH THE LOGO */
+#header {
+	height: 120px;
+	width: 960px;
+}
+
+/* CONTENT WITH THE HEADING TEXT AND STATUS BAR */
+#content {
+	width: 600px;
+	font-size: 16px;
+	margin: 0px auto;
+	color: #00edbe;
+}
+
+#heading-status {
+	float: right;
+	position: relative;
+	top: 10px;
+	width: 210px;
+}
+
+/* THE MAIN WRAP OF THE FORM */
+#main-wrap {
+	width: 900px;
+	margin: 0 auto;
+	font-size: 12px;
+}
+
+/* WRAP OF THE FORM TO ITS SPECIFIC WIDTH CENTERED */
+#form-wrap {
+	width: 600px;
+	margin: 30px auto;
+	text-align: right;
+}
+
+/* FIRST DIV ROW */
+#form-first-column {
+	width: 310px;
+	height: 50px;
+	float: left;
+}
+
+/* SECOND DIV ROW */
+#form-second-column {
+	float: right;
+	margin-left: 20px;
+	text-align: left;
+	width: 270px;
+	height: 50px;
+}
+
+/* LAST HORIZONTAL DIV FOR THE RES OF THE INPUT */
+#form-third-column {
+	width: 600px;
+	height: 500px;
+	margin: 0 auto;
+	clear: both;
+	position: relative;
+	top: 10px;
+}
+
+.third-column-wrap {
+	position: relative;
+	left: -72px;
+	top: 18px
+}
+
+/* BLANK DIV */
+.name-wrap {
+	height: 20px;
+}
+
+/* INPUT SPECIFIC STYLES */
+#MemberGenderId {
+	width: 146px;
+	color: #444444;
+}
+
+#MemberLookingForId {
+	width: 134px;
+	color: #444444;
+}
+
+#MemberState {
+	width: 360px;
+}
+
+#MemberCity {
+	width: 360px;
+}
+
+#MemberCountry {
+	width: 364px;
+	text-align: center;
+	color: #444444;
+}
+
+#MemberZipcode {
+	width: 360px;
+}
+
+#MemberEmail {
+	width: 360px;
+}
+
+#MemberConfirmEmail {
+	width: 360px;
+}
+
+#MemberPassword {
+	width: 360px;
+}
+
+#MemberConfirmPassword {
+	width: 360px;
+}
+
+#MemberIdeaId {
+	width: 364px;
+	text-align: center;
+	color: #444444;
+}
+
+#i-agree {
+	width: 80px;
+	margin-left: 182px;
+}
+
+#terms-condition {
+	text-align: left;
+	width: 500px;
+	margin-left: 150px;
+	margin-top: 30px;
+}
+
+#terms-condition p b {
+	color: #ffffff;
+}
+
+#terms-condition p {
+	color: #ffd892;
+}
+
+/* SECOND DIV ROW CLASSES */
+.inline_div {
+	margin-top: 10px;
+}
+
+.reduce {
+	margin-top: 10px;
+}
+
+.input {
+	margin-top: 10px;
+}
+
+.submit {
+	margin-top: 30px;
+}
+
+/* BUTTON WRAP FOR ITS SPECIFIC WIDTH */
+#button-wrap {
+	width: 280px;
+	height: 27px;
+	padding-top: 50px;
+	margin-left: 242px;
+}
+
+/* SAVE AND EXIT | SAVE AND CONTINUE BUTTON AND HOVER */
+.save-exit input[type=submit] {
+	background: url(save-continue.png);
+	height: 27px;
+	width: 138px;
+	border: 0;
+	text-indent: -99999999px;
+	float: left;
+}
+
+.save-exit input[type=submit]:hover {
+	background: url(save-continue.png);
+	height: 27px;
+	width: 138px;
+	position: relative;
+	top: 1px;
+	border: 0;
+	text-indent: -99999999px;
+}
+
+.save-continue input[type=submit] {
+	background: url(save-exit.png);
+	height: 27px;
+	width: 138px;
+	border: 0;
+	text-indent: -99999999px;
+}
+
+.save-continue input:hover[type=submit] {
+	background: url(save-exit.png);
+	height: 27px;
+	width: 138px;
+	position: relative;
+	top: 1px;
+	border: 0;
+	text-indent: -99999999px;
+}

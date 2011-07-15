@@ -1,0 +1,177 @@
+@CHARSET "ISO-8859-1";
+
+/**
+ * Css for Styles
+ */
+
+
+/**
+ * Step related styles
+ */
+div.step_block{
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+}
+
+div.step_block p{
+	margin-left:15px;
+	margin-right:10px;
+	font-size:1.2em;
+}
+div.header_step{
+	background-repeat:repeat-x;
+	background-image:url(img/step_header.png);
+	height:36px;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	margin:0px;
+	
+}
+div.note_bottom{
+	background-repeat:repeat-x;
+	background-image:url(img/subscribe_note_bg.png);
+	height:36px;
+}
+div.step_image{
+	margin-left:15px;
+}
+h2.step_label{
+	color:#3667b6;
+	font-size:110%;
+	font-weight:bold;
+	text-shadow: 0px 2px 3px transparent;
+	margin-top:3px;
+}
+div.open{
+	background-repeat:repeat-x;
+	background-image:url(img/step1_selected.png);
+	height:191px;
+}
+div.top{
+	margin-top:10px;
+	overflow:hidden;
+}
+div.close_select{
+	background-repeat:repeat-x;
+	background-image:url(img/subscribe_unselect.png);
+	height:59px;
+}
+div.radio, div.form{
+	margin:10px;
+}
+
+div.radio label{
+	font-size:130%;
+	text-shadow: 0px 2px 3px transparent;
+	color:#fff;
+}
+div.top div.radio label{
+	color:#3667b6;
+}
+
+#step-2{
+	background-color:#d0e8ff;
+	background-image:url(img/subscribe_circle_bg.png);
+	background-repeat:no-repeat;
+	background-position:bottom center;
+	height:380px;
+}
+
+#benefits_block{
+	margin-top:10px;
+}
+div.lastname{
+	margin-left:30px;
+}
+
+
+
+
+/**
+ * Checkout Box
+ */
+
+#checkout_box{
+	height:380px;
+	background-color:#aadafe;
+}
+div.header_checkout{
+	background-color:#688dc8;
+	color:#fff;
+	text-align:center;
+}
+div.header_checkout h2{
+	color:#fff;
+	text-shadow: 0px 2px 3px transparent;
+	font-size:140%;	
+	font-weight:bold;
+}
+.checkout_section{
+	background-image:url("img/checkout_text_bg.png");
+	background-repeat:no-repeat;
+	height:23px;
+	width:122px;
+	margin:auto;
+	border:none;
+	background-color:transparent;
+	text-shadow: 0px 2px 3px transparent;
+	font-size:1.2em;
+	font-weight:bold;
+}
+input[type=submit].checkout_section{
+	cursor:pointer;
+
+}
+#checkout_content{
+	height:200px;
+}
+
+/**
+ * Benefits Block
+ */
+#benefits_block{
+	background-color:#d5ecff;
+}
+
+#benefits_block, #benefits_block table{
+	border-radius:20px;
+}
+
+#benefits_block h3{
+	color:#3667b6;
+	text-shadow: 0px 2px 3px transparent;
+	font-weight:bold;
+	margin-top:10px;
+	font-size:140%;
+}
+#benefits_head{
+	background-color:#ffebb1;
+	margin:10px;
+	padding:10px;
+	font-size:150%;
+}
+div.benefit_section{
+	background-image:url("img/subscribe_benefit_section_bg.png");
+	background-repeat:repeat-x;
+	height:25px;
+	border-radius:10px;
+	width:95%;
+	font-weight:bold;
+	text-shadow: 0px 2px 3px transparent;
+}
+div.row{
+	margin-bottom:1em;
+}
+div.sub{
+	color:#717171;
+}
+div.row_line{
+	border-bottom:1px solid #acd8fe;
+}
+
+#checkout{
+	display:none;
+}
+#checkout h2{
+	font-size:120%;
+}

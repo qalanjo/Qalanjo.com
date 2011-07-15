@@ -1,0 +1,58 @@
+input, select{
+	padding:.5em;
+}
+input[type=text].small_sized{
+	width:30px;
+}
+label abbr{
+	color:#FF0000;	
+}
+div.form{
+	-moz-box-shadow: 0 0 5px 5px #888;
+	-webkit-box-shadow: 0 0 5px 5px#888;
+	box-shadow: 0 0 5px 5px #888;
+	margin-bottom:1.5em;
+}
+
+div.form-no-shadow{
+	border:1px solid #EEEEEE;
+}
+
+div.form h1, div.form-no-shadow h1{
+ 	background-color:#000063;
+	font-size:140%;
+	overflow:hidden;
+	font-weight:bold;
+	color:#fff;
+	padding:10px 5px 10px 5px;
+	margin:0px;
+	width:98%;
+}
+
+div.form h2, div.form-no-shadow h2{
+	font-size:125%;
+	overflow:hidden;
+	font-weight:bold;
+	padding:0 5px 10px 5px;
+	margin:0px;
+ }
+ div.form h1 span.step{
+ 	font-size:90%;
+ }
+ 
+div.form label{
+	font-weight:bold;
+}
+
+div.form fieldset{
+	padding:0px;
+	padding:1.2em 0 0 0;
+	width:100%;
+	border:none;
+	border-bottom:1px solid #CCCCCC;
+	margin:0px;
+}
+
+div.form fieldset div{
+	margin-left:1.2em;
+}

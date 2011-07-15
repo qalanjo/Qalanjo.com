@@ -1,0 +1,64 @@
+@CHARSET "ISO-8859-1";
+div.full_block{
+	width:100%;
+}
+
+
+#title{
+	margin:20px;
+	width:100%;
+}
+
+#title h1{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 0px;
+	display: block;
+}
+
+#title div.right{
+	margin-right:40px;
+}
+
+#control_top{
+	width:100%;
+}
+ul.inline_command{
+	list-style-type:none;
+}
+
+ul.inline_command li{
+	float:left;
+	margin-left:10px;
+}
+div.top_message, div.message_content{
+	margin:20px;
+}
+div.top_message img{
+	height:64px;
+	width:64px;
+}
+
+#message_replies{
+	margin:10px 0px 0px 100px;
+}
+
+div.message{
+	width:700px;
+	border-bottom:1px solid #cccccc;
+	margin-bottom:10px;
+}
+
+#reply_box{
+	width:400px;
+	height:150px;
+}
+
+.profile_pic_reply{
+	height:48px;
+	width:48px;
+}
+
+#writer{
+	margin-left:100px;
+}

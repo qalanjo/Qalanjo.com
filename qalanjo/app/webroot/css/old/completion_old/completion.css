@@ -1,0 +1,122 @@
+body {
+	background: url(header.png) no-repeat center top #3565b1;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;	
+	font-size:62.5%;
+}
+p{
+	text-indent:5em;
+}
+div#wrapper{
+	width:900px;
+	position:relative;
+	margin-right:auto;
+	margin-left:auto;
+	text-align:center;
+}
+div#content{
+	text-align:center;
+}
+
+div#top_info{
+	margin-bottom:0px;
+	width:640px;
+	overflow:hidden;
+	margin:auto;
+}
+div#top_info h1{
+	margin-bottom:0px;
+	float:left;	
+	font-size:3em;
+	color:#0adcc2;
+	text-shadow: 0px 2px 3px transparent;
+	margin-top:0px;
+}
+div#header{
+	height:120px; 
+	width:960px;
+	text-align:left;
+}
+div#inside{
+	text-align:left;	
+	background:url(form-bg.png) center top no-repeat;
+	width:640px;
+	margin:auto;
+	padding:20px;
+	padding-right:25px;
+	overflow:hidden;
+	margin-top:-20px;
+	min-height:532px;
+	
+
+}
+
+div#inside p.welcome{
+	color:#0045B1;
+}
+
+#terms-condition {
+	text-align: left;
+	width: 500px;
+	margin-top: 30px;
+	margin-left:50px;
+	clear:both;
+}
+
+#terms-condition p strong {
+}
+
+#terms-condition p {
+}
+
+.back{
+	margin-left:20px;
+}
+.back, .back:visited{
+	color:#fff;
+}
+#footer_links{
+	text-align:center;
+}
+#footer_links a, #footer_links a:visited{
+	color:#fff;
+}
+#flashMessage{
+	overflow:hidden;
+}
+#progress{
+	width:100px;
+	float:right;
+	height:15px;
+}
+/**
+ * Override Label
+ */
+.ui-form fieldset{
+	padding:20px;
+}
+.ui-form .continue{
+	background-image:url(save-continue.png);
+	background-repeat:no-repeat;
+	background-color:transparent;
+	border:none;
+	height: 54px;
+	width: 153px;
+}
+
+
+div.center{
+	text-align:center;
+}
+
+button.back{
+	background-image:url(skipbutton.png);
+	background-repeat:no-repeat;
+	background-color:transparent;
+	border:none;
+	height: 36px;
+	width: 138px;
+}

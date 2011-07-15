@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+#content_main {
+	padding-bottom: 40px;
+	margin-bottom: 0;	
+}
+
+.instruction {
+	font-size: 14px;
+	padding-left: 20px
+}
+
+#profile_completion_box {
+	border: 1px solid #cdcdcd;
+	background: #f3f3f3;
+	-moz-border-radius: 10px;
+  	-webkit-border-radius: 10px;
+  	border-radius: 10px;
+	width: 430px;
+	margin: 10px 0 0 25px;
+	padding: 30px 0 10px 0;
+}
+
+label {
+	padding: 0;
+	margin: 0;	
+}
+
+button {
+	margin: 0 0 0 25px;
+	padding: 0;	
+}
+
+p.image_set_top .right {
+	padding: 35px 10px 0 0;
+	margin: 0;	
+}
+
+p.image_set_bottom .left {
+	padding: 45px 0 0 0;
+	margin: 0;
+}
+
+#profile_completion_box p {
+	padding: 0 0 5px 15px;
+	margin: 0;	
+}
+
+textarea {
+	width: 392px;
+	height: 354px;
+}

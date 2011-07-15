@@ -1,0 +1,29 @@
+@CHARSET "ISO-8859-1";
+.gift-box-list dt{
+	color:#005F9D;
+	font-size:12px;
+	font-weight:normal;
+	max-width:135px;
+}
+.gift-box-list dd{
+	margin-bottom:10px;
+	width:362px;
+	font-size:11px;
+}
+
+.gift-box-list dd.gift-info{
+	width:250px;
+}
+.gift-info h2{
+	margin-bottom:17px;
+	font-size:14px;
+	padding:0;
+	color:#666666;
+}
+.gift-info p,.gift-box-list dd.message{
+	color:#666666;
+	font-size:11px;
+}
+.gift-info-box{
+	width:250px;
+}

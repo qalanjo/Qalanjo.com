@@ -1,0 +1,621 @@
+.view-profile-page-header {
+	display: block;
+	float: left;
+	width: 876px;
+	margin: 20px;
+	background-color: transparent;
+	font-size: 16px;
+}
+
+.view-profile-page-header .header-left-side {
+	display: block;
+	float: left;
+	width: 553px;
+	height: 20px;
+	padding-right: 20px;
+	background-color: transparent;
+}
+
+.view-profile-page-header .header-left-side .personal-info {
+	display: block;
+	float: left;
+}
+
+.view-profile-page-header .header-left-side .back-to-my-matches-link {
+	display: block;
+	float: right;
+	font-size: 12px;
+	color: #0066cc;
+	vertical-align: baseline;
+}
+
+.view-profile-page-header .header-right-side {
+	display: block;
+	float: left;
+	width: 303px;
+	height: 20px;
+	background-color: transparent;
+}
+
+.view-profile-page-header .header-right-side span {
+	display: block;
+	float: left;
+	font-size: 12px;
+}
+
+.main-content {
+	display: block;
+	float: left;
+	width: 876px;
+	margin: 0px 20px 20px 20px;
+	background-color: transparent;
+}
+
+.main-content .left-side {
+	display: block;
+	float: left;
+	width: 553px;
+	margin-right: 20px;
+	background-color: transparent;
+}
+
+.main-content .left-side .introduction-box {
+	display: block;
+	float: left;
+	width: 509px;
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: #0b60a1;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid #8cb9d8;
+}
+
+.main-content .right-side {
+	display: block;
+	float: left;
+	width: 303px;
+	background-color: trans;
+}
+
+.introduction-box-left-side {
+	display: block;
+	float: left;
+	width: 130px;
+	background-color: transparent;
+	margin-right: 20px;
+}
+
+.introduction-box-left-side img {
+	display: block;
+	float: left;
+	padding-top: 23px;
+	padding-bottom: 15px;
+}
+
+.introduction-box-left-side img{
+	height:130px;
+	width:130px;
+}
+
+.introduction-box-left-side a:active {
+	background-position: 0px -52px;
+}
+
+.introduction-box-right-side {
+	display: block;
+	float: left;
+	width: 359px;
+	background-color: transparent;
+}
+
+.introduction-box-right-side span {
+	display: block;
+	float: left;
+	color: #fff;
+	font-size: 14px;
+	width: 100%:
+}
+
+.introduction-box-right-side .passionate-about-box {
+	display: block;
+	float: left;
+	width: 325px;
+	padding: 15px 15px 30px 15px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid #8cb9d8;
+}
+
+.introduction-box-right-side .looking-for-a-person {
+	display: block;
+	float: left;
+	width: 325px;
+	padding: 15px 15px 30px 15px;
+	background-color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid #8cb9d8;
+}
+
+.main-content .main-content-tab {
+	display: block;
+	float: left;
+	width: 553px;
+	background-color: transparent;
+}
+
+.main-content .main-content-tab .main-content-tab-bar {
+	display: block;
+	float: left;
+	width: 553px;
+	height: 36px;
+	background-color: transparent;
+}
+
+.main-content .main-content-tab .main-content-tab-bar ul {
+	display: inline-block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main-content .main-content-tab .main-content-tab-bar ul li {
+	display: block;
+	float: left;
+}
+
+.main-content .main-content-tab .main-content-tab-bar ul li a {
+	display: block;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	background-color: transparent;
+	font-size: 14px;
+	color: #045d9f;
+	font-weight: bold;
+	margin-right: 2px;
+	cursor: pointer;
+}
+
+.main-content .main-content-tab .main-content-tab-bar ul li a span {
+	display: inline-block;
+	float: left;
+	background-image: url(../img/blue/match/matches-tab-center-normal.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	padding: 0px 5px;
+}
+
+.main-content .main-content-tab .main-content-tab-bar ul li a span.tab-left {
+	width: 5px;
+	height: 36px;
+	background-image: url(../img/blue/match/matches-tab-left-normal.png);
+	padding: 0px;
+}
+
+.main-content .main-content-tab .main-content-tab-bar ul li a span.tab-right {
+	width: 5px;
+	height: 36px;
+	background-image: url(../img/blue/match/matches-tab-right-normal.png);
+	padding: 0px;
+}
+
+.main-content .main-content-tab .main-content-tab-bar ul li.active a {
+	color: #fff;
+}
+
+.main-content .main-content-tab .main-content-tab-bar ul li.active a span {
+	background-image: url(../img/blue/match/matches-tab-center-active.png);
+}
+
+.main-content .main-content-tab .main-content-tab-bar ul li.active a span.tab-left {
+	background-image: url(../img/blue/match/matches-tab-left-active.png);
+}
+
+.main-content .main-content-tab .main-content-tab-bar ul li.active a span.tab-right {
+	background-image: url(../img/blue/match/matches-tab-right-active.png);
+}
+
+.main-content-tab .tab-content-container-top {
+	display: block;
+	float: left;
+	width: 553px;
+	height: 7px;
+	background-color: #045d9f;
+	-webkit-border-top-right-radius: 7px;
+	-moz-border-radius-topright: 7px;
+	border-top-right-radius: 7px;
+}
+
+.main-content-tab .tab-content-container-body {
+	display: block;
+	float: left;
+	width: 551px;
+	background-color: #fff;
+	border: 1px solid #8cb9d6;
+}
+
+.main-content-tab .tab-content-container-body .next-step-bar {
+	display: block;
+	float: left;
+	width: 541px;
+	height: 40px;
+	padding-top: 14px;
+	padding-left: 10px;
+	background-color: #00f;
+	background-image: url(../img/blue/view-profile-page/next-step-bg.jpg);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	border-bottom: 1px solid #8cb9d6;
+}
+
+.main-content-tab .tab-content-container-body .next-step-bar span {
+	display: block;
+	float: left;
+	color: #33659a;
+	font-size: 16px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+a.next-step-button {
+	display: block;
+	float: left;
+	width: 144px;
+	height: 25px;
+	background-image: url(../img/blue/view-profile-page/send-him-a-message.png);
+	background-position: 0px 0px;
+}
+
+a.next-step-button:hover {
+	background-position: 0px -25px;
+}
+
+a.next-step-button:active {
+	background-position: 0px -50px;
+}
+
+.tab-content-container-body div.first-viewed-date {
+	display: block;
+	float: left;
+	padding-left: 20px;
+	margin: 10px 0px;
+}
+
+.tab-content-container-body h2 {
+	display: block;
+	float: left;
+	padding-left: 20px;
+	font-size: 18px;
+	color: #33669d;
+	padding: 0px;
+	width: 531px;
+	padding-left: 20px;
+	background-color: #c5dcea;
+}
+
+.tab-content-container-body dl.basic-information-dl {
+	display: block;
+	float: left;
+	margin: 0px 31px 30px 31px;
+}
+
+.tab-content-container-body dl.basic-information-dl dt {
+	display: block;
+	float: left;
+	clear: both;
+	width: 100px;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.tab-content-container-body dl.basic-information-dl dd {
+	display: block;
+	float: left;
+}
+
+.tab-content-container-body dl.in-my-own-words-dl {
+	display: block;
+	float: left;
+	padding: 0px 30px;
+}
+
+.tab-content-container-body dl.in-my-own-words-dl dt {
+	color: #33669d;
+	font-size: 14px;
+	clear: both;
+}
+
+.tab-content-container-body dl.in-my-own-words-dl dd {
+	margin-bottom: 15px;
+}
+
+.tab-content-container-body dl.in-my-own-words-dl ul {
+	margin: 0px;
+}
+
+.tab-content-container-body dl.in-my-own-words-dl div.column {
+	display: block;
+	float: left;
+	width: 234px;
+	margin: 0px;
+	padding: 0px 10px 0px 0px;
+} 
+
+.tab-content-container-body dl.in-my-own-words-dl div.last {
+	padding: 0px 0px 0px 10px;
+}
+
+.tab-content-container-body dl.in-my-own-words-dl div.next-step dt {
+	color: #000;
+}
+
+.what-to-do-with-this-user {
+	display: block;
+	float: left;
+	width: 553px;
+	margin: 20px 0px 0px 0px;
+}
+
+.what-to-do-with-this-user a {
+	display: block;
+	float: right;
+}
+
+.right-side .panel {
+	display: block;
+	float: left;
+	width: 301px;
+	overflow: hidden;
+	background-color: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #8cb9d6;
+	margin-bottom: 20px;
+}
+
+.right-side .panel h2 {
+	height: 32px;
+	border-bottom: 1px solid #8cb9d6;
+	background-color: #1a6aa5;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 32px;
+	vertical-align: middle;
+	padding-left: 10px;
+	margin-bottom: 0px;
+}
+
+.right-side .next-step-panel h2 span.links a {
+	display: block;
+	float: right;
+	color: #fff;
+	font-size: 11px;
+	font-weight: normal;
+	padding-right: 10px;
+}
+
+.right-side .panel .content {
+	display: block;
+	float: left;
+	width: 301px;
+	background-color: #fff;
+	margin-bottom: 15px;
+}
+
+.next-step-panel .content p {
+	margin: 10px 50px 10px 20px;
+	font-size: 11px;
+}
+
+.next-step-panel .content ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-align: center;
+}
+
+.next-step-panel .content ul li {
+	display: block;
+	float: left;
+	width: 301px;
+	text-align: center;
+}
+
+.next-step-panel .content ul li div {
+	display: inline-block;
+}
+
+.next-step-panel .content a {
+	display: block;
+	float: left;
+	font-size: 11px;
+	line-height: 25px;
+}
+
+.next-step-panel .content img {
+	display: block;
+	float: left;
+}
+
+.next-step-panel .content a.send-him-a-message-button {
+	position: static;
+	display: block;
+	float: left;
+	width: 262px;
+	height: 26px;
+	background-image: url(../img/blue/view-profile-page/send-a-message-button.png);
+	background-position: 0px 0px;
+	text-align: center;
+	line-height: 26px;
+	vertical-align: middle;
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+}
+
+.next-step-panel .content a.upload-button {
+	position: static;
+	display: block;
+	float: left;
+	width: 262px;
+	height: 26px;
+	background-image: url(../img/blue/view-profile-page/button.png);
+	background-position: 0px 0px;
+	text-align: center;
+	line-height: 26px;
+	vertical-align: middle;
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+}
+
+
+
+.next-step-panel .content a.send-him-a-message-button:hover {
+	background-position: 0px -26px;
+}
+
+.next-step-panel .content a.send-him-a-message-button:active {
+	position: relative;
+	top: 1px;
+	left: 1px;
+	background-position: 0px -52px;
+}
+
+.topic-opener .content > dl {
+	padding: 10px;
+}
+
+.topic-opener .content dl {
+	margin-bottom: 0px;
+}
+
+.topic-opener .content > dl > dt {
+	margin: 0px 0px 10px 0px;
+}
+
+.topic-opener .content > dl > dd {
+	margin-left: 0px;
+}
+
+.topic-opener .content > dl > dd > ul {
+	list-style: none;
+}
+
+.topic-opener .content  ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.topic-opener .content > dl > dd > ul > li {
+	padding-left: 40px;
+	margin-bottom: 10px;
+	min-height: 29px;
+}
+
+li#travel {
+	background-image: url(../img/blue/view-profile-page/travel-logo.png);
+	background-repeat: no-repeat;
+}
+
+li#pets {
+	background-image: url(../img/blue/view-profile-page/pets-logo.png);
+	background-repeat: no-repeat;
+}
+
+li#books {
+	background-image: url(../img/blue/view-profile-page/reading-logo.png);
+	background-repeat: no-repeat;
+}
+
+li#likes {
+	background-image: url(../img/blue/view-profile-page/time-logo.png);
+	background-repeat: no-repeat;
+}
+
+li a {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+li#travel a {
+	color: #989013;
+}
+
+li#travel a:hover {
+	color: #b3a815;
+}
+
+li#pets a {
+	color: #2072ac;
+}
+
+li#pets a:hover {
+	color: #2582c4;
+}
+
+li#books a {
+	color: #0b8b94;
+}
+
+li#books a:hover {
+	color: #0ca3ad;
+}
+
+li#likes a {
+	color: #2071b2;
+}
+
+li#likes a:hover {
+	color: #2581cc;
+}
+
+.introduction-box-left-side .button {
+	display: block;
+	float: left;
+	width: 60px;
+	text-align: center;
+	background-color: #090;
+	font-size: 11px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	margin-right: 10px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.introduction-box-left-side .button:hover {
+	background-color: #0b0;
+}
+
+.introduction-box-left-side .button.last {
+	margin-right: 0px;
+}
+
+p.status{
+	text-align:center;
+}
+p.status .online{
+	color:#00FF33;
+	font-weight:bold;
+	text-decoration:none;
+}
+p.status .last-active{
+	color:#660000;
+	font-weight:bold;
+	text-decoration:none;	
+}

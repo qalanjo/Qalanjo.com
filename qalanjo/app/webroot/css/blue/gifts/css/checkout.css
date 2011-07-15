@@ -1,0 +1,60 @@
+
+
+#view-cart-wrap {
+	text-align:center;
+	margin:10px;
+}
+
+#checkout-table {
+	width:480px;
+	margin:15px auto;
+	overflow:auto;
+}
+.checkout-item .item {
+	width:59px;
+	height:61px;
+}
+.checkout-item {
+	overflow:hidden;
+	border-radius:20px;
+	background-color:aqua;
+	height:80px;
+	margin:7px 0px;
+}
+
+
+.checkout-item div.item-image {
+	float:left;
+	padding:10px;
+	margin-left:15px;
+}
+
+.checkout-item div.check {
+	float:left;
+	padding:5px;
+	display:block;
+	margin:25px 10px;
+}
+
+.checkout-item div.name-price {
+	float:right;
+	padding:20px 7px;
+	margin:10px 10px;
+	text-align:left;
+	width:300px;
+	border-radius:10px;
+	background-color:white;
+	border:1px solid white;
+}
+
+div.name-price span.item-name {
+	float:left;
+	width:130px;
+	margin-left:15px;
+}
+
+div.name-price span.item-price {
+	float:right;
+	width:130px;
+}
+

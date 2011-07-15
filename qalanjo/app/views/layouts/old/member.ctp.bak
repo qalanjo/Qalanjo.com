@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Qalanjo.com</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<?php echo $this->Html->css("globals/globals")?>
+	<?php echo $this->Html->css("globals/album")?>
+	<?php echo $this->Html->css("members_index")?>
+	<?php echo $this->Html->css("redmond/jquery-ui-1.8.10.custom")?>
+	<?php echo $this->Javascript->link("jquery")?>	
+	<?php echo $this->Javascript->link("ui/jquery-ui-1.8.10.custom")?>
+	<?php echo $this->Javascript->link("jquery.autocomplete.min")?>
+	<?php echo $this->element("scripts/tinymce_functions")?>
+	<?php echo $this->element("scripts/messaging")?>
+	<?php //echo $this->Javascript->link("member_index")?>
+
+	
+</head>
+
+
+<body>
+	
+	<div id="wrapper">
+	
+		<div id="sidebar">
+			<div class='badge' id="logo">
+				<?php echo $this->Html->image("member/logo.png")?>
+			</div>
+			
+			
+			
+			
+			
+			<!-- Render Sidebar link control -->
+			<?php 
+				if (isset($member)){
+					echo $this->Website->renderProfileBox($member);
+					
+					echo $this->Website->renderSidebar($member);
+				}
+			?>
+			
+			
+			<div class="badge">
+				<?php echo $this->Html->image("member/tourqalanjo.png")?>
+			
+			</div>
+			
+			<div class="badge">
+				<?php echo $this->Html->image("member/exploreprofile.png")?>
+			
+			</div>
+			
+			
+		</div>
+		<div id="right_content">
+		
+			<?php echo $this->element("control_link")?>
+			
+		
+			<div id="tab_navigation">
+				<ul>
+					<li class="selected"><?php echo $this->Ajax->link("HOME","/members/home", array("update"=>"updatable_div", "indicator"=>"loading"))?></li>
+					<li><?php echo $this->Ajax->link("MY MATCHES")?></li>
+					<li><?php echo $this->Ajax->link("REPORTS")?></li>
+				</ul>	
+			
+			
+			</div>
+			
+			<div class="loading">
+				<p>Loading...</p>
+			</div>
+				
+			<div id="updatable_div">
+			
+				<?php echo $content_for_layout;?>
+				
+			</div>
+			
+			<div id="footer">
+				<!-- First Layer Footers -->
+				<p><?php echo $this->Html->link("Privacy", "#")?>
+				 &nbsp; <?php echo $this->Html->link("About Us", "#")?>
+				  &nbsp; <?php echo $this->Html->link("Feedback", "#")?>
+				   &nbsp; <?php echo $this->Html->link("Report", "#")?>
+				   &nbsp; <?php echo $this->Html->link("Contact Us", "#")?>
+				   
+				   </p>
+			   
+			  </div>
+		</div>	
+	
+		
+	</div>
+</body>
+</html>
+
+

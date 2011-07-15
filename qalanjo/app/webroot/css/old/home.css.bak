@@ -1,0 +1,219 @@
+@CHARSET "ISO-8859-1";
+/* BASIC */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #080e1a;
+	text-align: center;
+}
+
+h1, h2, h3, h4, p, ul, ol {
+	margin: 0px;
+	padding: 0px;
+}
+
+a img { 
+	border: none;
+}
+
+/**
+ * Login Link on Header
+ */
+#login{
+	float:right;
+}
+#login span{
+	color:#cdf2ff;
+}
+
+#login a{
+	color:#f9f6d5;
+}
+/**
+ * Sign up form
+ */
+#signup{
+	float:right;
+	width:45%;
+	margin: 0;
+	margin: 50px 50px 0 0;
+	font-size:62.5%;	
+}
+
+#signup span{
+	margin-bottom:0.5em;
+	display:block;
+	border-bottom:1px solid #1e3964;
+}
+#signup, #signup input, #signup select{
+	font-size:1em;
+}
+
+#signup fieldset{
+	margin: 0;
+	padding-top: 10px;
+	text-align: left;
+	border: none;
+}
+
+#signup fieldset div.input{
+	margin-bottom: 13px;
+}
+#signup fieldset div.input label {
+	display: block;
+	width: 150px;
+	height: 21px;
+	text-align: right;
+	padding-top: 1px;
+	line-height: 1.1;
+	float: left;
+	clear: both;
+}
+
+#signup fieldset div.input input,
+#signup fieldset div.input textarea,
+#signup fieldset div.input select {
+	display: block;
+	width: 270px;
+}
+
+#signup fieldset div.inline_div{
+	display: inline;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#signup fieldset div.inline_div select{
+}
+
+#signup fieldset div.inline_div label {
+	display: block;
+	width: 150px;
+	height: 20px;
+	text-align: right;
+	padding-top: 1px;
+	line-height: 1.1;
+	float: left;
+	clear: both;
+}
+
+#signup fieldset div.reduce select{
+	margin-left:20px;
+
+}
+
+#signup fieldset div.inline_spec {
+	margin-bottom: 13px;
+}
+
+#signup fieldset div.inline_spec select{
+	margin: 0;
+}
+
+#signup .no_div{
+	margin: 0;
+	width: 140px;
+}
+#signup h1{
+	margin-bottom:0px;
+}
+#signup h1, #signup span{
+	color:#1e3964;	
+}
+
+#signup input[type=submit]{
+	background-image:url("img/signup.png");
+	background-color:transparent;
+	width:217px;
+	height:55px;
+	border:none;
+	margin-top: 10px;
+	margin-left: 150px;
+	
+}
+#main_display{
+	width: 1024px;
+	background-image:url("img/couple.jpg");
+	background-repeat:no-repeat;
+	clear:both;
+	min-height:665px;
+}
+
+#details_display{
+	background-color:#a7d9ff;
+	min-height:395px;
+	padding:10px 10px 10px 10px;
+	
+}
+/**
+ * Steps
+ */
+
+#steps{
+	display:block;
+	min-height:120px;
+}
+#steps h1{
+	color:#1e3964;	
+}
+div.step img, div.step{
+	float:left;
+}
+div.step img{
+	margin-right:5px;	
+}
+div.step{
+	width:225px;
+	margin-right:5px;
+}
+div.step p{
+	font-weight:bold;
+	font-size:.8em;
+}
+
+/**
+ * Advices
+ */
+
+#bottom{
+	overflow:hidden;
+}
+div.advice_block{
+	width:360px;
+	height:131px;
+	padding:0.2em;
+	float:left;
+	margin-right:5px;
+	font-size:80%;
+}
+div.advice_block div.content{
+	width:220px;
+	float:right;
+	overflow:hidden;
+
+}
+div.advice_block div.content p{
+	font-size:.8em;
+}
+
+
+
+img.advice_pic{
+	float:left;
+}
+
+span.title{
+	font-weight:bold;
+}
+
+div.error-message {
+	color: red;
+	font-size: 10px;
+	padding: 0 0 0 150px;
+}
+
+#signup fieldset div.error{
+	margin-bottom: 0px;
+}

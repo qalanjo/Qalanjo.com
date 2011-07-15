@@ -1,0 +1,62 @@
+@CHARSET "ISO-8859-1";
+
+#select-file-dialog {
+}
+#instruction-image {
+	background: url(img/albums/instruction.png) no-repeat;
+	width: 200px;
+	height:156px;
+	margin:20px 10px;
+}
+
+.instruction-span {
+	padding-top:10px;
+	padding-left:10px;
+}
+
+#album-content {
+	display:block;
+	margin-top:10px;
+	margin-left:90px;
+}
+
+.notification {
+	padding-left:15px;
+}
+
+textarea#albumDescFlag {
+	height:auto;
+	width:auto;
+	max-height:104px!important;
+	max-width:255px!important;
+	margin-left:11px;
+}
+
+#albumNameFlag {
+	padding:4px;
+	width:19.6em;
+	margin-left:7px;
+}
+
+.desc-span {
+	margin-top:10px;
+}
+
+.album-row {
+	display:block;
+}
+
+.album-name {
+	padding-top:20px;
+	padding-left:20px;
+	font-weight:bold;
+}
+
+.upload-dialog-button {
+	padding-top:5px;
+	margin-right:5px;
+}
+
+#editAlbumForm {
+	overflow:hidden;
+}

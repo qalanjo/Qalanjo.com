@@ -1,0 +1,184 @@
+.arrow-steps{
+	width:680px;
+	background: url(../img/blue/steps/steps-bg-gradient.png) repeat-x #fff;
+	border-right:1px solid #D3D3D3;
+	display:block;
+	margin:54px 0 0 121px;
+}
+.arrow-step{
+	background: url(../img/blue/steps/steps-non-highlight.png) no-repeat;
+	width:223px;
+	height:68px;
+	display:block;
+	position:relative;
+	margin-top:-2px;
+	
+}
+.arrow-step h2{
+	font-weight: bold;
+	font-size:16px;
+	margin-top:22px;
+}
+.arrow-step-1{
+	z-index: 3;
+}
+.arrow-step-2{
+	z-index: 2;
+	margin-left:-35px;
+}
+.arrow-step-3{
+	z-index: 1;
+	margin-left:-33px;
+}
+.number-1{
+	background: url(../img/blue/steps/1-non-highlight.png) no-repeat;
+	width:16px;
+	height:34px;
+	display:block;
+	margin:13px 14px 0 12px;
+}
+.number-2{
+	background: url(../img/blue/steps/2-non-highlight.png) no-repeat;
+	width:23px;
+	height:33px;
+	display:block;
+	margin:13px 14px 0 45px;
+}
+.number-3{
+	background: url(../img/blue/steps/3-non-highlight.png) no-repeat;
+	width:23px;
+	height:34px;
+	display:block;
+	margin:13px 14px 0 45px;
+}
+.arrow-step-active{
+	background: url(../img/blue/steps/steps-highlighted.png) no-repeat;
+	height:64px;
+	margin-top:-1px;
+}
+.arrow-step-active .number-1{
+	background: url(../img/blue/steps/1-highlight.png) no-repeat;
+}
+.arrow-step-active .number-2{
+	background: url(../img/blue/steps/2-highlight.png) no-repeat;
+}
+.arrow-step-active .number-3{
+	background: url(../img/blue/steps/3-highlight.png) no-repeat;
+}
+.header-cap{
+	width:656px;
+	height:63px;
+	border:1px solid #D3D3D3;
+	margin:7px 0 0 121px;
+	display:block;
+	padding:25px 0 0 24px;
+}
+.header-cap h1{
+	font-size:18px;
+	font-weight:bold;
+	margin-bottom:6px;
+	padding:0;
+}
+.header-cap span.instruction{
+	font-size:12px;
+	color:#666666;
+	margin-bottom:10px;
+}
+.header-cap .shadow{
+	background: url(../img/blue/steps/header-shadow.png) no-repeat;
+	width:600px;
+	height:4px;
+}
+.spacer{
+	background-color:#CACACA;
+	width:121px;
+	height:167px;
+}
+.form-content{
+	width:680px;
+	height:367px;
+	border-left:1px solid #D3D3D3;
+	border-right:1px solid #D3D3D3;
+	border-bottom:1px solid #D3D3D3;
+	display:block;
+	background: url(../img/blue/steps/form-gradient.jpg) repeat-x;
+	border-radius: 0 0 7px 7px;
+}
+.form-container{
+	overflow: hidden;
+	height:304px;
+	width:100%;
+	display:block;	
+}
+.form-profile{
+	margin-left:155px;
+}
+.form-profile dl dt{
+	width:89px;
+	color:#666666;
+	font-size:14px;
+}
+.form-profile dl dd select, .form-profile dl dd input[type=text]{
+	width:312px;
+	height:24px;
+}
+.form-profile dl dd input[type=text]{
+	border:1px solid #D3D3D3;
+}
+.form-profile dl dd input[type=text].zipcode{
+	width:92px;
+}
+.form-content .buttonset{
+	margin:12px 14px 0 0;
+}
+
+.form-content form button.continue{
+	background: url(../img/blue/steps/save-continue.png) no-repeat;
+	width:124px;
+	height:40px;
+	border:none;
+}
+.form-content form button.continue:hover{
+	background-position:0 -82px;
+}
+
+.form-content form button.continue:active{
+	background-position:0 -42px;
+}
+.form-about{
+	margin:15px 0 0 50px;
+}
+.form-about dt{
+	font-size:14px;
+	color:#666666;
+}
+.form-about dd{
+	padding:0;
+	margin-left:84px;
+}
+.form-about textarea{
+	width:529px;
+	height:88px;
+	max-width: 529px;
+	max-height: 88px;
+	min-width: 529px;
+	min-height: 88px;
+	
+}
+.form-upload{
+	margin:15px 0 0 27px;
+}
+.form-upload .silo{
+	margin-right:26px;
+}
+.upload-content{
+	text-align: center;
+	width:380px;
+}
+a.upload{
+	width:124px;
+	height:24px;
+	display: block;
+	background: url(../img/blue/steps/choosefile.gif) no-repeat;
+	margin:auto;
+}

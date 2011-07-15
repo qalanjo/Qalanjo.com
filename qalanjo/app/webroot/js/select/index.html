@@ -1,0 +1,540 @@
+<!-- ////////////////////////////////////////////////////
+Brant Wills
+Hyjack Select Control
+Be Excellent to Each Other - http://www.youtube.com/watch?v=ijqnsRqSo2k
+//////////////////////////////////////////////////// -->	
+
+<html>
+<head runat="server">
+    <title>Hijack Control</title>
+	
+	<!-- ////////////////////////////////////////////////////	
+		Required JavaScript Files 
+		+ We require these next two lines of code to "include" our javascript libraries
+		+ If we do not include these hyjack will not be able to work correctly.
+		+ If we reference hyjack before jquery (flip the next two lines) we may also have some issues.		 
+	//////////////////////////////////////////////////// -->
+	<script src="jquery-1.4.4.min.js" type="text/javascript"></script>
+    <script src="jquery.hyjack.select.js" type="text/javascript"></script>
+
+	<!-- ////////////////////////////////////////////////////	
+		Required CSS (Cascading Style Sheet) Files
+		+ We require the next one line of code to "include" our CSS libraries
+		+ If we do not include these hyjack will work, but it will look funny.
+		+ Feel free to explore hyjack.css and modify to meet your needs!
+		+ If you can see areas of improvement please let us know!!		 
+	//////////////////////////////////////////////////// -->
+	<link href="hyjack.css" rel="stylesheet" type="text/css" />
+	
+	
+	<!-- ////////////////////////////////////////////////////	
+		Page Level CSS 
+		+ These classes and id's are just for the page level items to help show off hyjack
+		+ You should always abstract your CSS into files and include them like libraries as we did above
+	//////////////////////////////////////////////////// -->
+	<style type="text/css">
+		body
+		{
+			font: 83%/20px "Lucida Grande","Lucida Sans Unicode",'Ebrima', 'Calibri', Arial,Verdana,sans-serif;
+			margin: 30px;
+			background: #fafafa;
+		}
+
+		h1,h2,h3,h4,p{
+			padding: 0 0 8px 0;
+			margin: 0;
+		}		
+				
+		.container, .info, .bugs, .fixed{
+			padding: 30px;
+			border: solid 1px #e0e0e0;
+			margin: 10px 0 20px;
+			border-radius: 3px;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+		}
+		
+		.container
+		{
+			background: #fff;
+		}
+		
+		.container p
+		{
+			border-bottom: solid 1px #e0e0e0;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+		}
+
+		.info
+		{
+			background: #f0f0f0;
+		}
+
+		.bugs
+		{
+			background: #FFE4E1; 
+		}
+		
+		.buttons
+		{
+			margin: 20px 0 10px; 
+		}
+		
+		.fixed
+		{
+			background: #E0EEE0;
+		}
+
+		.nav
+		{
+			position: absolute;
+			right: 30px;
+			top: 67px;
+		}
+
+		nav
+		{
+			text-decordation: none;
+			display: block;
+		}
+		
+		.nav li
+		{
+			font-size: .9em;
+			border: solid 1px #ccc;
+			border-bottom: solid 1px #f0f0f0;
+			padding: 10px;
+			margin-left: 20px;
+			background: #f0f0f0;
+			border-radius: 3px 3px 0 0;
+			-moz-border-radius: 3px 3px 0 0;
+			-webkit-border-radius: 3px 3px 0 0;
+			float: right;
+			display: inline;
+		}
+		
+		.done
+		{
+			text-decoration: line-through;
+		}
+		
+		.onchange
+		{
+			display: none;
+			color: Green;
+			margin: 5px 0 0;
+		}
+	</style>
+		
+	
+	<!-- ///////////////////////////////////////////////////
+		Page Level Scripts 
+		+ These javascript functions are just here to help the index.html page show off hyjack's capability
+		+ You should always abstract your javascript into files and include them like libraries as we did above
+		+ Feel free to explore and modify these page level script to get a feel of how hyjack operates!
+	//////////////////////////////////////////////////// --->
+	<script type="text/javascript">
+	    
+		
+		////////////////////////////////////////////////
+		// jQuery on page load
+		////////////////////////////////////////////////
+		$(function () {
+			var wait = 3000;
+			$('.old').fadeTo('fast',.4);
+
+			// Hyjack Onload with all defaults
+			$('.hyjack').hyjack_select();				
+			$('#rs_select').hyjack_select({restrictSearch: true});
+			$('#filter_select').hyjack_select({filter: 'like'});
+
+			/* Multiple CLASS with customization      
+			$('.hyjack').hyjack_select({            // Defaults
+				ddImage: 'image/of/arrow.png',      // arrow_down.png         
+				ddCancel: 'image/of/cancel.png',    // cancel.png         
+				ddImageClass: 'class_of_arrow',     // hjsel_ddImage         
+				ddCancelClass: 'class_of_cancel',   // hjsel_ddCancel         
+				emptyMessage: 'No Items Message',   // No Items to Display         
+				restrictSearch: false/true,         // false         
+				offset: 12            // false     
+			}); 
+			*/
+			
+			
+			// Display Function to help explain whats going on
+			$(':input').change(function () {
+	            $('.onchange', $(this).parent()).html('onChange event fired, value is now - ' + $(this).val()).show().delay(wait).fadeOut();
+	        });
+
+	    });
+		
+		
+		////////////////////////////////////////////////
+		// Perform real time DOM hyjacking
+		////////////////////////////////////////////////
+		function hyjack_realtime(selector, filter) {
+			if(!selector) return;
+
+			alert('hijacking ' + selector);
+			
+			$(selector).hyjack_select();
+		}
+		
+		
+		////////////////////////////////////////////////
+		// Perform real time disable
+		////////////////////////////////////////////////
+		function disable(selector)
+		{
+			if(!selector) return;
+			alert('disabled ' + selector);
+			
+			$(selector).attr('disabled','disabled');
+			$.hyjack_select.update(selector); /* Dont forget to update the selector!! */
+		}
+		
+		////////////////////////////////////////////////
+		// Perform real time enabel
+		////////////////////////////////////////////////
+		function enable(selector)
+		{
+			if(!selector) return;
+			alert('enable ' + selector);
+			
+			$(selector).removeAttr('disabled');
+			$.hyjack_select.update(selector); /* Dont forget to update the selector!! */
+		}
+
+		
+		////////////////////////////////////////////////
+		// Perform disposal of hyjacked control
+		////////////////////////////////////////////////
+		function dispose_hyjack(selector)
+		{
+			if(!selector) return;
+			alert('disposing hyjack from ' + selector);
+			
+			$.hyjack_select.dispose(selector);
+		}
+
+		////////////////////////////////////////////////
+		// Dispose all the Hyjacks on the Page
+		////////////////////////////////////////////////
+		function dispose_all()
+		{
+			alert('disposing all hyjacks');						
+			$.hyjack_select.dispose(); 
+			// $.hyjack_select.dispose_all();
+		}
+		
+		////////////////////////////////////////////////
+		// Modify the filter - search algorithm
+		////////////////////////////////////////////////
+		function changeFilter(selector)
+		{
+			if(!selector) return;
+			var newFilter = $('#filter').val();
+			alert('updating filter to ' + newFilter);
+			
+			$.hyjack_select.dispose(selector);
+			$(selector).hyjack_select({filter : newFilter});
+		}
+		
+		////////////////////////////////////////////////
+		// Modify the Width 
+		////////////////////////////////////////////////
+		function changeWidth(selector)
+		{
+			if(!selector) return;
+			var newWidth = $('#width').val();
+			alert('updating width to ' + newWidth);
+			
+			$.hyjack_select.dispose(selector);
+			$(selector).css('width', newWidth);
+			$(selector).hyjack_select();
+		}
+		
+		////////////////////////////////////////////////
+		// Modify the Offset 
+		////////////////////////////////////////////////
+		function changeOffset(selector)
+		{
+			if(!selector) return;
+			var newOffset = $('#offset').val();
+			alert('updating offset to ' + newOffset);
+			
+			$.hyjack_select.dispose(selector);
+			$(selector).hyjack_select({offset: newOffset});
+		}
+		
+		////////////////////////////////////////////////
+		// Perform adding 5 items and update
+		////////////////////////////////////////////////
+		function addItems(selector){
+			if(!selector) return;
+							
+			var items = 5;
+			alert('adding ' + items + ' items to ' + selector + ' and hyjacking!');
+			
+			// Add new items
+			for(var i=0; i<items; i++){
+				$(selector).append( 
+					$('<option/>').val('newItem' + i).html('newItem' + i) 
+				); 
+			}
+
+			$.hyjack_select.update(selector); /* Dont forget to update the selector!! */
+		}
+
+		
+		////////////////////////////////////////////////
+		// Update all the Hyjacks on the Page
+		////////////////////////////////////////////////
+		function update_all(){
+			alert('updating all hyjacks');
+			$.hyjack_select.update();
+			$.hyjack_select.update_all();		
+		}
+	</script>
+
+</head>
+<body>
+
+    <img src="hyjack.png" />
+    <ul class="nav">
+        <li><a title="contact us" href="mailto:brantwills@gmail.com">Contact Us</a></li>	
+		<li><a title="frontensemble" href="http://www.frontensemble.com/">frontensemble.com</a></li>
+		<li><a title="jquery code" href="http://plugins.jquery.com/project/hyjack">jQuery Plugin</a></li>
+		<li><a title="google code" href="http://code.google.com/p/hyjack/">Google Project</a></li>
+    </ul>
+
+    <div class="info">
+        <h4>Hyjack Select</h4>
+        <p>
+            This jQuery plugin replaces the traditional html select control with an improved
+            or "hijacked" version.
+			To begin, try exploring the various Hyjack HTML select examples.
+			Notice, you may now type to search for available drop down items!
+			Please feel free to discover the demos, expand on current ideas,
+			or just drop us a note! Documenation can be found in code behind and through google code
+			or at our jQuery plugin page!			
+		</p>
+		
+
+		<b>Download Now</b>
+		<ul>
+			<li><a href="http://code.google.com/p/hyjack/downloads/list" title="Click to see our download list from Google Code" target="_blank">http://code.google.com/p/hyjack/downloads/list</a></li>
+			<li><a href="" title="Click to see our downloads off jQuery" target="_blank">http://plugins.jquery.com/project/hyjack</a></li>
+		</ul>
+
+        
+    </div>
+
+	<div class="container">
+		<h4>1) Default Hyjack Select</h4>
+		<p>
+			This is the default hyjack select loaded with 20 options which repeat and contain duplicates.
+			Feel free to click the buttons below performing simple events on the new hyjack select.
+		</p>
+		<select id="test1" class="hyjack">
+			<option value="1volvo">Volvo</option>
+			<option value="2saab">Saab</option>
+			<option value="3mercedes">Mercedes</option>
+			<option value="4audi">Audi</option>
+			<option value="5volvo">Volvo</option>
+			<option value="6saab">Saab</option>
+			<option value="7mercedes">Mercedes</option>
+			<option value="8audi">Audi</option>
+			<option value="9volvo">Volvo</option>
+			<option value="10saab">Saab</option>
+			<option value="11mercedes">Mercedes</option>
+			<option value="12audi">Audi</option>
+			<option value="13volvo">Volvo</option>
+			<option value="14saab">Saab</option>
+			<option value="15mercedes">Mercedes</option>
+			<option value="16audi">Audi</option>
+			<option value="17volvo">Volvo</option>
+			<option value="18saab">Saab</option>
+			<option value="19mercedes">Mercedes</option>
+			<option value="20audi">Audi</option>
+		</select>       
+		<div class="onchange" id="test1_onchange">onChange event fired!</div>
+		<div class="buttons">
+			<input type="button" onclick="disable('#test1');" value="Click to Disable" />
+			<input type="button" onclick="enable('#test1');" value="Click to Enable" />
+			<input type="button" onclick="hyjack_realtime('#test1');" value="Click to Hyjack" />
+			<input type="button" onclick="dispose_hyjack('#test1')" value="Click to Dispose Hyjack" />
+			<input type="button" value="Submit Return Value" onclick="alert('Selected value is: ' + $('#test1').val()); "/>
+		</div>
+	</div>
+	
+	
+	<div class="container">
+		<h4>2) Hyjack using Filter Setting</h4>
+		
+			This example shows the different "filter" or search algorithms built into hyjack.
+			These algorithms determine how hyjack should display the options after users start typing words.
+			There are three options available to use:
+			<ul>
+				<li><b>like</b>: this is the default and searches 'like' terms</li>
+				<li><b>first</b>: this searches options based on the first letter / word <i>(try typing the letter 'a')</i></li>
+				<li><b>words</b>: this searches multiple words, basically ignoring the space bar <i>(try typing with a space bar)</i></li>
+			</ul>
+		<p>
+			Feel free to change the algorithms, using the dropdown list, to get a feel of how each one works.
+			If you know of a better algorithm, or have an idea, please let us know we are always looking to improve!
+		</p>
+		<select id="filter_select" >
+			<option value="1saab">Saab</option>
+			<option value="2mercedesOrSaab">Mercedes or Saab</option>
+			<option value="3audi">Audi</option>
+			<option value="4apple">Apple</option>
+			<option value="5asprin">Asprin</option>
+			<option value="6mercedes">Mercedes</option>
+			<option value="7audiOrVolvo">Audi or Volvo</option>
+			<option value="8volvo">Volvo</option>
+			<option value="9saab">Saab</option>
+			<option value="10mercedes">Mercedes</option>
+		</select> 
+        <div class="onchange" id="traditional_html_select_onchange">onChange event fired!</div>
+		<div class="buttons">
+			<select id="filter">
+				<option value="like">like</option>
+				<option value="first">first</option>
+				<option value="words">words</option>
+			</select> 
+			<input type="button" value="Change Algorithm" onclick="changeFilter('#filter_select')"/>
+			<input type="button" value="Submit Return Value" onclick="alert('Selected value is: ' + $('#filter_select').val());"/>
+		</div>
+	</div>
+	
+	
+	<div class="container">
+		<h4>3) Hyjack using Restricted Search Setting & Dynamically Add Options</h4>
+		<p>
+			In this example we have set the restricted search setting to "true", forcing a user
+			to only select from the options we allow.  For example, try typing "Apple", although there
+			are no options available - when we click away, the previous search is cleared restricting a
+			search to only available options. Additionally, you can dynamically add 5 new items to this hyjack using the buttons below.
+		</p>
+		<select id="rs_select" >
+			<option value="1saab">Saab</option>
+			<option value="2mercedes">Mercedes</option>
+			<option value="3audi">Audi</option>
+			<option value="4volvo">Volvo</option>
+			<option value="5saab">Saab</option>
+			<option value="6mercedes">Mercedes</option>
+			<option value="7audi">Audi</option>
+			<option value="8volvo">Volvo</option>
+			<option value="9saab">Saab</option>
+			<option value="10mercedes">Mercedes</option>
+		</select> 
+        <div class="onchange" id="traditional_html_select_onchange">onChange event fired!</div>
+		<div class="buttons">
+			<input type="button" onclick="addItems('#rs_select')" value="Click to Add Items" />
+			<input type="button" value="Submit Return Value" onclick="alert('Selected value is: ' + $('#rs_select').val());"/>
+		</div>
+	</div>
+	
+	<div class="container">
+		<h4>4) Modifying Hyjack Width and Offset Setting</h4>
+		<p>
+			By default hyjack takes the width of the original select, however; this will chop off
+			the longest option value (since we now have a cancel 'x' button to deal with).  If you would 
+			like to modify the width or increase the offset setting.  Feel free to modify the width and offset 
+			using the dropdown lists below.
+		</p>
+		<select id="size_select" class="hyjack">
+			<option value="1saab">Saab</option>
+			<option value="2mercedes">Mercedes</option>
+			<option value="3audi">Audi</option>
+			<option value="4volvo">Volvo</option>
+			<option value="5saab">Saab</option>
+			<option value="6mercedes">Mercedes</option>
+			<option value="7audi">Audi</option>
+			<option value="8volvo">Volvo</option>
+			<option value="9saab">Saab</option>
+			<option value="10mercedes">Mercedes</option>
+		</select> 
+        <div class="onchange" id="traditional_html_select_onchange">onChange event fired!</div>
+
+			
+		<div class="buttons">
+			<select id="width" >
+				<option value="100px">Default</option>
+				<option value="200px">200px</option>
+				<option value="400px">400px</option>
+			</select> 
+			<input type="button" onclick="changeWidth('#size_select')" value="Change Width" />
+		</div>
+		
+		<div class="buttons">
+			<select id="offset" >
+				<option value="15">Default</option>
+				<option value="5">5</option>
+				<option value="0">0</option>
+			</select> 
+			<input type="button" onclick="changeOffset('#size_select')" value="Change Offset"/>
+			*developmental
+		</div>
+	</div>
+
+	<div class="container">
+		<h4>5) Global Functions</h4>
+		<p>
+			These are just examples of globally updating and disposing hyjacked controls.  This example is showing how 
+			quickly you can affect each hyjack on the page.
+		</p>
+		<div class="buttons">
+		<input type="button" onclick="dispose_all()" value="Click to Dispose of All Hyjacks" />
+		<input type="button" onclick="update_all()" value="Click to Update all Hyjacks" />
+		</div>
+	</div>
+	
+	<div class="bugs">
+        <h4>Bugs that need fixing/researching</h4>
+        <ul>
+            <li>IE 6 testing</li>
+            <li>Bottom of the screen detection, avoiding options falling off screen</li>
+			<li>Improved "width" logic for hyjacked select</li>
+			<li>.remove() function in update works well in IE but not in FireFox therefore we are using .hide() in the update and dispose methods</li>
+        </ul>
+    </div>
+	
+	<div class="fixed">
+		<h4>Whats New in this version 1.1.2</h4>
+		<ul>
+			<li>HTML encode and decode, in case you're loading some html tags</li>
+			<li>added new settings for search algorithms: 'like', 'words', 'first'</li>
+			<li>if no select options are included, do not hyjack and just display normal select</li>
+			<li>width issues address, could use some refinement</li>
+			<li>additional documentation placed in "code-behind" .js / .html files</li>
+			<li>including a minified js version, thanks google closure!!</li>
+		</ul>
+	</div>
+	
+	<div class="fixed old">
+		<h4>Whats New in this version 1.1.1</h4>
+		<ul>
+			<li>hyjack now inserts before original select instead of using after</li>
+			<li>textbox now binds to keydown to better handle tab key press</li>
+			<li>hide function introduced to better handle escapeing clicks</li>
+			<li>arrow keys up and down now act more like original select dropdown</li>
+			<li>arrow keys now account for hidden items after search</li>
+			<li>enter key updated to reflect traditional select</li>
+		</ul>		
+	</div>
+	
+	<div class="fixed old">
+		<h4>Whats New in this version 1.1.0</h4>
+		<ul>
+			<li>Accounted for disabled attributes</li>
+			<li>Included dispose function</li>
+			<li>Included update function</li>
+			<li>updated to jquery 1.4.4 - allows us to make use of "data" rather then hardcoding index in ID</li>
+		</ul>		
+	</div>
+
+</body>
+</html>

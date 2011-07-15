@@ -1,0 +1,46 @@
+.input {
+	position: relative;
+	width: 203px;
+	height: 48px;
+	margin: 0;
+	background-color: transparent;
+	background-image: url(../img/home/textfield.png);
+	background-position: 0px 0px;
+	float: left;
+}
+
+.input span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 20px;
+	margin: 6px 20px;
+	padding: 8px 6px 8px 6px;
+	background-color: transparent;
+	font-family: 'Lucida Grande', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #4f96b3;
+	text-align: center;
+}
+
+.input input, .input textarea, .input select {
+	position: relative;
+	width: 163px;
+	height: 36px;
+	margin: 6px 20px;
+	border: none;
+	padding: 6px;
+	background: #transparent;
+	font: inherit;
+}
+
+.input input:focus, .input textarea:focus, .input select:focus {
+	outline: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.input input, .input textarea, .input select {
+		padding: 4px;
+	}
+}

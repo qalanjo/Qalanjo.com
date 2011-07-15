@@ -1,0 +1,16 @@
+@CHARSET "ISO-8859-1";
+#questions {
+    margin-top: 20px;
+}
+
+p.image_set_bottom img{
+	position:relative;
+	top:20px;
+	margin-top:0px;
+}
+
+
+
+span.button button{
+	margin:230px 0 0 10px;
+}

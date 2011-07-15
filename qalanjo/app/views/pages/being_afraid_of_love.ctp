@@ -1,0 +1,11 @@
+<h1>BEING AFRAID TO LOVE </h1>
+<p>To love and be loved are such wonderful things. They are almost always associated with beautiful things in life. But did you ever stop to think that somewhere, there may be people who are afraid to love? </p>
+<p>Yes, indeed it is very possible. Why?</p>
+<p>Because many people are afraid of getting hurt. </p>
+<p>Self - defense is an innate thing within us, humans. We learn from our experiences that we need to defend ourselves from any possible harm or hurt that may come our way. </p>
+<p>When we love for the first time, most of us are full of enthusiasm and dreams for us, for our loved ones and for our future together with them. But if love becomes awry, and we get hurt, we stop and shy away from love. We have, indeed, learned our lesson. "Never again", we would tell ourselves. </p>
+<p>When we have learned to get over the hurt, we start to look for a prospect. Unfortunately, the love that we offer is not returned the same way we would want it to be returned. Rejected and hurt, we turn away from love again.</p>
+<p>Truth is: getting hurt is a big deal for us. It messes up our lives and it takes such a long time to heal. That is probably why many people would prefer to be alone for some time. But you know what another truth is? It is this: To love involves risks. We have to accept it. When we love a person, we are actually giving him/her the power over us. Thus, the power to hurt us. We have to accept that fact of life. </p>
+<p>Lastly, we at Qalanjo, would like to encourage you to take a chance. To love is already a mystery and experiencing it, is a chance we should not dare pass. If we get hurt, then we will pick up the broken pieces of our hearts and try to put them back together. We strongly suggest that we mend it first on our own. Don't let others do it for you. Go back to what's within yourself and add those important lessons you've learned along the way. We know it is easier said than done, but that's the way to it. </p>
+<p>Have a heart full of hope and believe that there is definitely someone for you out there. Not some fancy prince charming or knight in shining armor, but someone who may not be perfect but is definitely real. 
+Go ahead. Take a chance. </p>

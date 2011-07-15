@@ -1,0 +1,142 @@
+@CHARSET "ISO-8859-1";
+
+
+body{
+	font-size:62.5%;
+}
+
+#centercontent{
+	background-color:#fff;
+	padding:0 20px 0 20px;
+	width:80%;
+	overflow:hidden;
+}
+
+p.congrats{
+	font-size:110%;
+	font-weight:bold;
+}
+form{
+	font-size:62.5%;	
+}
+
+form span{
+	margin-bottom:0.5em;
+	display:block;
+	border-bottom:1px solid #1e3964;
+}
+form, form input, form select{
+	font-size:1em;
+}
+
+form fieldset{
+	margin: 0;
+	padding-top: 10px;
+	text-align: left;
+	border: none;
+	overflow:hidden;
+	display:block;
+	
+}
+
+form fieldset div.input{
+	margin-bottom: 13px;
+	width:80%;
+	overflow:hidden;
+	padding-bottom:10px;
+}
+form fieldset div.input label {
+	display: block;
+	height: 50px;
+	text-align: right;
+	padding-top: 1px;
+	line-height: 1.1;
+	float: left;
+	clear: both;
+}
+
+div.input{
+	border-bottom:1px solid #333;
+}
+
+
+form fieldset div.input input,
+form fieldset div.input textarea{
+	display: block;
+}
+
+form fieldset div.input select {
+	display:inline;
+}
+
+form fieldset div.inline_div{
+	display: inline;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+form fieldset div.inline_div select{
+}
+
+
+
+form fieldset div.inline_div label {
+	display: block;
+	width:120px;
+	height: 20px;
+	text-align: right;
+	padding-top: 1px;
+	line-height: 1.1;
+	float: left;
+	clear: both;
+}
+
+form fieldset div.reduce select{
+	margin-left:20px;
+
+}
+
+form fieldset div.inline_spec {
+	margin-bottom: 13px;
+}
+
+form fieldset div.inline_spec select{
+	margin: 0;
+}
+div.sets, div.sets_inline{
+	float:right;
+	width:65%;
+	overflow:hidden;
+	display:inline;
+}
+
+
+
+div.sets div.radio label{
+	float:none;
+	display:inline;
+	clear:none;
+	text-align:left;
+}
+div.radio input[type=radio]{
+	width:15%;
+	display:inline;
+}
+form .no_div{
+	margin: 0;
+	width: 140px;
+}
+
+div.error-message{
+	clear:both;
+}
+
+div.submit{
+	float:left;
+}
+
+div.sets_inline input[type=radio]]{
+	display:inline;
+	float:left;
+}

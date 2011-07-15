@@ -1,0 +1,309 @@
+@CHARSET "ISO-8859-1";
+
+.main-container{
+	overflow:visible;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:1px solid #666666;
+	width:840px;
+	margin:20px;
+	background-image:url(../img/blue/inbox/top_gradient.png);
+	background-repeat:repeat-x;
+	padding-top:44px;
+	padding:44px 23px 10px 13px;
+}
+
+.banner{
+	height: 108px;
+	width:100%;
+	display:block;
+	margin-bottom:23px;
+}
+.left-container{
+	width:183px;
+	height:281px;
+	display:block;
+}
+.logo-q{
+	background: url(../img/blue/inbox/q-logo.png) no-repeat;
+	width:52px;
+	height:60px;
+	display:block;
+}
+.mail-contacts h2{
+	margin:0;
+	padding:0;
+}
+.mail-letters{
+	color:#005C99;
+	font-size:20px;
+	font-weight: bold;
+}
+.mail-contacts .contacts-letters{
+	font-size:16px;
+	color:#333;
+	margin-top:-12px;
+}
+.mail-contact-icon{
+	background:url(../img/blue/inbox/message-icon.png) no-repeat;
+	height:46px;
+	width:52px;
+	display:block;
+}
+.compose{
+	width:96px;
+	height:28px;
+	display:block;
+	background:url(../img/blue/inbox/save-button.png) no-repeat #fff;
+	margin:20px 40px;
+	border:none;
+	font-size:11px;
+}
+.compose:hover{
+	background-position:0 -59px;
+}
+.compose:active{
+	background-position:0 -30px;
+}
+
+.compose span{
+	display:block;
+	width:100%;
+	text-align: center;
+}
+.gradient-message-control .controls{
+	list-style-type:none;
+	font-size:11px;
+}
+.gradient-message-control .controls li{
+	margin-bottom:7px; 
+}
+.gradient-message-control .controls a{
+	text-decoration: none;
+	display:block;
+	float:left;
+	width:100px;
+	color:#666666;
+}
+.gradient-message-control .controls a span.count{
+	color:#005F9D;
+	margin-right:3px;
+}
+img.inbox{
+	margin-right:10px;
+}
+img.message-sent{
+	margin-right:4px;
+}
+img.trash{
+	margin-right:13px;
+}
+.instruction{
+	color:#999999;
+}
+.reply-button{
+	border:none;
+	background: url(../img/blue/inbox/reply.png) no-repeat transparent;
+	width:67px;
+	height:27px;
+	cursor: pointer;
+}
+.reply-button:hover{
+	background-position:0 -54px;
+}
+.reply-button:active{
+	background-position:0 -27px;
+}
+.sender{
+	margin-left:5px;
+	width:283px;
+	padding:0 7px;
+	height:24px;
+	background-color: #fff;
+	border:1px solid #d3d3d3;
+}
+div.message-content-list{
+	width:650px;
+}
+.message-content-list .message-control{
+	margin-bottom:20px;
+}
+ul.message-content-list{
+	list-style-type:none;
+	margin:0;
+}
+ul.message-content-list li{
+	width:100%;
+	margin-bottom:10px;
+	border-bottom:1px solid #ccc;
+}
+.sender-picture{
+	background: url(../img/blue/inbox/shadow-picture.png) no-repeat #fff;
+	height:91px;
+	width:85px;
+	margin-right:15px;
+}
+.sender-picture img{
+	width:70px;
+	height:76px;
+	margin:3px;
+	position:relative;
+	left:5px;
+	top:5px;
+}
+.message-content-list span.name{
+	color:#005F9D;
+}
+.message-content-list span.message{
+	width:400px;
+	display:block;
+	word-wrap: break-word;
+}
+.message-content-list .time{
+	color:#666666;
+}
+.messager{
+	background-color:#fff;
+	width:100%;
+	min-height:85px;
+	border-top:1px solid #D6D6D6;
+}
+.messager-container{
+	margin:2px;
+	width:610px;
+	padding:22px 6px 17px 30px;
+	background-color:#C3DDFC;
+	min-height:42px;
+}
+.messager textarea{
+	width:100%;
+	padding:0;
+	margin:0;
+	height:20px;
+}
+.container-textarea{
+	width:600px;
+	padding:0;
+	margin:0;
+}
+.gradient-message-control{
+	width:174px;
+	height:167px;
+	background:url(../img/blue/inbox/gradient-message-control.png) repeat-y;
+	padding:2px;
+	border:1px solid #D6D6D6;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+	margin-top:5px;
+}
+#messages-tab{
+	width:650px;
+	height:348px;
+	display:block;
+}
+#messages-tab{
+	border:none;
+}
+#messages-tab .ui-tabs-nav{
+	background-image:none;
+	background-color:transparent;
+}
+#messages-tab .ui-tabs-nav .ui-state-active{
+	background:none;
+	background-color:#005F9D;
+	color:#fff;
+}
+#messages-tab .ui-tabs-nav .ui-state-active a{
+	color:#fff;
+}
+#messages-tab .ui-widget-header{
+	border:none;
+	border-bottom:3px solid #005F9D;
+	border-radius:0;
+}
+#messages-tab .ui-tabs-panel{
+	padding:0;
+}
+.messages{
+	width:100%;
+	border:1px solid #CCCCCC;
+}
+.messages .message-control, .message-control{
+	background: url(../img/blue/inbox/gradient-message-top.png) repeat-x #fff;
+	height:40px;
+	width:100%;
+	border-bottom:1px solid #A7A7A7;
+	margin-bottom:1px;
+	
+}
+.qmail-item{
+	margin:12px 0 0 12px;
+	color:#666;
+}
+.qmail-control-items{
+	margin:12px 12px 0 0;
+}
+.ui-widget-content a{
+	color:#004B7D;
+	text-decoration: none;
+	cursor:pointer;
+	
+}
+.qmail-control-items ul{
+	list-style-type:none;	
+}
+.qmail-control-items li{
+	float:left;
+	width:52px;	
+	padding-left:11px;
+}
+.qmail-control-items ul li.divider{
+	border-right:1px solid #999;
+}
+.messages ul{
+	list-style-type: none;
+	padding:0;	
+	overflow:hidden;
+	margin:0;
+}
+.messages{
+	overflow:hidden;
+}
+.messages ul li{
+	float:left;
+	margin-right:2px;	
+	font-size:10px;	
+}
+.message-header ul li{
+	background-color: #C3DDFC;
+}
+.messages ul li.checkbox{
+	margin-left:1px;
+	padding:9px 11px;
+	width:14px;
+}
+.messages ul li.from{
+	padding:7px 16px;
+	width:135px;
+}
+.messages ul li.message{
+	padding:7px 16px;
+	width:285px;
+}
+.messages ul li.date{
+	padding:7px 0px 7px 16px;
+	width:102px;
+}
+.messages ul li input[type=checkbox]{
+	margin:0;
+}
+.messages div.even{
+	background-color:#EBF3FE;	
+}
+.messages div.unread{
+	font-weight:bold;
+}
+div.message{
+	cursor:pointer;
+}

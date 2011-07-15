@@ -1,0 +1,58 @@
+@CHARSET "ISO-8859-1";
+
+/**
+ * Overrides
+ */
+
+#homebox{
+	min-height:400px;
+}
+
+.photo-header{
+	margin:20px;
+}
+
+.photo-header h2{
+	margin:0px;
+	font-weight:bold;
+	font-size:18px;
+}
+
+.uploaded{
+	width:755px;
+	height:118px;
+	box-shadow:1px 1px 7px #8E8E8E;
+	margin:20px;
+}
+
+.shout{
+	margin:16px 14px 16px 14px;
+}
+
+div.photos{
+	display: block;
+    float: left;
+    width: 578px;
+    height: 50px;
+    background-image: url(../img/blue/photos/matches-bg.jpg);
+    background-repeat: repeat-x;
+    margin-top: -2px;
+    padding: 20px 10px;
+}
+
+div.list{
+	display:block;
+	width:100%;
+}
+
+ul.recent-albums, ul.recent-photos{
+	list-style-type:none;
+}
+
+div.sub-header{
+	margin-bottom:10px;
+}
+
+div.sub-header h2{
+	font-size:16px;	
+}

@@ -1,0 +1,249 @@
+#banner{
+	height:100px;
+	width:100%;
+	background:repeat-x url(../img/blue/subscription_transactions/details/header.png);
+}
+
+
+.photo-header{
+	margin:10px 20px 10px 20px;
+}
+
+.photo-header h2{
+	margin:0px;
+	font-weight:bold;
+	font-size:18px;
+	text-align:center;
+}
+
+#logo{
+	padding:15px 10px 10px 22px;
+}
+
+#label{
+	padding-top:22px;
+	
+}
+#label h1{
+	font-size:27px;
+	margin-top:35px;
+	color:#fff;
+	text-shadow:10px 10px 10px transparent;
+}
+
+#content{
+	width:850px;
+	min-height:200px;
+	background-image:url(../img/blue/subscription_transactions/details/bg_blue.jpg);
+	background-repeat:repeat-x;
+}
+#content_box{
+	padding-top:10px;
+	overflow:hidden;
+	margin-left:30px;
+}
+div.tab{
+	margin-left:37px;
+	font-size:15px;
+	padding:5px 10px 0px 10px;
+	width:100px;
+	background-image:url(../img/blue/subscription_transactions/details/tab_repeat_s1.png);
+	background-position:top left;
+	background-repeat:repeat-x;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+
+#invitation{
+	font-size:120%;
+	margin-bottom:.5em;
+}
+p.message{
+	
+}
+p.instruction, p.signup{
+	margin:0.2em;
+	margin-bottom:0;
+	display:inline-block;
+	margin-left:1em;
+	margin-top:0;
+}
+p.signup{
+	text-indent:2em;
+}
+p.instruction{
+	margin-top:1em;
+}
+#subscription_tab{
+	margin-left:1em;
+	width:630px;
+	overflow:hidden;
+}
+
+#subscription_detail{
+	width:630px;	
+	margin-right:1em;
+}
+div.tab strong{
+	color:#006600;
+}
+div.content_tab{
+	width:100%;
+	height:240px;
+	background-color:#9FF4A6;
+}
+div.tab-skin-top{
+	background-image:url(../img/blue/subscription_transactions/details/gradient_green.png);
+	background-repeat:repeat-x;
+	height:52px;
+	width:98.5%;
+}
+
+div.subscription-list{
+	background-color:#fff;
+	height:181px;
+	width:98.5%;
+}
+
+div.tab-skin-top, div.subscription-list{
+	margin-left:6px;
+	margin-right:6px;
+}
+
+span.promotion-message{
+	margin-top:16px;
+	margin-bottom:10px;
+	display:inline-block;
+	margin-left:10px;
+}
+span.joinnow{
+	text-align:center;
+}
+span.joinnow a{
+	display:block;
+	height:31px;
+	width:91px;
+	background:url(../img/blue/subscription_transactions/details/join_now.png) no-repeat transparent;
+	margin:auto;
+}
+span.joinnow a:hover{
+	background-position:0 -35px;
+}
+span.joinnow a:active{
+	background-position:0 -67px;
+}
+
+
+
+div.subscription{
+	width:143px;
+	text-align:center;	
+	margin-top:10px;
+	border-right:1px solid #00FFFF; 
+}
+div.subscription span{
+	display:inline-block;	
+	width:100%;		
+}
+
+div.subscription p span.left{
+	margin:0px;
+}
+
+span.time{
+	color:#0066FF;
+	font-size:15px;
+}
+
+span.value{
+	color:#999999;
+	font-size:12px;
+}
+span.price{
+	color:#330000;
+	font-size:18px;
+}
+span.permonth{
+	color:#666666;
+	font-size:11px;
+}
+
+/**
+ * The benefits
+ */
+#reasons{
+	margin-top:1em;
+	margin-left:1em;
+	width:630px;
+}
+table.benefits{
+	width:630px;
+}
+#benefits th{
+	font-weight:bold;
+}
+th.features{
+	width:90%;
+	font-weight:bolder;
+}
+strong.connect{
+	color:#006600;
+}
+th.connect{
+	font-size:8px;
+}
+tr.benefits-header{
+	background-color:#cccccc;
+}
+
+/**
+ * The sidebar
+ */
+#sidebar{
+	width:190px;
+	margin-left:10px;
+	margin-top:-20px;
+}
+
+p.tagline{
+	font-size:12px;
+	font-weight:bold;
+	margin-bottom:.7em;
+}
+div.couple{
+	width:190px;
+	height:242px;
+	background-color:#cccccc;
+	margin-bottom:1em;
+}
+
+/**
+ * Why Qalanjo
+ */
+#whyqalanjo{
+	width:190px;
+}
+#whyqalanjo h3{
+	font-size:15px;
+	background-color:#C9DFF0;
+	padding:9px 0px 9px 3px;
+	font-weight:bold;
+	margin-bottom:.5em;
+}
+#whyqalanjo h4{
+	font-size:14px;
+	color:#0000FF;
+	margin-bottom:0px;
+	margin:.3em 0 .5em .5em;
+}
+#whyqalanjo p.message{
+	margin-left:.5em;
+}
+#payment span{
+	font-size:10px;
+	font-weight:bold;
+}
+#payment img{
+	margin-right:.2em;
+}
+

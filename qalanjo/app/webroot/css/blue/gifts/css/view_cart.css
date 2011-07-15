@@ -1,0 +1,41 @@
+
+
+#view-cart-wrap { /* header */
+	text-align:center;
+	margin:10px;
+}
+
+#cart-table { 
+	width:480px;
+	border:1px solid red;
+	margin:15px auto;
+}
+
+th, tr, td {
+	padding:7px;
+	text-align:center;
+	margin:0 auto;
+}
+
+th {
+	background-image: url(../img/cat-head.png)!important;
+}
+
+thead { 
+	margin: 0px 15px;
+}
+
+tbody tr a {
+	display:block;
+	width:131px;
+	height:27.33px;
+	background-image: url(../img/search-gift-btn.png);
+	background-repeat:none;
+	cursor:pointer;
+	display:block;
+	text-align:center;
+	vertical-align:middle;
+	text-decoration:none;
+	margin-top:10px;
+	line-height:30px;
+}

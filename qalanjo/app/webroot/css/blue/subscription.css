@@ -1,0 +1,275 @@
+@CHARSET "ISO-8859-1";
+.settings-container{
+	overflow:visible;
+	border-radius:5px;
+	border:1px solid #666666;
+	width:836px;
+	margin:20px;
+	background-image:url(../img/blue/container/top.gif);
+	background-repeat:repeat-x;
+	padding:44px 20px 20px 20px;
+}
+.encourage-line{
+	width:100%;
+	margin-top:17px;
+}
+.encourage-line-message{
+	width:370px;
+	height:49px;
+	background:url(../img/blue/subscribe/encourage-line.png) repeat-x #fff;
+	border-left:1px solid #dfdfdf;
+	border-top:1px solid #dfdfdf;
+	border-bottom:1px solid #dfdfdf;
+	padding:10px 0 0 13px;
+	display:block;
+	color:#666666;
+	font-size:18px;
+}
+.encourage-line-message span{
+	margin-top:-5px;	
+}
+.encourage-line-message strong{
+	color:#005F9D;
+	font-size:18px;
+}
+.encourage-line .arrow{
+	width:34px;
+	height:62px;
+	background:url(../img/blue/subscribe/arrow.png) no-repeat #fff;
+	display:block;
+	z-index:10;
+}
+.encourage-line .arrow-yellow{
+	width:74px;
+	height:61px;
+	display:block;
+	background:url(../img/blue/subscribe/subscribe-arrow.png) no-repeat;
+	margin-left:-20px;
+	z-index:9;
+}
+
+.feature-message{
+	width:280px;
+	display:block;
+	height:61px;
+	margin-top:5px;	
+}
+.feature-message h2{
+	line-height:1.2em;
+	margin:0;
+	font-size:16px;
+	color:#333333;
+}
+.frames{
+	overflow:hidden;
+	width:100%;
+}
+.viewport{
+	width:2000px;
+}
+.spacer-line{
+	width:100%;
+	height:8px;
+	background-color:#666666;
+	margin-bottom:10px;
+}
+.subscription-item{
+	width:196px;
+	height:188px;
+	padding-top:23px;
+	display:block;
+	border-radius:7px;
+	border:1px solid #9A9A9A;
+}
+.item-spacer{
+	background-color:#005F9D;
+	height:63px;
+	width:14px;
+	display:block;
+	margin-top:70px;
+}
+.subscription-item h2, .subscription-item h3{
+	margin:0;
+	padding:0;
+	text-align:center;
+	font-weight:bold;
+	width:100%;
+}
+h3.months{
+	font-size:16px;
+	color:#005F9D;
+}
+h2.subscription-description{
+	font-size:22px;
+	
+}
+h2.most-successful{
+	color:#FF8000;
+}
+h2.top-seller{
+	color:#9FCC1A;
+}
+h2.other{
+	color:#666666;
+}
+h2.price{
+	font-size:30px;
+}
+h3.permonth{
+	color:#005F9D;
+	font-size:18px;
+}
+div.join{
+	margin-top:10px;
+	text-align:center;
+	width:100%;
+}
+div.join a{
+	display:block;
+	height:67px;
+	width:100px;
+	background:url(../img/blue/subscribe/join-now.png) no-repeat;
+	margin-left:45px;
+}
+div.control-pay{
+	width:842px;
+	display:block;
+	margin-left:10px;
+}
+
+.select-method{
+	width:824px;
+	overflow:hidden;
+	text-align:center;
+	margin-bottom:16px;
+}
+.select-method p{
+	margin:0;
+	padding:0;
+	color:#ff8000;
+	font-weight:bold;
+	font-size:20px;
+}
+.arrow-back{
+	width:30px;
+	height:36px;
+	display:block;
+	overflow:hidden;
+	background:url(../img/blue/subscribe/gray-back.png) no-repeat;
+	margin:64px 70px 0 10px;
+	cursor:pointer;
+}
+.paypal-pay{
+	width:302px;
+	height:173px;
+	display:block;
+	background:url(../img/blue/subscribe/paypal.png) no-repeat;
+	margin-right:82px;
+	cursor:pointer;
+}
+.cc-pay{
+	width:302px;
+	height:174px;
+	display:block;
+	background:url(../img/blue/subscribe/cc_card_pay.png) no-repeat;
+	cursor:pointer;
+}
+
+.reasons{
+	margin-top:16px;
+}
+.benefits{
+	height:287px;
+	width:573px;
+	overflow:hidden;
+	display:block;
+	border:1px solid #ccc;
+}
+.benefits h2{
+	background:url(../img/blue/subscribe/subscribe_gradient-top_s1.jpg) repeat-x #fff;
+	height:14px;
+	width:100%;
+	border-bottom:1px solid #ccc;
+	padding:12px 15px;
+	margin:0;
+	overflow:hidden;
+}
+.membership-plan-header{
+	color:#004D80;
+	font-size:14px;
+	font-weight:bold;
+	display:block;
+	width:400px;
+}
+.premium-header{
+	width:72px;
+	border-right:1px solid #C4C4C7;
+	margin-right:24px;
+} 
+.free-header, .premium-header{
+	color:#FF7F00;
+	font-size:12px;
+	font-weight:bold;
+	display:block;
+}
+.benefit-list{
+	list-style-type:none;
+	width:100%;
+	padding-top:10px;
+}
+.benefit-list li{
+	float:left;
+	width:100%;
+	height:22px;
+	margin-bottom:8px;
+}
+.col1{
+	width:400px;
+}
+.col2{
+	width:72px;
+}
+.benefit-list .check{
+	width:17px;
+	height:23px;
+}
+.checkblue{
+	background:url(../img/blue/subscribe/checkblue_s1.jpg) no-repeat;
+	margin-left:14px;
+}
+.checkgray{
+	background:url(../img/blue/subscribe/checkgray_s1.jpg) no-repeat;
+	margin-left:22px;
+}
+.why-qalanjo{
+	background:url(../img/blue/subscribe/why-blue-gradient.png) no-repeat 2px 2px;
+	height:251px;
+	width:207px;
+	margin-left:14px;
+	overflow:hidden;
+	display:block;
+	border:1px solid #ccc;
+	padding:18px 10px 16px 19px;
+	color:#666666;
+}
+.why-qalanjo h2{
+	font-size:16px;
+	font-weight:bold;
+	color:#333;
+}
+p.works{
+	margin-bottom:20px;
+}
+p.works-reason{
+	margin-bottom:10px;
+}
+p.payment{
+	margin-bottom:5px;
+}
+p.read-more{
+	text-align:right;
+	font-size:11px;
+}
+p.read-more a{
+	text-decoration:none;
+}

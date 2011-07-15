@@ -1,0 +1,718 @@
+/**
+ * Home 
+ */
+
+* {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	outline: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #009;
+}
+
+#viewport {
+	overflow: hidden;
+	width: 100%;
+	height: 706px;
+	min-width: 1094px;
+}
+
+#frames {
+	position: relative;
+	width: 200%;
+	height: 100%;
+	background-color: transparent;
+	margin-left: 0;
+}
+
+#signup-form-frame {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 50%;
+	height: 100%;
+	background-color: transparent;
+}
+
+#login-form-frame {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	background-color: transparent;
+}
+
+.wrapper {
+	position: relative;
+	width: 1094px;
+	height: auto;
+	margin: 0 auto;
+	background-color: transparent;
+}
+
+.header {
+	width: 100%;
+	height: 54px;
+	overflow: hidden;
+	background-color: transparent;
+}
+
+.homebox {
+	position: relative;
+	width: 1060px;
+	height: 636px;
+	margin: 0 0 10px 0;
+	padding: 0 17px 16px 17px;
+	background-color: transparent;
+	background-image: url(../img/home/homebox-background.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	left: 17px;
+	display: block;
+	width: 360px;
+	height: 614px;
+	padding-bottom: 22px;
+	background-color: #fff;
+}
+
+.panels {
+	position: relative;
+	top: 0;
+	right: 0;
+	width: 701px;
+	height: 636px;
+	background-color: transparent;
+	overflow: hidden;
+	float: right;
+}
+
+#slideshow {
+}
+
+.panel {
+	width: 701px;
+	height: 636px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.panel .next {
+	width: 260px;
+	height: 182px;
+	position: absolute;
+	top: 2px;
+	right: 0;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+	cursor: pointer;
+	background-color: #f00;
+}
+
+.panel .next:hover {
+	background-color: #f33;
+}
+
+#panel-1 {
+	background-color: #9f9;
+}
+
+#panel-2 {
+	background-color: #3f3;
+}
+
+#panel-3 {
+	background-color: #0c0;
+}
+
+#panel-4 {
+	background-color: #090;
+}
+
+.form-container h2 {
+	height: auto;
+	margin: 0;
+	margin-bottom: -10px;
+	padding: 25px 0px 18px 0px;
+}
+
+.form-container h2 a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+.form-container h3 {
+	width: 339px;
+	height: 51px;
+	margin: 0;
+	padding: 7px 10px 7px 20px;
+	margin-left: -10px;
+	background-image: url(../img/home/seperator.png);
+	background-repeat: no-repeat;
+}
+
+.form-container h3 a {
+	display: block;
+	width: 339px;
+	height: 51px;
+	background-image: url(../img/home/seperator-text.png);
+	background-repeat: no-repeat;
+}
+
+.form-container h3 a span {
+	text-indent: -9999px;
+	overflow: hidden;
+	display: block;
+}
+
+form.registration {
+	display: block;
+	width: 100%;
+}
+
+form.registration * {
+	margin: 0;
+	padding: 0;
+}
+
+form.registration .form-content dl {
+	overflow: hidden;
+	font-size: 12px;
+}
+
+form.registration .form-content dl dt {
+	width: 30%;
+	display: block;
+	clear: both;
+	float: left;
+	text-align: right;
+	padding-top: 4px;
+	margin-right: 5px;
+}
+
+form.registration .form-content dl dd {
+	width: 68%;
+	display: block;
+	float: left;
+	margin-bottom: 7px;
+}
+
+form.registration .form-content label {
+	margin: 0 5px 0 0;
+	color: #114181;
+}
+
+form.registration .form-content input, form.registration .form-content select {
+	width: 206px;
+	display: block;
+	float: left;
+	height: 19px;
+	border: 1px solid #bcd0e1;
+	color: #114181;
+	font-size: 14px;
+}
+
+.form-container form.registration .form-content {
+	padding: 15px 25px 0 25px;
+	border: none;
+}
+
+form.registration .form-content label.gender {
+	width: 40px;
+}
+
+form.registration .form-content label.gender2 {
+	width: auto;
+	margin: 4px 8px 0 8px;
+}
+
+form.registration .form-content select.gender {
+	width: 74px;
+}
+
+form.registration .form-content label.gender, form.registration .form-content select.gender {
+	float: left;
+	clear: none;
+}
+
+form.registration .form-content label.gender.first {
+	float: right;
+}
+
+form.registration .form-content select {
+	height: 21px;
+	padding-top: 1px;
+	width: 208px;
+}
+
+form.registration .form-content span.footnote {
+	clear: both;
+	display: block;
+	font-size: 10px;
+}
+
+.form-container form.registration .form-content span.footnote, form.registration option {
+	color: #114181;
+}
+
+.form-container form.registration button {
+	display: block;
+	background-color: transparent;
+	background-image: url(../img/home/find-my-match-button.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	border: none;
+	width: 248px;
+	height: 49px;
+	margin: 20px auto 40px auto;
+}
+
+#overview #panel-1 {
+	background-image: url(../img/home/panel-1.png);
+}
+
+#overview #panel-1 .next {
+	background-color: transparent;
+	background-image: url(../img/home/corner.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#overview #panel-1 a#btn-why:hover {
+	background-position: -260px 0px;
+}
+
+#overview #panel-2 {
+	background-image: url(../img/home/panel-2.png);
+}
+
+#overview #panel-2 .next {
+	background-color: transparent;
+	background-image: url(../img/home/corner.png);
+	background-position: 0px -182px;
+	background-repeat: no-repeat;
+}
+
+#overview #panel-2 a#btn-how:hover {
+	background-position: -260px -182px;
+}
+
+#overview #panel-3 {
+	background-image: url(../img/home/panel-3.png);
+}
+
+#overview #panel-3 .next {
+	background-color: transparent;
+	background-image: url(../img/home/corner.png);
+	background-position: 0px -364px;
+	background-repeat: no-repeat;
+}
+
+#overview #panel-3 a#btn-new:hover {
+	background-position: -260px -364px;
+}
+
+#overview #panel-4 {
+	background-image: url(../img/home/panel-4.png);
+}
+
+.panels .nav {
+	position: absolute;
+	top: 25px;
+	left: 30px;
+	overflow: hidden;
+	list-style-type: none;
+	margin: 0 0 1em 1.4em;
+	padding: 0;
+	font-size: 11px;
+	line-height: 1.5em;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+.panels .nav li {
+	color: #1f74a9;
+	display: block;
+	float: left;
+	font-size: 12px;
+	font-family: 'Arial Narrow', Arial, Helvetica, Verdana, sans-serif;
+}
+
+.panels .nav a {
+	color: #1f74a9;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.panels .nav a.active, .panels .nav a:hover {
+	color: #29376e;
+}
+
+.panels .nav1 {
+	width: 16px;
+	height: 15px;
+	background-color: transparent;
+	background-image: url(../img/home/home-icon.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.panels .nav span {
+	visibility: hidden;
+}
+
+#signup-form-frame .header .tagline {
+	float: left;
+	margin: 19px 0 0 20px;
+	font-size: 14px;
+	color: #fff;
+}
+
+a#login-button {
+	background-image: url(../img/home/member-login.png);
+	float: right;
+	margin: 17px 18px 0 0;
+	cursor: pointer;
+}
+
+a#register-button {
+	display: inline-block;
+	background-image: url(../img/home/register.png);
+	margin: 0;
+	cursor: pointer;
+}
+
+a.login-button {
+	display: block;
+	overflow: hidden;
+	text-indent: -999px;
+	background-color: transparent;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	width: 109px;
+	height: 21px;
+}
+
+a.login-button:hover {
+	background-position: -109px 0;
+}
+
+a.login-button:active {
+	background-position: -218px 0;
+}
+
+#login-form-frame .form-container {
+	background-color: #fff;
+	height: 397px;
+	width: 359px;
+	margin-left: -1px;
+	padding-bottom: 0;
+}
+
+.homebox-background {
+	width: 100%;
+	height: 100%;
+	background-color: #f7f7f7;
+}
+
+#login-form-frame .form-container h3 a {
+	background-image: url(../img/home/member-login-here.png);
+}
+
+form.registration {
+	display: block;
+	width: 100%;
+}
+
+#login-form-frame form.registration .form-content {
+	padding: 15px 15px 0px 15px;
+}
+
+#login-form-frame form.registration .form-content label {
+	font-size: 14px;
+}
+
+form.registration .form-content .txt {
+	width: 198px;
+	height: 25px;
+}
+
+#login-form-frame form.registration .form-content dl dt {
+	width: 115px;
+}
+
+#login-form-frame form.registration .form-content dl dd {
+	width: 200px;
+}
+
+form.registration a.forgot {
+	float: none;
+	margin: 0 0 0 120px;
+	text-align: left;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+form.registration a.forgot:hover {
+	text-decoration: underline;
+}
+
+button#find-my-matches {
+	cursor: pointer;
+}
+
+button#find-my-matches:hover {
+	background-position: -248px 0px;
+}
+
+button#find-my-matches:active {
+	background-position:  -496px 0px;
+}
+
+button#login-button {
+	width: 101px;
+	height: 26px;
+	background-color: transparent;
+	background-image: url(../img/home/login.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+button#login-button:hover {
+	background-position: -101px 0px;
+}
+
+button#login-button:active {
+	background-position: -202px 0px;
+}
+
+#not-a-member {
+	width: 100%;
+	height: 33px;
+	background-color: transparent;
+	background-image: url(../img/home/login-form-bottom.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-y;
+	padding-top: 11px;
+	color: #00e;
+}
+
+#not-a-member p {
+	margin: 0;
+	text-align: center;
+}
+
+#form-container-shadow {
+	width: 370px;
+	height: 407px;
+	background-image: url(../img/home/login-form-background.png);
+	float: left;
+}
+
+#slideshow {
+	position: relative;
+	display: inline-block;
+	width: 690px;
+	height: 100%;
+}
+
+#slideshow img {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 8;
+}
+
+#slideshow img.active {
+	display: block;
+	z-index: 10;
+}
+
+.signup-page-footer {
+	width: 100%;
+	background-color: transparent;
+	text-align: center;
+}
+
+a#why-join-qalanjo-link {
+	display: block;
+	width: 1060px;
+	height: 29px;
+	background-color: transparent;
+	background-image: url(../img/home/why-qalanjo-button.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	margin: -15px auto 0 auto;
+	text-align: center;
+	padding-top: 4px;
+	color: #eee;
+	font-weight: bold;
+}
+
+div#why-join-qalanjo {
+}
+
+#why-join-qalanjo .homebox {
+	float: left;
+	height: auto;
+	background-position: center bottom;
+}
+
+#left-side {
+	width: 65%;
+	height: auto;
+	float: left;
+}
+
+#right-side {
+	width: 35%;
+	height: 100%;
+	float: left;
+}
+
+#left-side .content {
+	padding: 60px 40px 80px 80px;
+}
+
+#right-side .content {
+	padding: 60px 60px 80px 40px;
+}
+
+#why-join-qalanjo h1 {
+	font: normal 1.5em Impact, "Arial Narrow", sans-serif;
+	color: #152D6A;
+	background-image: url(../img/home/reasons_min_logo.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	padding-left: 125px;
+}
+
+#why-join-qalanjo p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+
+#why-join-qalanjo ul {
+	font-size: 11px;
+	padding-left: 10px;
+	list-style-type: none;
+}
+
+#why-join-qalanjo ul li {
+	border-right: 1px dotted #999;
+	width: 125px;
+	height: 200px;
+	float: left;
+	text-align: center;
+	padding: 5px;
+}
+
+#why-join-qalanjo ul li.list-last {
+	border-right: none;
+}
+
+.step {
+	margin-bottom: 15px;
+	width: 125px;
+	height: 80px;
+	background-color: transparent;
+}
+
+.step-1 {
+	background-image: url(../img/home/step-1.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.step-2 {
+	background-image: url(../img/home/step-2.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.step-3 {
+	background-image: url(../img/home/step-3.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.step-4 {
+	background-image: url(../img/home/step-4.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.space-top {
+	padding-top: 10px;
+}
+.clear {
+	clear: both;
+}
+
+#why-join-qalanjo h2 {
+	margin-top: 15px;
+	padding-left: 30px;
+	border-bottom: 1px dotted #999;
+	font: normal 1.4em Georgia, "Times New Roman", Times, serif;
+	color: #152D6A;
+	background-image: url(../img/home/check.png);
+	background-position: 0 2px;
+	background-repeat: no-repeat;
+}
+
+#content-container {
+	float: left;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+}
+
+.footer_links {
+	color: #c7ced6;
+	font-family: 'Lucida Grande', Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	margin-bottom: 26px;
+}
+
+.footer_links a {
+	text-decoration: none;
+	color: #c7ced6;
+	font-family: 'Lucida Grande', Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin: 0 0 0 15px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.footer_links a:hover {
+	color: #FFF;
+}
+
+.footer_links a:active {
+	color: #c7ced6;
+}
+
+.required, form.registration .form-content label.required{
+	color:#ff0000;
+	font-size:10px;
+}
+
+.picture-strips {
+	margin: 5px 0 20px 0;
+}

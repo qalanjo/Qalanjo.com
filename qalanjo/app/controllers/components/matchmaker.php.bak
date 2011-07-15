@@ -1,0 +1,177 @@
+<?php
+class MatchMakerComponent extends Object{
+	function initialize($controller, $settings = array()){
+		$this->controller = $controller;
+		$this->controller->loadModel("Member");
+	}
+	//called after Controller::beforeFilter()
+	function startup(&$controller) {
+	}
+
+	//called after Controller::beforeRender()
+	function beforeRender(&$controller) {
+	}
+
+	//called after Controller::render()
+	function shutdown(&$controller) {
+	}
+
+	//called before Controller::redirect()
+	function beforeRedirect(&$controller, $url, $status=null, $exit=true) {
+	}
+
+	function redirectSomewhere($value) {
+		// utilizing a controller method
+		$this->controller->redirect($value);
+	}
+	
+	
+	/**
+	 * 
+	 * Get the list of candidates ...
+	 * @param array $searchee the searchee
+	 */
+	function getCompatibleCandidates($searchee = array(), $limit=-1, $criteria=array()){	
+		$action="profile_search";
+		$registered_date=null;
+		foreach($criteria as $key=>$value){ //plugs variables to place
+			if ($key=="action"){
+				$action = $value;
+			}else if ($key=="registered_date"){
+				$registered_date = $value;
+			}
+		}
+		if ($action=="searchbydateprofile"){
+			return $this->getCompatibleCandidatesByDate($searchee, $registered_date, $limit);
+		}
+		
+	}
+	
+	private function getCompatibleCandidatesByDate($searchee, $date=null, $limit=-1){
+		if ($limit==-1){ 
+			$members = $this->Member->find("all", array("conditions"=>array("created"=>$date)));
+		}else{
+			$members = $this->Member->find("all", array("conditions"=>array("created"=>$date), "limit"=>$limit));						
+		}
+		$processed = array();
+		foreach ($members as $member){
+			$member["Member"]["compatibility"] = $this->getCompatibility($searchee, $member);
+			$processed[] = $member;
+		}
+		return $processed;
+	} 
+	
+	
+	
+	/**
+	 * 
+	 * Get the compatibility percentage of the searchee and the candidate based on profile...
+	 * @param Member $searchee
+	 * @param Member $candidate
+	 */
+	function getCompatibility($searchee = array(), $candidate = array(), $type="Profile"){
+		if ($type=="Profile"){
+			return count($this->intersection($searchee, $candidate))/count($this->union($searchee, $candidate));
+		}
+	}
+	
+	
+	/**
+	 * Get the distance between the similarities of two objects profile
+	 */
+
+	function getDistance($searchee = array(), $candidate = array()){
+		return 1 - $this->getCompatibility($searchee, $candidate);
+	}
+	
+	/**
+	 * 
+	 * Get the union ...
+	 * @param array $searchee
+	 * @param array $candidate
+	 */
+	function union($searcher = array(), $candidate = array()){
+		$set = array();
+		
+		foreach($searcher["MemberProfile"] as $temp){ //include all attribute from the first set
+			$set[] = $temp;
+		}
+		
+		foreach($candidate["MemberProfile"] as $key_candidate => $temp){
+			foreach($set as $key=>$value){
+				if ($key_candidate==$key){		
+					continue;
+				}else{
+					$set[] = array($key=>$value);
+				}
+			}
+			
+		}
+		return set;
+	}
+
+
+	/**
+	 * 
+	 * Get the intersection of two members. Used in  Jaccard index algo
+	 * @param array $searchee
+	 * @param array $candidate
+	 */
+	function intersection($searcher = array(), $candidate = array()){
+		$set = array();
+		foreach($searcher["MemberProfile"] as $key_searchee=>$temp1){
+			if ($key_searchee=="member_id"){
+				continue;
+			}
+			foreach($candidate["MemberProfile"] as $key_candidate=>$temp2){
+				if ($key_candidate==$key_searchee){
+					if ($temp1[$key_searchee]==$temp2[$key_candidate]){
+						$set[] = array($key_searchee=>$temp1);					
+						break;			
+					}
+				}			
+			}		
+		}
+		return $set;
+	}	
+	
+	
+	/**
+	 * 
+	 * Get the compatibility by weight. Based on euclidean distance ...
+	 * @param array $searchee
+	 * @param array $candidate
+	 * @param int $type
+	 */
+	function getCompatibilityByWeight($searchee=array(), $candidate=array(), $type=1){
+		$commonItems = 0;
+		
+		$sim = 0;
+		switch($type){
+			case 1:{
+				foreach($searchee["MemberAttributeWeight"] as $weight_searchee){
+					foreach($candidate["MemberAttributeWeight"] as $weight_candidate){
+						$searchee_weight = $weight_searchee["MemberAttributeWeight"];
+						$candidate_weight = $weight_candidate["MemberAttributeWeight"];
+						if ($candidate_weight["attribute_id"]==$searchee_weight["attribute_id"]){
+							$commonItems++;
+							$weight1 = $searchee_weight["weight"];
+							$weight2 = $candidate_weight["weight"];
+							$sim+=Math.pow(($weight1-$weight2), 2);
+						}			
+					}		
+				}
+		
+				if ($commonItems>0){
+					$sim = Math.sqrt($sim/$commonItems);
+					$sim = 1 - Math.tanh($sim);
+				}
+				break;
+			}
+			
+		}
+		return $sim;
+	}
+		
+}
+

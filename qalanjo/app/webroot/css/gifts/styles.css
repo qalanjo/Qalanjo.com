@@ -1,0 +1,449 @@
+li {
+	list-style: none;
+}
+
+.spinner {
+	height: 150px;
+	background: transparent url(../img/spinner.gif) no-repeat center center;
+}
+
+.overlay-spinner {
+	height: 100%;
+	background: transparent url(../img/spinner.gif) no-repeat center center;
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: black url(../img/spinner.gif) no-repeat scroll center center;
+}
+
+#lightbox {
+	position: absolute;
+	width: 643px;
+}
+
+#lightbox .top {
+	float: left;
+	width: 643px;
+	height: 15px;
+	background-color: transparent;
+	background-image: url(../img/gifts/lightbox-canvas-top.png);
+	background-repeat: no-repeat;
+}
+
+#lightbox .middle {
+	float: left;
+	padding: 0px 15px;
+	width: 613px;
+	background-color: transparent;
+	background-image: url(../img/gifts/lightbox-canvas-middle.png);
+	background-repeat: repeat-y;
+}
+
+#lightbox .middle .content {
+	float: left;
+	width: 613px;
+}
+
+#lightbox .middle .content .lightbox-notice-header {
+	height 30px;
+	background-color: #00f;
+	color: #fff;
+	padding-left: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#lightbox .middle .content .lightbox-notice {
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#lightbox .middle .controls {
+	float: left;
+	width: 613px;
+}
+
+#lightbox .bottom {
+	float: left;
+	width: 643px;
+	height: 15px;
+	background-color: transparent;
+	background-image: url(../img/gifts/lightbox-canvas-bottom.png);
+	background-repeat: no-repeat;
+}
+
+#lightbox .middle .content .left {
+	float: left;
+	margin: 15px 20px 20px 15px;
+}
+
+#lightbox .middle .content .image-container {
+	float: left;
+	margin-bottom: 5px;
+}
+
+#lightbox .middle .content .image-container img {
+	float: left;
+	width: 203px;
+	height: 203px;
+	margin: 0;
+	border: 1px solid #e5e5e5;
+}
+
+#lightbox .middle .content .message-box dl {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#lightbox .middle .content .message-box dl dt {
+	margin: 0;
+	padding: 0;
+}
+
+#lightbox .middle .content .message-box dl dd {
+	margin: 0;
+	padding: 0;
+}
+
+#lightbox .middle .content .message-box dl dd textarea {
+	width: 203px;
+	height: 75px;
+	margin: 0;
+	padding: 0;
+	resize: none;
+}
+
+#lightbox .middle .content .details {
+	float: left;
+	width: 358px;
+	margin: 15px 15px 20px 0;
+}
+
+#lightbox .middle .content .name {
+	margin: 0 0 15px 0;
+	font-family: georgia;
+	font-size: 21px;
+	font-weight: bold;
+	color: #0060B8;
+	border-bottom: 2px solid #C9DCE3;
+	padding-bottom: 5px;
+}
+
+#lightbox .middle .content .description {
+	min-height: 105px;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+	font-family: georgia;
+	font-size: 14px;
+	color: #333;
+	border-bottom: 1px dotted #C9DCE3;
+}
+
+#lightbox .middle .content .row {
+	font-weight: bold;
+	overflow: hidden;
+	color: #00B860;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px dotted #C9DCE3;
+}
+
+#lightbox .middle .content .row .label {
+	float: left;
+}
+
+#lightbox .middle .content .row .warning {
+	color: #f00;
+}
+
+#lightbox .middle .content .row .value {
+	float: right;
+}
+
+#lightbox .middle .controls .button {
+	display: block;
+	bottom: 23px;
+	width: 101px;
+	height: 26px;
+	background-color: transparent;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	text-align: center;
+	line-height: 26px;
+	vertical-align: middle;
+	color: #333;
+	font-weight: bold;
+	text-shadow: 0px 1px 0px #fff;
+	background-image: url(../img/gifts/lightbox-button.png);
+}
+
+#lightbox .middle .controls .button.disabled {
+	background-image: url(../img/gifts/lightbox-button-disabled.png);
+}
+
+#lightbox .middle .controls .button.enabled:hover {
+	background-position: 0 -26px;
+}
+
+#lightbox .middle .controls .button.enabled:active {
+	background-position: 0 -52px;
+}
+
+#lightbox .middle .controls .button.enabled span {
+	position: static;
+}
+
+#lightbox .middle .controls .button.enabled:active span {
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
+#lightbox .middle .controls .buy-qpoints {
+	float: left;
+}
+
+#lightbox .middle .controls .warning {
+	color: #f00;
+	float: left;
+	font-weight: bold;
+	line-height: 26px;
+	vertical-align: middle;
+	padding-left: 10px;
+}
+
+#lightbox .middle .controls .buy {
+	float: right;
+}
+
+#lightbox .middle .controls .cancel {
+	float: right;
+}
+
+#lightbox .middle .controls .ok {
+	float: right;
+}
+
+#lightbox .middle .controls .buy-qpoints {
+	background-image: url(../img/gifts/lightbox-button-blue.png);
+}
+
+#lightbox .bottom {
+	
+}
+
+#lightbox .close {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	width: 26px;
+	height: 26px;
+	background-color: transparent;
+	background-image: url(../img/gifts/close-button.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+#lightbox .close:hover {
+	background-position: 0 -26px;
+}
+
+#lightbox .close:active {
+	background-position: 0 -52px;
+}
+
+#lightbox .buy-button, #lightbox .cancel-button {
+	background-image: url(../img/gifts/lightbox-button.png);
+}
+
+#lightbox .ribbon {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 120px;
+	height: 120px;
+	background-color: transparent;
+	background-image: url(../img/gifts/lightbox-ribbon.png);
+	background-repeat: no-repeat;
+}
+
+.gifts-container-header {
+	float: left;
+	width: 876px;
+	height: 106px;
+	margin: 20px;
+	background-color: #00f;
+}
+
+.gifts-container {
+	float: left;
+	width: 876px;
+	margin: 0 20px;
+	border: 1px solid #8cb9d7;
+	background-color: #c7dde8;
+}
+
+.container-nav {
+	float: left;
+	overflow: visible;
+	width: 184px;
+	padding: 10px 0 10px 10px;
+	margin: 0 -1px -1px 0;
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	border-color: #8cb9d7;
+	background-color: #fff;
+}
+
+.gifts-container .container-nav li .category-link,  .gifts-container .container-nav li .category-link span {
+	display: block;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	background-image: url(../img/gifts/container-nav-button.png);
+	background-repeat: no-repeat;
+}
+
+.gifts-container .container-nav li .category-link {
+	position: relative;
+	float: none;
+	width: 163px;
+	height: 28px;
+	margin-bottom: 5px;
+	padding-right: 12px;
+	cursor: pointer;
+	overflow: hidden;
+	background-color: #ff0;
+	background-position: right -38px;
+}
+
+.gifts-container .container-nav li .category-link span {
+	padding-left: 30px;
+	white-space: no-wrap;
+	line-height: 28px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #005a9c;
+	background-position: 0 -38px;
+}
+
+.gifts-container .container-nav li .category-link:hover {
+	background-position: right -76px;
+}
+
+.gifts-container .container-nav li .category-link:hover span {
+	background-position: 0 -76px;
+}
+
+.gifts-container .container-nav li.selected .category-link {
+	background-position: right 0px;
+	width: 170px;
+	padding-right: 23px;
+	cursor: default;
+}
+
+.gifts-container .container-nav li.selected .category-link span {
+	background-position: 0px 0px;
+	color: #fff;
+}
+
+.gifts-container .container-content {
+	float: left;
+	width: 681px;
+	background-color: #fff;
+	border-left: 1px solid #8cb9d7;
+}
+
+#gifts {
+	float: left;
+	width: 477px;
+	padding: 15px 15px 15px 5px;
+}
+
+#gifts h2 {
+	margin-left: 10px;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 29px;
+	color: #0060b8;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #c9dce3;
+}
+
+.gifts-container .right {
+	width: 181px;
+	min-height: 501px;
+	background-color: #f7f7f7;
+}
+
+.gifts-list {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.gifts-list li {
+	display: block;
+	float: left;
+	margin: 0 0 10px 10px;
+}
+
+.gifts-list li a {
+	display: block;
+	float: left;
+	width: 135px;
+	height: 208px;
+	padding: 7px;
+	background-color: #f7f7f7;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	text-decoration: none;
+	color: #005a9c;
+}
+
+.gifts-list li a:hover {
+	background-color: #e7e7e7;
+	cursor: pointer;
+}
+
+.gifts-list li img {
+	width: 135px;
+	height: 135px;
+}
+
+.gifts-list li div.name {
+	float: left;
+	width: 135px;
+	overflow: hidden;
+	text-align: center;
+	font-weight: bold;
+}
+
+.gifts-list li div.price {
+	text-align: center;
+}
+
+.buy-qpoints {
+	float: left;
+	width: 876px;
+	margin: 0 20px 5px 20px;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}

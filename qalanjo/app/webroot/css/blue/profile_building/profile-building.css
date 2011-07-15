@@ -1,0 +1,138 @@
+.item-set-1f {
+	background: url(../../img/blue/questionnaire/questionset/female-side.jpg) top right no-repeat;
+	min-height: 300px;
+}
+
+.item-set-1m {
+	background: url(../../img/blue/questionnaire/questionset/male-side.jpg) top right no-repeat;
+	min-height: 300px;
+}
+
+.item-set-maid {
+	background: url(../../img/blue/questionnaire/questionset/maid.jpg) bottom right no-repeat
+		#F3F3F3;
+	min-height: 248px;
+}
+
+.item-set-smoking {
+	background: url(../../img/blue/questionnaire/questionset/smoking.jpg) top right no-repeat
+		#F3F3F3;
+	min-height: 185px;
+}
+
+.item-set-graduates {
+	background: url(../../img/blue/questionnaire/questionset/graduates.jpg) bottom right
+		no-repeat #FFFFFF;
+	min-height: 185px;
+}
+
+.item-set-job {
+	background: url(../../img/blue/questionnaire/questionset/job.jpg) bottom right no-repeat
+		#F3F3F3;
+	min-height: 185px;
+}
+
+.item-set-asset {
+	background: url(../../img/blue/questionnaire/questionset/asset.jpg) bottom right no-repeat
+		#FFFFFF;
+	min-height: 185px;
+}
+
+.item-set-telme {
+	background: url(../../img/blue/questionnaire/questionset/telme.jpg) bottom right no-repeat
+		#FFFFFF;
+	min-height: 416px;
+}
+
+.picture-select-set-item {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.picture-select-set-item li {
+	float: left;
+	margin-right: 9px;
+	width: 80px;
+}
+
+.picture-select-set-item span {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	font-size: 9px;
+	font-weight: bold;
+}
+
+.picture-select-set-item hover {
+	background: #48ABF3;
+}
+
+.picture-select-set-item active {
+	background: #B9E1F7;
+}
+
+.picture-select-set dd {
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+
+.picture-container {
+	border-radius: 5px;
+	border: 1px solid #999999;
+	height: 80px;
+	width: 80px;
+}
+
+.picture-container img {
+	margin: 4px 0px 4px 0px;
+}
+
+#occupation {
+	padding: 0.5em;
+	padding-top: 0.5em;
+	padding-right: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.5em;
+	width: 400px;
+}
+
+#MemberProfileCurrentJob {
+	padding: 0.5em;
+	padding-top: 0.5em;
+	padding-right: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.5em;
+	width: 400px;
+	height:auto;
+}
+
+.Multilinebox {
+	padding: 0.5em;
+	padding-top: 0.5em;
+	padding-right: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.5em;
+	width: 400px;
+	height: 90px;
+}
+
+.floatpart {
+	margin: 0 0 16px 0;
+	color: #054A80;
+	overflow: hidden;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.floatpart span {
+	float: left;
+}
+
+.floatpart span.line {
+	margin: 14px 0 0 14px;
+	width: 740px;
+	height: 1px;
+	background-color: #054A80;
+	display: block;
+}

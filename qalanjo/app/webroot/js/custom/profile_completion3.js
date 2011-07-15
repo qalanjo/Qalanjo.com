@@ -1,0 +1,5 @@
+/**
+ * 
+ */
+
+$(".row:even").addClass("highlight");

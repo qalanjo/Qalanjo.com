@@ -1,0 +1,196 @@
+.content-container {
+    height: auto;
+}
+
+#header-wrap{
+	height:50px;
+	width:100%;
+}
+
+#header-title{
+
+}
+
+.half{
+	width:50%
+}
+
+#header-title p{
+	font-size:18px;
+	font-weight:bold;
+	padding:10px;
+	color: #33659A;
+}
+
+#header-links{
+	
+}
+
+#header-links ul{
+	padding:15px 0 0 200px;	
+}
+
+#header-links li{
+	padding:8px;
+	list-style:none;
+	display:inline;
+}
+
+.active-link{
+	font-weight:bold;
+}
+
+#teaser{
+	height:35px;
+	width:90%;
+	margin:0 45px;
+    background-color: #C5DCEA;
+    border: 1px solid #8CB9D6;
+}
+
+#teaser p{
+	text-align:center;
+	padding-top:8px;
+	font-weight:bold;
+}
+
+#teaser span a{
+	margin-left:15px;
+}
+
+.header-cat{
+	height:30px;
+	width:95%;
+	margin:40px 25px;
+    background-color: #8CB9D8;
+}
+
+.header-cat p{
+	margin:-12px 0;	
+}
+
+span.left{
+	margin-left:10px;
+}
+
+span.right{
+	margin-right:10px;
+}
+
+.title {
+    font-size: 14px;
+	font-weight:bold;
+	line-height:12px;
+}
+
+.full{
+    margin:0px 20px;
+	width:100%;
+	height:auto;
+}
+
+.half-a{
+    height: 30px;
+    width: 40%;
+}
+
+.tar{
+	text-align:right;
+	padding:5px 20px 0 0;
+}
+
+.tal{
+	text-align:left;
+}
+
+.text{
+	padding:5px 0;
+}
+
+.input input{
+	margin-top:5px;
+}
+
+.m-top{
+	margin-top:-20px;
+}
+
+.list{
+	list-style:none;
+	display:inline;
+	margin-right:10px;
+}
+
+.un-list{
+	margin-left:-20px;
+}
+
+.radio{
+	position:relative;
+	top:-8px;
+}
+
+.save-subscribe-btn{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	text-align:center;
+}
+
+span#subs-button button {
+    background: url("../img/blue/account/save-btn.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    font-size: 16px;
+    height: 41px;
+    width: 197px;
+	margin:0 350px;
+}
+
+
+span#subs-button button:hover {
+    background-position: 0 -41px;
+    height: 41px;
+    width: 197px;
+}
+
+span#subs-button button:active {
+    background-position: 0 -82px;
+    height: 41px;
+    width: 197px;
+}
+
+#save-changes{
+    padding: 20px;
+}
+
+button#save-button p {
+    color: #FFFFFF;
+    padding: 2px 3px 0 0;
+    text-align: center;
+}
+
+
+button#save-button {
+    background: url("../img/blue/account/next.png") no-repeat scroll 0 0 transparent;
+    height: 24px;
+    width: 110px;
+	border:none;
+}
+
+button#save-button:hover {
+    background-position: 0 -25px;
+    height: 24px;
+    width: 110px;
+}
+
+button#save-button:active {
+    background-position: 0 -51px;
+    color: #000000;
+    height: 24px;
+    width: 110px;
+}
+
+.flash-setting{
+	margin: 40px 25px;
+	width:93%;
+}

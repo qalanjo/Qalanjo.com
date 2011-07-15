@@ -1,0 +1,26 @@
+@CHARSET "ISO-8859-1";
+
+#message_result, .wink-result{
+	background-color:#efefef;
+}
+.wink-success, .wink-question, .wink-failed{
+	height:150px;
+	width:320px;
+}
+.wink-question{
+	background:url(../img/blue/dialog/wink-smiley.png) no-repeat 0 30px, url(../img/blue/dialog/question_mark.png) no-repeat 260px 90px;
+}
+.wink-success{
+	background:url(../img/blue/dialog/wink-smiley.png) no-repeat 0 30px, url(../img/blue/dialog/w.png) no-repeat 250px 90px;
+}
+.wink-success h2, .wink-question h2, .wink-failed h2{
+	color:#333;
+	font-size:14px;
+	margin:30px 0 0 10px;
+}
+.wink-success h2 strong, .wink-question h2 strong, .wink-failed h2 strong{
+	color:#005F9D;	
+}
+.wink-result .breaker-result{
+	width:200px;
+}

@@ -1,0 +1,65 @@
+.item-set-female {
+	background: url(../img/blue/successpage/qalanjopicture.jpg) center top
+		no-repeat;
+	background-position: 2px 2px;
+	min-height: 591px;
+}
+
+.floatpart {
+	margin: 0 0 16px 0;
+	color: #054A80;
+	overflow: hidden;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.button-set {
+	font-size: 14px;
+	margin-top: 40px;
+}
+
+.message strong {
+	color: #ADD835;
+	font-size: 42px;
+}
+
+.message h2 {
+	color: #ffffff;
+	font-size: 23px;
+}
+
+.message h2 span {
+	color: #FF9000;
+	font-size: 23px;
+}
+
+.button-set button {
+	background: url(../img/blue/successpage/orangebutton.png) no-repeat;
+	height: 88px;
+	width: 200px;
+	border: none;
+	cursor: pointer;
+}
+
+.button-set button:hover {
+	background-position: 0px -91px;
+}
+
+.button-set button:active {
+	background-position: 0px -182px;
+}
+
+.floatbutton {
+	margin-top: 20px;
+	margin-right: 60px;
+	text-align: center;
+}
+
+.floatmargin {
+	margin: 20px;
+	text-align: center;
+}
+
+.item-set{
+	min-height:0;
+}

@@ -1,0 +1,72 @@
+.content-container {
+    background-color: #FFFFFF;
+    float: left;
+    height: auto;
+    width: 100%;
+}
+
+#success-wrap{
+	margin:20px auto;
+}
+
+#success{
+	width:640px;
+	height:250px;
+	margin-left:10px;
+}
+
+#success-cont{
+	width:100%;
+	height:150px;
+	border:1px solid #c0c0c0;
+	border-radius:20px;
+}
+
+#success-text-container{
+	background:url(../img/blue/subscription_transactions/success/check.png) no-repeat 30px 30px;
+	color:#888;
+	width:70%;
+	padding:25px 0 0 160px;
+}
+
+#success-text-container h2{
+	color:#888;
+	font-weight:bold;
+}
+
+#btn-wrap{
+	padding:40px 20px;
+}
+
+#button {
+    background: url("../img/blue/subscription_transactions/checkout/next.png") no-repeat scroll 0 0 transparent;
+    height: 24px;
+    width: 103px;
+    cursor:pointer;
+}
+
+
+
+#button:hover {
+    background-position: 0 -25px;
+    height: 24px;
+    width: 103px;
+}
+
+
+#button:active {
+    background-position: 0 -51px;
+    height: 24px;
+    width: 103px;
+}
+
+#button p {
+    color: #FFFFFF;
+    padding: 2px 0;
+    text-align: center;
+}
+
+#button p:active {
+    color: #000000;
+}
+

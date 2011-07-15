@@ -1,0 +1,17 @@
+@CHARSET "ISO-8859-1";
+div.uploader{
+	margin-top:10px;
+}
+
+div.uploadifyQueue{
+	text-align:center;
+	margin-top:10px;
+	
+}
+div.uploadifyQueueItem{
+	margin:auto;
+}
+
+fieldset.ui-widget-content{
+	min-height:532px;
+}

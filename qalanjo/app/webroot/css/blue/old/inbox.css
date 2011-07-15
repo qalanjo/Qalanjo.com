@@ -1,0 +1,212 @@
+.left-bar-controls{
+	display: block;
+	float: left;
+	width: 189px;
+	overflow: hidden;
+	background-color: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #8CB9D6;
+	margin:10px 0 0 10px;
+}
+
+h2.header{
+	height: 32px;
+	border-bottom: 1px solid #8CB9D6;
+	background-color: #1A6AA5;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 32px;
+	vertical-align: middle;
+	padding-left: 10px;
+	margin-bottom: 0px;
+}
+
+.left-bar-controls div.content{
+	display: block;
+	float: left;
+	width: 301px;
+	background-color: white;
+	margin-bottom: 15px;
+}
+div.content div.control{
+	height:33px;
+	display:block;
+	background:url(../img/blue/inbox/gtc_s1.png) repeat-x transparent;
+}
+
+ul.control{
+	list-style-type:none;
+	margin-top:15px;
+}
+
+ul.control li a{
+	color:#3D3D3D;
+	text-decoration:none;
+}
+
+.inbox{
+	width:694px;
+	min-height:465px;
+	border-radius:5px;
+	border:1px solid #8CB9D6;
+	margin-left:10px;
+	margin-top:10px;
+	overflow:hidden;
+}
+
+.inbox-header{
+	background-color:#E0F3FB;
+	display:block;
+	overflow:hidden;
+}
+.inbox-header ul{
+	list-style-type:none;
+	margin:0px;
+	overflow:hidden;
+	padding:0px;
+	color:#D5DFE3;
+	font-weight:bold;
+}
+
+.inbox-header ul li{
+	float:left;
+}
+
+.inbox-header ul li span{
+	color:#929B9F;
+}
+
+.checkbox{
+	width:47px;
+}
+.from{
+	width:165px;
+}
+.subject{
+	width:306px;
+}
+.date{
+	width:162px;
+}
+.messages ul{
+	list-style-type:none;
+	margin:0px;
+	overflow:hidden;
+	padding:0px;
+}
+.messages ul li{
+	border-bottom:1px solid #E6E7E8;
+	overflow:hidden;
+}
+.messages ul li.message{
+	cursor:pointer;	
+}
+.messages ul li:hover{
+	background-color:#EBF0FB;
+}
+li.unread{
+	font-weight:bold;
+	background-color:#DEF3FB;
+}
+ul.control{
+	padding-left:0px;
+}
+ul.control li{
+	height:22px;
+}
+
+ul.control li img{
+	margin:5px 3px 0 1.5em;
+}
+ul.control li a{
+	display:inline-block;
+}
+
+ul.control li.active{
+	background:url(../img/blue/inbox/active.png) repeat-x transparent;
+	
+}
+a.checkmail{
+	background:url(../img/blue/inbox/CheckMail.png) no-repeat transparent;
+	border:none;
+	height:19px;
+	width:96px;
+	background-position:1px 0px;
+	display:block;
+	margin:7px 4px 0px 10px;
+
+}
+
+a.checkmail:hover{
+	background-position:1px -44px;
+}
+a.checkmail:active{
+	background-position:1px -22px;
+}
+a.new{
+	background:url(../img/blue/inbox/New.png) no-repeat transparent;
+	border:none;
+	height:20px;
+	width:63px;
+	display:block;
+	margin:7px 4px 0px 0px;
+
+}
+a.new:hover{
+	background-position:0 -45px;
+}
+a.new:active{
+	background-position:0 -23px;
+}
+
+a.delete{
+	background:url(../img/blue/inbox/Delete.png) no-repeat transparent;
+	border:none;
+	height:20px;
+	width:62px;
+	display:block;
+	margin:7px 4px 0px 10px;
+}
+a.delete:hover{
+	background-position:0 -45px;
+}
+a.delete:active{
+	background-position:0 -23px;
+}
+
+a.back{
+	background:url(../img/blue/inbox/Back.png) no-repeat transparent;
+	border:none;
+	height:20px;
+	width:62px;
+	display:block;
+	margin:7px 4px 0px 10px;
+
+}
+
+a.back:hover{
+	background-position:0 -45px;
+}
+a.back:active{
+	background-position:0 -23px;
+}
+
+a.spam{
+	background:url(../img/blue/inbox/Spam.png) no-repeat transparent;
+	border:none;
+	height:20px;
+	width:62px;
+	display:block;
+	margin:7px 4px 0px 0px;
+
+}
+
+a.spam:hover{
+	background-position:0 -45px;
+}
+a.spam:active{
+	background-position:0 -23px;
+}

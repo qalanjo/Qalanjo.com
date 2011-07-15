@@ -1,0 +1,429 @@
+@font-face { font-family: Tiza; src: url('font/Tiza.ttf'); } 
+
+body {
+	background-color: #009;
+	background-repeat: repeat;
+	background:url(../img/blue/homepage/repeat-bg_s1.png) repeat;
+	font-family:Arial, Helvetica, "sans-serif";
+}
+
+/**
+ * Overrides
+ */
+.container{
+	width:1000px;
+}
+.container-main{
+	width:980px;
+	background:url(../img/blue/homepage/couple.jpg) no-repeat #fff;
+	overflow:visible;
+	min-height:1100px;
+	position:relative;
+	margin-bottom:31px;
+	box-shadow:0px 5px 10px #0D293B;
+}
+.shadow{
+	height:1118px;
+	width:10px;
+	display:block;
+	background:url(../img/blue/homepage/dropshadow.png) no-repeat transparent;
+}
+.shadow-last{
+	background-position:-9px 0;
+}
+.logo{
+	background:url(../img/blue/homepage/qalanjo-logo.png) no-repeat;
+	width:260px;
+	height:103px;
+	margin:20px;
+}
+.login{
+	width:293px;
+	height:169px;
+	display:block;
+	background:url(../img/blue/homepage/login-bg-shadow.png) repeat-x;
+	margin-right:4px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	position:relative;
+}
+.button-login{
+	cursor:pointer;
+}
+.login fieldset{
+	border:none;
+	margin:15px 0 0 49px;
+	padding:0;
+}
+.login dl{
+	margin-bottom:6px;
+}
+.login dl dd{
+	margin-left:0;
+}
+.login dt{
+	color:#fff;
+}
+.login dl input[type=text],.login dl input[type=password]{
+	width:200px;
+	margin-bottom:0;
+}
+.small-links{
+	color:#AED7EE;
+	width:100%;
+	text-align:right;
+	margin:10px -40px 0 0;
+
+}
+.small-links a{
+	color:#AED7EE;
+	text-decoration:none;
+}
+
+.login .logged-button{
+	background:url(../img/blue/homepage/login-button.png) no-repeat transparent;
+	display:block;
+	width:64px;
+	height:28px;
+	border:none;
+}
+.login .logged-button:hover{
+	background-position:0 -58px;
+}
+.login .logged-button:active{
+	background-position:0 -30px;
+}
+
+
+.login-button{
+	position:relative;
+	left:130px;	
+	background:url(../img/blue/homepage/login-bg-shadow.png) repeat-x;
+	width:159px;
+	height:37px;
+	display:block;
+	top:-169px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	
+}
+.login-button button{
+	border:none;
+	text-align:center;
+	width:100%;
+	background:transparent;		
+	font-size:14px;
+	color:#fff;
+}
+.signup-form{
+	width:440px;
+	min-height:398px;
+	display:block;
+	background:url(../img/blue/homepage/signup-bg.png) repeat-y;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	margin:-45px 400px 0 40px;
+}
+
+.sign-up-header{
+	margin-top:12px;
+}
+.signup-slice-corner{
+	background:url(../img/blue/homepage/signup-slice-corner.png) no-repeat;
+	width:18px;
+	height:67px;
+	margin-right:-13px;
+}
+.signup-slice-corner-left{
+	width:10px;
+	height:48px;
+	display:block;
+	background:url(../img/blue/homepage/signup-slice-corner-left.png) no-repeat;
+}
+.signup-repeat-header{
+	width:329px;
+	height:48px;
+	display:block;	
+	background:url(../img/blue/homepage/signup-style-gradient.jpg) repeat-x #fff;
+}
+.signup-repeat-header h2{
+	width:100%;
+	display:block;
+	text-shadow:10px 10px 10px transparent;
+	font-size:20px;
+	font-weight:bold;
+	margin:10px 0;
+	text-align:center;
+	color:#122D5B;
+}
+.signup-form fieldset{
+	border:none;
+}
+.signup-form fieldset dl{
+	margin-left:24px;
+}
+.signup-form fieldset dt{
+	width:100px;
+	text-align:right;
+	color:#fff;
+	font-size:11px;
+}
+
+.signup-form fieldset dd{
+	margin-bottom:10px;
+	width:200px;
+}
+.signup-form fieldset input[type=text],
+.signup-form fieldset input[type=password],
+.signup-form fieldset select{
+	width:185px;
+	margin:0;	
+	height:14px;
+	padding:3px;
+	font-size:11px;
+}
+.signup-form fieldset select{
+	height:25px;
+}
+span.footnote{
+	font-size:11px;
+	float:left;
+	clear:both;
+}
+.signup-form-content{
+	margin-top:-20px;
+}
+.signup-form-content select.gender{
+	width:75px;
+}
+.signup-form-content dt.gender-label{
+	width:75px;
+}
+.signup-form dd.gender{
+	width:50px;
+}
+.signup-form .required{
+	color:#ff0000;
+	clear:both;
+	float:left;
+}
+
+.signup-form fieldset button{
+	background:url(../img/blue/homepage/findmymatch.png) no-repeat transparent;
+	border:none;
+	background-position:1px -1px;
+	width:195px;
+	height:38px;
+	margin-left:141px;
+}
+.signup-form fieldset button:hover{
+	background-position:1px -86px;
+}
+.signup-form fieldset button:active{
+	background-position:1px -43px;
+}
+
+
+.why-qalanjo{
+	height:81px;
+	width:233px;
+	display:block;
+	background:url(../img/blue/homepage/whyqalanjo-repeat_s1.png) repeat-x #fff;
+	border-right:1px solid #4A95C9;
+	border-top:1px solid #4A95C9;
+	border-bottom:1px solid #4A95C9;
+	margin-right:1px;
+	
+}
+.why-qalanjo h2{
+	font-size:28px;
+	font-weight:bold;
+	color:#333333;
+	margin:18px 0 0 0;
+	width:100%;
+	text-align:center;
+	text-shadow:0 0 10px #fff;
+	
+}
+.why-qalanjo-pointer{
+	background:url(../img/blue/homepage/why-qalanjo-pointer_s1.png) no-repeat transparent;
+	width:37px;
+	height:83px;
+	background-position:0 -2px ;
+}
+.why-qalanjo, .why-qalanjo-pointer{
+	margin-top:70px;
+}
+.item-features{
+	margin:20px 0 50px 0;
+
+}
+.item-feature{
+	height:169px;
+	width:232px;
+	display:block;
+	margin-right:5px;
+}
+.item-shadow{
+	background:url(../img/blue/homepage/item-shadow.png) no-repeat transparent;
+	width:6px;
+	height:158px;
+	display:block;
+}
+.item-content{
+	width:222px;
+	display:block;
+	height:158px;
+	border:1px solid #d2d2d2;
+	border-radius:10px;
+	background-color:#fff;
+	overflow:hidden;
+}
+.item-content .content{
+	margin:4px;
+	background-color:#DFF0F9;
+	width:192px;
+	height:126px;
+	padding:13px 11px;
+	text-align:left;
+}
+.item-content img{
+	margin:-23px 0 0 10px;
+	opacity:.8;
+}
+
+.item-content h3{
+	font-size:22px;
+	color:#333333;
+	margin:0;
+	font-family:Tiza, Arial, Helvetica, "sans-serif";
+}
+.item-content h3.content{
+	width:120px;
+	text-align:left;
+}
+
+.item-content p{
+	color:#333;
+	font-size:12px;
+}
+.item-shadow-left{
+	margin-right:-2px;
+}
+.item-shadow-right{
+	margin-left:-2px;
+}
+.item-feature-first{
+	margin-left:23px;
+}
+.footer{
+	width:925px;
+	background-color:#fff;
+	display:block;
+}
+.call-qalanjo{
+	background:url(../img/blue/homepage/call_qalanjo_s1.png) no-repeat transparent;
+	height:60px;
+	width:70px;
+	margin-left:14px;
+}
+h2.qalanjo{
+	font-size:20px;
+	font-weight:bold;
+	color:#005F9D;
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+p.call{
+	color:#666666;
+	font-size:13px;
+	margin:0;
+}
+.footer-left{
+	margin-left:27px;
+	height:50px;
+}
+.gradient-bottom{
+	background:url(../img/blue/homepage/gradient-bottom.jpg) repeat-x transparent;
+	height:19px;
+	width:100%;
+}
+.footer-link-set{
+	margin-left:54px;
+	overflow:hidden;
+}
+.footer-links{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+.footer-links li{
+	float:left;
+	margin-left:25px;
+}
+.footer-links a{
+	text-decoration:none;
+	color:#005F9D;
+}
+
+.top-links{
+	margin:0 0 14px 36px;
+}
+.center-links{
+	margin-left:120px;
+}
+.name-company{
+	overflow:hidden;
+	text-align:center;
+	color:#666666;
+}
+.find-us{
+	position:relative;
+	top:-60px;
+	left:200px;
+	width:83px;
+	height:42px;
+	font-weight:bolder;
+	color:#666666;
+	font-size:13px;
+}
+.find-us a{
+	margin-right:2px;
+}
+.fb{
+	display:block;
+	height:22px;
+	width:22px;
+	background:url(../img/blue/homepage/fb.png) no-repeat;
+}
+.fb:hover{
+	background-position:0 -22px;
+}
+.twitter{
+	display:block;
+	height:22px;
+	width:22px;
+	background:url(../img/blue/homepage/twitter.png) no-repeat;
+}
+.twitter:hover{
+	background-position:0 -22px;
+}
+.rss{
+	display:block;
+	height:22px;
+	width:22px;
+	background:url(../img/blue/homepage/rss.png) no-repeat;
+}
+.rss:hover{
+	background-position:0 -22px;
+}
+dd.birthdate select{
+	width:50px;
+}
+#MemberProfileBirthdateMonth{
+	width:75px;
+}
+#MemberProfileBirthdateYear{
+	width:60px;
+}

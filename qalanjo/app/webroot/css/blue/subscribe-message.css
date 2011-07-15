@@ -1,0 +1,59 @@
+@CHARSET "ISO-8859-1";
+
+.subscribe-message{
+	overflow:hidden;
+}
+.message-notification{
+	width:100%;
+	overflow:hidden;
+}
+.message-notification p{
+	color:#333;
+	font-size:14px;
+}
+.subscribe-message .profile-picture{
+    width:90px;
+    height:91px;
+    overflow:hidden;
+    background:url(../img/blue/icebreaker/frame.png) no-repeat transparent;
+}
+.subscribe-message .profile-picture img{
+	width: 70px;
+	height: 76px;
+	margin: 3px;
+	position: relative;
+	left: 5px;
+	top: 5px;
+}
+.subscribe-message .profile-info{
+	overflow:hidden;
+	width:250px;
+}
+.subscribe-message .profile-info .name{
+	color:#1E4B8C;
+	font-size:14px;
+}
+.subscribe-message .icon-set{
+	margin-top:12px;
+}
+.arrow-full{
+	margin-right:4px;
+}
+.arrow-blur{
+	margin:1px 20px 0 0;
+}
+.message-icon{
+	margin:0 25px 0 0;
+}
+
+.buttonpane{
+	text-align: left;
+	border-width: 1px 0 0 0;
+	background-image: none;
+	margin: .5em 0 0 0;
+	padding: .3em 1em 1.1em .4em;
+	background-color:#4574AA;
+}
+.buttonset{
+	float:right;
+}

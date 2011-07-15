@@ -1,0 +1,34 @@
+.li-slider-header{
+	overflow:hidden;
+	margin-bottom:24px;
+}
+.slider-header{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	float:left;
+}
+.sliders li.item{
+	margin-bottom:24px;
+	overflow: hidden;
+}
+.slider-header li{
+	float:left;
+	font-weight:bold;
+	margin-right:33px;
+}
+.block-set .col1{
+	width:253px;
+	font-weight:bold;
+	display:block
+}
+.block-set .col2{
+	width:476px;
+	display:block;
+}
+.slider{
+	width:366px;
+	display:block;
+	margin:3px 0 0 10px;
+}
+

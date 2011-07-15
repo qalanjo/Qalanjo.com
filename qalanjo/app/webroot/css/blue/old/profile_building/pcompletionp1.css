@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+#content_main {
+	padding-bottom: 0;
+	margin-bottom: 0;	
+}
+
+.instruction {
+	font-size: 14px;
+	padding-left: 20px
+}
+
+#profile_completion_box {
+	border: 1px solid #cdcdcd;
+	background: #f3f3f3;
+	-moz-border-radius: 10px;
+  	-webkit-border-radius: 10px;
+  	border-radius: 10px;
+	width: 632px;
+	margin: 10px 0 100px 25px;
+	padding: 20px 12px 30px 12px;
+}
+
+.profile_box {
+
+}
+
+.profile_box a {
+	border: 1px solid #ABAEB0;
+	background: #E1F2FF url("../img/page1/bg_default.gif") left top repeat-x;
+	-moz-border-radius: 10px;
+  	-webkit-border-radius: 10px;
+  	border-radius: 10px;
+	-webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 4px 5px #ccc;	
+	width: 97px;
+	display: block;
+	float: left;
+	padding: 10px 7px 0 7px;
+	margin: 0 0 0 11px;
+}
+
+.profile_box a.active {
+	display: block;
+	background: #51CEF3 url("../img/page1/bg_active.jpg") left top repeat-x;
+	font-weight: bold;
+	color: #010103;
+}
+
+.profile_box a:hover {
+	display: block;
+	width: 97px;
+	display: block;
+	background: #51CEF3 url("../img/page1/bg_active.jpg") left top repeat-x; 
+}
+
+.profile_box p {
+	padding: 25px 0 20px 0;
+	margin: 0;	
+}
+
+.profile_border_image {
+	border: 1px solid #c0c0c0;	
+	text-align: center;		
+}
+
+.color_text {
+	color: #666;
+	text-align: center;
+	font-size: 14px;
+}
+
+button {
+	margin: 0 0 0 25px;
+	padding: 0;	
+}
+
+
+
+p.image_set_top .right {
+	padding: 0;
+	margin: 0;	
+}
+
+p.image_set_bottom .left {
+	padding: 0;
+	margin: 0;	
+}
+
+p.image_set_bottom .left {
+	padding: 200px 0 0 200px;
+	margin: 0 0 0 0;
+}

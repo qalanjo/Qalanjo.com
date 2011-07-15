@@ -1,0 +1,195 @@
+#summary{
+	padding:0.8em;
+	width:800px;
+	margin:15px 28px 15px 28px;	
+}
+
+.subscription-form{
+	overflow:visible;
+	border-radius:5px;
+	border:1px solid #666666;
+	width:876px;
+	margin:20px;
+	background-image:url(../img/blue/subscription_transactions/checkout/checkout_container_top.gif),  url(../img/blue/subscription_transactions/checkout/checkout_cart.gif);
+	background-repeat:repeat-x, no-repeat;
+	background-position:0 0, 600px 250px;
+	height:1176px;
+}
+
+.step-arrow{
+	margin-left:-10px;
+	background:url(../img/blue/subscription_transactions/checkout/checkout-arrow.png) no-repeat transparent;
+	height:50px;
+	width:199px;
+}
+.step-arrow span{
+	margin:10px 10px;
+	color:#333;
+}
+.order-form{
+	width:250px;
+	height:174px;
+	overflow:hidden;
+	margin-right:28px;
+	border:1px solid #9d9d9d;
+	background-color:#DFE1E6;
+	padding:0px;
+}
+.order-form h2{
+	background:url(../img/blue/subscription_transactions/checkout/checkout_order_summary.gif) repeat-x transparent;
+	width:250px;
+	text-shadow:10px 10px 10px transparent;
+	font-size:20px;
+	padding:0px;
+	margin:0px;
+}
+.order-form h2 span{
+	margin-right:30px;
+	color:#fff;
+	display:block;
+}
+.order-summary{
+	height:132px;
+	width:250px;
+	margin:0px;
+}
+.order-summary .description, .order-summary .total{
+	font-size:14px;
+	margin-left:5px;
+	width:100px;
+	font-weight:bold;
+}
+.order-summary .description{
+	color:#025EA1;
+	margin-top:24px;
+}
+.order-summary .total{
+	margin-top:15px;
+}
+.order-summary .details{
+	margin-top:24px;
+	margin-right:5px;
+	height:46px;
+	width:100px;
+	border-bottom:1px solid #9d9d9d;
+}
+.order-summary .times{
+	font-size:16px;
+}
+
+.order-summary .amount span{
+	font-size:20px;
+	margin-right:5px;
+}
+
+.subscription-form .content{
+	overflow:hidden;
+	margin-top:-130px;
+}
+.subscription-form .content h2.header{
+	color:#00609D;
+	font-weight:bolder;
+	font-size:16px;
+	margin-left:30px;
+	margin-bottom:20px;
+	height:20px;
+}
+.col-group{
+	padding-top:0;
+}
+abbr, .required{
+	color:#ff0000;
+}
+
+.basic-information{
+	border:none;
+	padding:none;
+	margin:0;
+}
+.col1{
+	float:left;
+}
+.cc{
+	margin-left:23px;
+}
+.cc-form{
+	width:809px;
+	margin-left:9px;
+	background-image:url(../img/blue/subscription_transactions/checkout/cc.png), url(../img/blue/subscription_transactions/checkout/checkout_back_card.gif);
+	background-repeat:no-repeat, no-repeat;
+	background-color:#EDEDED;
+	background-position:600px 20px, 360px 300px;
+}
+.subscription-form .cc-form h2{
+	font-size:125%;
+}
+.cc-top{
+	background:url(../img/blue/subscription_transactions/checkout/checkout_cc_top.png) no-repeat;
+	height:15px;
+	width:823px;
+}
+.cc-bottom{
+	background:url(../img/blue/subscription_transactions/checkout/checkout_shadow_bottom.png) no-repeat;
+	width:823px;
+	height:41px;
+}
+.cc-form div{
+	margin-left:3.25em;
+}
+.cc-form .secured{
+	font-weight:bold;
+}
+.cc-form .light{
+	font-size:10px;	
+}
+.cc-form h2{
+	margin-left:14px;
+}
+span.card{
+	padding:.2em;
+}
+span.card img{
+	cursor:pointer;
+}
+span.active{
+	background-color:#E8E8E8;
+	border:1px dotted #DDDDDD;
+}
+span.light{
+    color:#BBBBBB;
+}
+span.loud{
+	font-weight:bold;	
+}
+div.what-now{
+	width:100%;			
+}
+div.what-now h2{
+	font-size:14px;
+	font-weight:bold;
+}
+.back{
+	border:none;
+	background:url(../img/blue/subscription_transactions/checkout/back.png) no-repeat;
+	height:28px;
+	width:65px;
+}
+.back:hover{
+	background-position:0 -60px;
+}
+.back:active{
+	background-position:0 -30px;
+}
+.process-payment{
+	border:none;
+	background:url(../img/blue/subscription_transactions/checkout/process_payment.png) no-repeat;
+	height:28px;
+	width:120px;
+	margin-left:10px;
+}
+.process-payment:hover{
+	background-position:0 -60px;
+}
+.process-payment:active{
+	background-position:0 -30px;
+}

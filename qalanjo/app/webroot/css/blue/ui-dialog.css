@@ -1,0 +1,36 @@
+@CHARSET "ISO-8859-1";
+
+.ui-dialog .ui-widget-header{
+	background:none;
+	border:none;
+	border-bottom:4px solid #005F9D;
+	height:44px;
+}
+
+.ui-dialog .ui-dialog-title{
+	color:#333;
+	font-size:16px;
+	padding-top:12px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close{
+	width:30px;
+	height:28px;
+	background:url(../img/blue/dialog/dialog.png) no-repeat;
+	margin-top:-20px;
+	padding:0px;
+}
+.ui-dialog .ui-icon-closethick{
+	background-image:none;
+	background-position:0 0;
+	
+}
+.ui-dialog .ui-state-hover{
+	border:none;
+}
+.ui-dialog .ui-dialog-titlebar-close:hover{
+	background-position:0 -30px;
+}
+.ui-dialog-buttonpane{
+	background-color:#4574AA;
+}

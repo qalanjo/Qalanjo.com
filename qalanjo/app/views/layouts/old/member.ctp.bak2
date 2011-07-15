@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<?php echo $this->Html->css("redmond/jquery-ui-1.8.10.custom")?>
+<?php echo $this->Html->css("members/profile/globals")?>
+<?php echo $this->Html->css("inbox/inbox")?>
+<?php echo $this->Javascript->link(array("jquery", "ui/jquery-ui-1.8.10.custom",'validate/jquery.validate.min', 'custom/member_globals'))?>
+<?php echo $this->element("scripts/autocomplete")?>
+
+<title>Qalanjo.com</title>
+</head>
+<body>
+<div id="top">
+     <div id="page">
+          <div id="qalanjonomerge"></div>
+          <div id="searchbarnomerge">
+          		<input type="text" class="search_text"/><button class="search_button"></button>
+          </div>
+          <div id="twoButtons"><a href="#" class="tourQalanjo"></a><a href="#" class="exploreButton"></a>
+          <a href="#" class="myAccount">MY ACCOUNT</a>
+          <?php echo $this->Html->link("", array("action"=>"logout", "controller"=>"members"), array("class"=>"logoutButton"))?>
+          </div>
+          <div id="currenttopmenunomerge"></div>
+          <div id="topMenu">
+                <ul class="">
+                    <li class="tab_selected"><?php echo $this->Ajax->link("Home", "/members/home", array("update"=>"updatable_div", "complete"=>"resize('small')"))?></li>
+                    <li><a href="#">My Matches</a></li>				
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+          </div>
+          <!--####################### SIDE MENU HERE #######################-->
+          <div id="fadingboxnomerge">
+              <div id="sideMenu">
+                    <img src="images/profilepicturenomerge.png" height="90" align="left" />       
+                    <h1><?php echo $member["Member"]["firstname"]." ".$member["Member"]["lastname"]?></h1>
+                    <a class="sideLinks" href="#">Edit Profile</a>
+                    <p class="sideAlign">Profile: 81% <a href="#" class="sideLinks2">Why?</a></p> 
+                    <ul>
+                    	<li class="titleMenu">MY PROFILE
+                        	<ul>
+                            	<li class="sideSubMenus"><a href="#">Who's Viewed Me</a></li>
+                            </ul>
+                        </li>
+                        <li class="titleMenu">MY PHOTOS</li>
+                        <li class="titleMenu">INBOX
+                        	<ul>
+                        		<?php 
+                        			$message = "Messages(".count($member["PrivateMessage"]).")";      		
+                        		?>
+                            	<li id="inbox_link" class="sideSubMenus"><?php echo $this->Ajax->link($message, "/private_messages/inbox/".$member["Member"]["id"], array("update"=>"updatable_div", "complete"=>"resize('full')"))?></li>
+                                <li class="sideSubMenus"><a href="#">Smiles(3)</a></li>
+                                <li class="sideSubMenus"><a href="#">Gifts(0)</a></li>
+                            </ul>
+                        </li>
+                        <li class="titleMenu">ACTIONS
+                        	<ul>
+                            	<li class="sideSubMenus"><a href="#">Messages sent(1)</a></li>
+                                <li class="sideSubMenus"><a href="#">Smiles sent(4)</a></li>
+                                <li class="sideSubMenus"><a href="#">Gifts sent(1)</a></li>
+                                <li class="sideSubMenus"><a href="#">Viewed profiles</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+              </div>
+         
+          <!--####################### CONTENT HERE #######################-->        
+          <div id="contentareanomerge">            
+            	<div id="updatable_div">
+                	<?php echo $content_for_layout;?>
+                </div><!--/updatable div--> 
+            </div>
+         </div><!--/fading box-->
+     </div><!-- /page -->
+<!--######################################## FOOTER ########################################-->
+<div id="footer">
+	<ul>
+		<li id="AU">
+        	<a href="#" title="About Us">About Us</a>
+        </li>   
+        <li>
+        	<a href="#" title="Why Qalanjo">Why Qalanjo</a>
+        </li>
+        <li>
+        	<a href="#" title="Career">Career</a>
+        </li>
+        <li>
+        	<a href="#" title="Privacy">Privacy</a>
+        </li>
+        <li>
+        	<a href="#" title="Terms and Services">Terms and Services</a>
+        </li>
+        <li>
+        	<a href="#" title="Feedback">Feedback</a>
+        </li>
+        <li>
+        	<a href="#" title="Contact Us">Contact Us</a>
+        </li>
+        <li>
+        	<a href="#" title="Site Map">Site Map</a>
+        </li>
+        <li id="HIW">
+        	<a href="#" title="How It Works">How It Works</a>
+        </li>
+        <li>
+        	<a href="#" title="Media Center">Media Center</a>
+        </li>
+        <li>
+        	<a href="#" title="Affiliates">Affiliates</a>
+        </li>
+        <li>
+        	<a href="#" title="Online Dating Safety Tips">Online Dating Safety Tips</a>
+        </li>
+        <li>
+        	<a href="#" title="Local">Local</a>
+        </li>
+        <li>
+        	<a href="#" title="Help">Help</a>
+        </li>
+    </ul>
+</div><!--/footer-->
+</div><!-- /top -->
+</body>
+</html>

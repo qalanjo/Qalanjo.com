@@ -1,0 +1,377 @@
+/*############################## GLOBAL ##############################*/
+body, p,
+h4,
+h3,
+h2,
+h6,
+h1,
+h5  {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;
+   color: #FFFFFF;
+}
+
+body  {
+   background-color: #fff;
+   background-image: none;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding-left: 0px;
+   padding-right: 0px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   -webkit-text-size-adjust: auto;
+   min-width: 960px;
+}
+
+#page  {
+   width: 960px;
+   position: relative;
+   margin: 0 auto;
+}
+
+#top  {
+   min-height: 100%;
+   width: 100%;
+}
+/*##############################HEADER ##############################*/
+#top_header {
+	padding-bottom: 1%;
+    position: relative;
+    z-index: 1;
+}
+
+#bgtop  {
+    background-image: url("../images/bgtop.png");
+    background-repeat: repeat;
+    height: 150px;
+    left: 0;
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+#top_header #leftAreaheader #leftDesigns {
+	background: url(../images/leftEffect.png) no-repeat;
+	float: left;
+	height: 123px;
+    width: 418px;
+}
+
+#top_header #leftAreaheader {
+	float: left;
+	width: 525px;
+}
+
+#top_header #leftAreaheader p{
+	color: #FFFFFF;
+    float: left;
+    font-family: arial;
+    font-size: 80%;
+    margin: -7.1% 1% 0 1%;
+	text-shadow: 1px 1px 0 #494949;
+}
+
+#top_header #leftAreaheader a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#top_header #leftAreaheader a:hover {
+	color: #0f2b58;
+	text-shadow: none;
+}
+
+#top_header #logoQalanjo {
+	left: 50%;
+    margin: 7px 0 0 -111px;
+    position: absolute;
+    top: 0;
+}
+
+#top_header #logoQalanjo img {
+	border: 0;
+	margin-right: 4px;
+}
+
+#top_header #logoQalanjo a.qalanjoLogo {
+	background-image: url("../images/qalanjoLogo.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 123px;
+    width: 222px;
+}
+
+#top_header #logoQalanjo a.qalanjoLogo:hover {
+	background-position: -224px 0%;
+}
+
+#top_header #leftAreaheader p.removeFloat2{ 
+	line-height: 22px;
+    margin: -4% 1% 0 0.5%;
+}
+
+#top_header #leftAreaheader p.removeFloat2 img {
+}
+
+#top_header #rightAreaheader {
+	float: right;
+	width: 418px;
+}
+
+#top_header #rightAreaheader p{
+	color: #FFFFFF;
+    float: right;
+    font-family: arial;
+    font-size: 80%;
+    margin: -9% 1% 0 0;
+	text-shadow: 1px 1px 0 #494949;
+}
+
+#top_header #rightAreaheader p.removeFloat{ 
+	margin: -2.6% 1% 0 0;
+}
+
+#top_header #rightAreaheader a{
+	font-size: 100%;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#top_header #rightAreaheader a:hover {
+	color: #0f2b58;
+	text-shadow: none;
+}
+
+#rightDesigns {
+	background: url("../images/rightEffect.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 123px;
+    width: 418px;
+}
+
+
+/*############################## SEARCH AREA ##############################*/
+#top #bgSearch {
+	/*border: 1px solid;*/
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#top #bgSearch #wrapIt { 
+  overflow:hidden;
+   background: url("../images/leftBgsearch.png") no-repeat scroll 0 0 transparent;
+
+}
+
+#top #bgSearch #contentBgsearch {	
+    background: url("../images/contentBgsearch.png") repeat scroll 0 0 transparent;
+    float:left;
+    height: 45px;
+    padding: 0;
+    width:100%;
+    margin-right:50px;
+    margin-left:25px;
+}
+
+#top #bgSearch #contentBgsearch p.bgMenuTop {
+	background: url("../images/bgMenuTop.png") no-repeat scroll 0 7px transparent;
+    height: 37px;
+    width: 164px;
+	float: left;
+	padding-top: 0.1%;
+}
+
+#top #bgSearch #contentBgsearch a.menuTopFullNavigation {
+	color: #FFFFFF;
+    font-family: arial;
+    font-size: 86%;
+    line-height: 39px;
+    margin-left: 2%;
+    text-decoration: none;
+	text-shadow: 1px 1px 0 #3C3B3B;
+}
+
+#top #bgSearch #contentBgsearch a.menuTopFullNavigation:hover {
+	border-bottom: 1px dashed;
+}
+
+#top #bgSearch #contentBgsearch a.menuTopNavigationalStyle {
+	background: url("../images/arrowDown.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: right;
+    height: 19px;
+    margin: 6% 4% 0 0;
+    width: 18px;
+}
+
+#top #bgSearch #contentBgsearch a.menuTopNavigationalStyle:hover {
+	background-position: -21px 0;
+}
+
+#top #bgSearch #contentBgsearch a.menuTopWish {
+	color: #FFFFFF;
+    font-family: arial;
+    font-size: 86%;
+    line-height: 42px;
+    margin-left: 12%;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #3C3B3B;
+}
+
+#top #bgSearch #contentBgsearch a.menuTopWish:hover {
+	border-bottom: 1px dashed;
+}
+
+#top #bgSearch #contentBgsearch a.menuTopNavigationalStyleWishy {
+	background: url("../images/arrowDown.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: right;
+    height: 19px;
+    margin: 11% 9% 0 0;
+    width: 18px;
+}
+
+#top #bgSearch #contentBgsearch a.menuTopNavigationalStyleWishy:hover {
+	background-position: -21px 0;
+}
+
+#top #bgSearch #contentBgsearch a.menuTopCart {
+	color: #FFFFFF;
+    font-family: arial;
+    font-size: 86%;
+    line-height: 42px;
+    margin-left: 53%;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #3C3B3B;
+}
+
+#top #bgSearch #contentBgsearch a.menuTopCart:hover {
+	border-bottom: 1px dashed;
+}
+
+#top #bgSearch #contentBgsearch #totalCart {
+	float: right;
+    font-size: 90%;
+	margin: 0.7% -3.9% 0 0;
+}
+
+#top #bgSearch #contentBgsearch .searchText {
+	color: #2B5290;
+    float: left;
+    height: 31px;
+    line-height: 40px;
+    margin: 0 0 0 0.5%;
+}
+
+#top #bgSearch #contentBgsearch select {
+	float: left;
+    margin: 5.5% 0 0 0.2%;
+}
+
+#top #bgSearch #contentBgsearch .fixWidthSearch #search {
+	margin: 6.6% 0 0 0.5%;
+    width: 100%;
+}
+
+#top #bgSearch #contentBgsearch .fixWidthSearch {
+	float: left;
+    height: 37px;
+    margin-left: 0.5%;
+}
+
+#top #bgSearch #contentBgsearch .bgMenuTopWishy {
+	background: url("../images/bgMenuTop2.png") no-repeat scroll 0 7px transparent;
+    float: right;
+    height: 37px;
+    width: 102px;
+}
+
+#top #bgSearch #contentBgsearch .bgMenuTopCart {
+	background: url("../images/bgMenuTopCart.png") no-repeat scroll 0 7px transparent;
+    float: right;
+    height: 37px;
+    width: 102px;
+	margin-right: 0.3%;
+}
+
+#top #bgSearch #rightBgsearch {
+    background-image: url("../images/rightBgsearch.png");
+    background-repeat: no-repeat;
+    background-position:top right;
+    height: 45px;
+    padding: 0 48px 0 0;
+}
+/*############################## FOOTER ##############################*/
+#footer  {
+    background: url("../images/bgfooter.png") repeat scroll 1px -6px transparent;
+    bottom: 0;
+    display: block;
+    height: 62px;
+    margin: -0.3% 0 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#footer #innerFooter {
+	margin: 25px auto 0;
+    width: 618px;
+}
+
+#footer ul  {
+   margin: 0px;
+   padding: 0px;
+   color: #FFE59A;
+   text-decoration: none;
+   font-variant: normal;
+   letter-spacing: 0px;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 25px;
+   font-family: Arial, Helvetica, sans-serif;
+   text-indent: 0px;
+   text-align: center;
+} 
+
+#footer ul li
+{
+   margin-right: 0px;
+   margin-left: 15px;
+   float: left;
+   list-style: none;
+} 
+
+#footer ul li#HIW
+{
+	margin-left: 58px;
+} 
+
+#footer ul li#AU
+{
+	margin-left: 0;
+}
+
+#footer ul li a
+{
+   padding-left: 0px;
+   padding-right: 0px;
+   width: 100%;
+   display: block;
+   text-decoration: none;
+   font-size: 13px;
+   color: #fff;
+} 
+
+#footer ul li a:hover
+{
+	color: #0B306F;
+}

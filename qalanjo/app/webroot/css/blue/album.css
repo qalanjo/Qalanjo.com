@@ -1,0 +1,192 @@
+.album-container{
+	overflow:visible;
+	border-radius:5px;
+	border:1px solid #666666;
+	width:876px;
+	margin:20px;
+	background-image:url(img/albums/album-top.gif);
+	background-repeat:repeat-x;
+	padding-top:44px;
+	height:1176px;
+}
+.album-container h1{
+	font-size:20px;
+	font-weight:bolder;
+	color:#005F9D;
+	margin:0px;
+}
+.left-container {
+	width:590px;
+	margin-left:15px;
+}
+.by{
+	font-size:11px;
+	margin-bottom:5px;
+	margin-top:2px;
+}
+.by .name{
+	color:#005F9D;
+}
+div.controls{
+	background:url(img/albums/line.png) no-repeat 0px 20px;
+	width:526px;
+	height:50px;
+}
+div#line {
+	background:url(img/albums/line.png) no-repeat 0px 20px;
+	width:526px;
+	height:35px;
+}
+.controls{
+	list-style-type:none;
+	font-size:10px;
+	overflow:hidden;
+}
+.controls li{
+	float:left;
+	margin-right:11px;
+}
+.controls li a{
+	text-decoration:none;
+	color:#00406C;
+}
+div.upload{
+	margin-right:10px;
+}
+
+#upload-photos{
+	border:none;
+	background:url(img/albums/create-album.png) no-repeat transparent;
+	width:120px;
+	height:24px;
+}
+#upload-photos:hover{
+	background-position:0px -54px;
+}
+
+#upload-photos:active{
+	background-position:0px -27px;
+}
+
+#add-photos{
+	border:none;
+	background:url(img/albums/add-photos.png) no-repeat transparent;
+	width:120px;
+	height:24px;
+}
+#add-photos:hover{
+	background-position:0px -54px;
+}
+
+#add-photos:active{
+	background-position:0px -27px;
+}
+#album-list{
+	width:100%;
+	margin-top:10px;
+}
+
+.albums, .photo {
+	list-style-type:none;
+	padding:0;
+}
+.albums li, .photo li{
+	width:180px;
+	float:left;	
+	margin-right:10px;
+	overflow:hidden;
+	min-height:140px;
+	margin-bottom:10px;
+}
+.albums li span.name{
+	font-size:11px;
+	color:#005F9D;
+	font-weight:bold;
+	margin-left:10px;
+	display:block;
+}
+.photo-album-bg{
+	background:url(img/albums/bg-picture.png) no-repeat transparent;
+	height:146px;
+	width:180px;
+}
+.photo-album-bg img{
+	position:relative;
+	left:18px;
+	top:15px;
+}
+
+.photo-bg{
+	background:url(img/albums/thumbnailpic.png) no-repeat transparent;
+	height:146px;
+	width:180px;
+}
+.photo-bg img{
+	position:relative;
+	left:10px;
+	top:8px;
+}
+.count {
+	color:#737373;
+	margin-left:10px;
+	font-size:10px;
+}
+.match-header{
+	background:url(img/albums/sliced_match.png) repeat-x transparent;
+	border:1px solid #D3D3D3;
+	margin:0;
+	padding:0;
+	width:223px;
+	height:30px;
+	font-size:0px;
+}
+.match-header span{
+	margin:10px;
+	font-size:12px;
+	font-weight:bold;
+}
+.album-match ul{
+	list-style-type:none;
+	padding:0;
+}
+.album-match li{
+	float:left;
+	margin:10px 5px 10px 5px;
+	border:1px solid #D0D0D3;
+	overflow:hidden;
+	padding:5px;
+	
+}
+.album-match li img{
+	height:65px;
+	width:90px;
+}
+.album-match span.name{
+	color:#005F9D;
+	margin-left:5px;
+}
+.album-match span.name strong{
+	color:#747474;
+	font-weight:normal;
+}
+.album-match-name{
+	color:#005F9D;
+	margin-left:5px;
+}
+.album-match-name a{
+	color:#005F9D;
+	text-decoration:none;
+}
+.sponsors{
+	margin-top:20px;
+}
+div.ads{
+	height:536px;
+	width:223px;
+	border:1px solid #ccc;
+}
+
+.right-container {
+	width:210px!important;
+}
+

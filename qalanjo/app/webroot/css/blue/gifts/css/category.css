@@ -1,0 +1,129 @@
+
+p, h1, h2, h3, h4, h5, h6 { margin:0px; }
+
+input[type=checkbox] { cursor:pointer; }
+
+#item-description select { 
+	width:5em;
+	text-align:center;
+}
+
+ul li { list-style-type:none; }
+
+#category-wrapper { float:none; }
+
+#items-category {
+	border:1px solid #dedede;
+	margin:10px 5px 10px 10px;
+}
+
+#header-category { 
+	margin:15px 5px;
+}
+
+#items-container {
+	overflow:auto;
+}
+
+.bold { font-size:1.3em; }
+
+.item { 
+	
+}
+
+/***********************************************
+ * 
+ *	item description.. pop up box
+ *
+ *
+ ***********************************************/
+
+.item {
+	text-align:center;
+	margin:0 auto;
+}
+.title {
+	font-weight:bolder;
+	text-align:center;
+}
+
+#item-description  {
+	text-shadow: 10px 10px 10px transparent;
+}
+
+#item {
+	float:left;
+	width:180px;
+	border:2px solid red;
+	padding:5px;
+}
+
+#rating {
+	clear:left;
+	float:left;
+}
+
+#price {
+	float:right;
+}
+
+#quantity { 
+	clear:right;
+	float:right;
+}
+
+#buttons {
+	clear:both;
+	margin:10px 5px;
+}
+
+#addtocart {
+	width:100px;
+	height:26px;
+	display:inline-block;
+	background-image: url(../img/category/addtocart-btn.png);
+	float:left;
+	text-decoration:none;
+	text-align:center;
+	v-align:bottom;
+	margin:15px 0px;
+}
+
+#addtocart:hover {
+	background-position: 0px 52px;
+}
+
+a#close {	
+	background-image: url(../img/blue-button.png);
+	background-repeat:none;
+	height:23px;
+	width:69px;
+	clear:left;
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	float:left;
+}
+
+a#close:hover {
+	background-position: 0px 46px;
+}
+
+#description-wrap {
+	float:right;
+	border:2px solid black;
+	width:410px;
+	padding:10px;
+}
+
+#description {
+	
+}
+
+#description, #in-stock, #details { margin:5px 0px; }
+#description-wrap h5 { color:blue; }
+
+#items-button {
+	width:470px;
+	height:69px;
+}

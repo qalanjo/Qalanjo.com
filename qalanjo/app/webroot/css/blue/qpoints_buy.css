@@ -1,0 +1,232 @@
+@CHARSET "ISO-8859-1";
+.settings-container{
+	overflow:visible;
+	border-radius:5px;
+	border:1px solid #666666;
+	width:836px;
+	margin:20px;
+	background-image:url(../img/blue/container/top.gif);
+	background-repeat:repeat-x;
+	padding:44px 20px 20px 20px;
+}
+.encourage-line{
+	width:100%;
+	margin-top:17px;
+}
+.encourage-line-message{
+	width:370px;
+	height:49px;
+	background:url(../img/blue/subscribe/encourage-line.png) repeat-x #fff;
+	border-left:1px solid #dfdfdf;
+	border-top:1px solid #dfdfdf;
+	border-bottom:1px solid #dfdfdf;
+	padding:10px 0 0 13px;
+	display:block;
+	color:#666666;
+	font-size:18px;
+}
+.encourage-line-message span{
+	margin-top:-5px;	
+}
+.encourage-line-message strong{
+	color:#005F9D;
+	font-size:18px;
+}
+.encourage-line .arrow{
+	width:34px;
+	height:62px;
+	background:url(../img/blue/subscribe/arrow.png) no-repeat #fff;
+	display:block;
+	z-index:10;
+}
+.encourage-line .arrow-yellow{
+	width:74px;
+	height:61px;
+	display:block;
+	background:url(../img/blue/subscribe/subscribe-arrow.png) no-repeat;
+	margin-left:-20px;
+	z-index:9;
+}
+
+.feature-message{
+	width:280px;
+	display:block;
+	height:61px;
+	margin-top:5px;	
+}
+.feature-message h2{
+	line-height:1.2em;
+	margin:0;
+	font-size:18px;
+	color:#333333;
+}
+.feature-message h2 span.count{
+	color:#115EA0;
+}
+.feature-message h2 span.q{
+	color:#FF7F00;
+}
+
+.frames{
+	overflow:hidden;
+	width:100%;
+	margin-bottom:400px;
+}
+.viewport{
+	width:2000px;
+}
+.spacer-line{
+	width:100%;
+	height:8px;
+	background-color:#666666;
+	margin-bottom:10px;
+}
+.qpoints-item{
+	width:262px;
+	height:241px;
+	
+}
+.qpoints-item .shadow{
+	background:url(../img/blue/qpoints-buy/shadow.png) no-repeat transparent;
+	width:2px;
+	height:241px;
+	position:relative;
+	z-index:10;
+}
+.qpoints-item-content{
+	border-radius:7px;
+	border:1px solid #9A9A9A;
+	display:block;
+	padding-top:23px;
+	width:256px;
+	height:216px;
+	position:relative;
+	z-index:11;
+	text-align:center;
+}
+.item-spacer{
+	background-color:#C8B04F;
+	height:86px;
+	width:24px;
+	display:block;
+	margin-top:70px;
+}
+.qpoints-item h2, .qpoints-item h3{
+	margin:0;
+	padding:0;
+	text-align:center;
+	font-weight:bold;
+	width:100%;
+}
+h3.months{
+	font-size:16px;
+	color:#005F9D;
+}
+h2.subscription-description{
+	font-size:22px;
+	
+}
+h2.most-successful{
+	color:#FF8000;
+}
+h2.top-seller{
+	color:#9FCC1A;
+}
+h2.other{
+	color:#666666;
+}
+h2.price{
+	font-size:30px;
+}
+h3.permonth{
+	color:#005F9D;
+	font-size:18px;
+}
+div.join{
+	margin-top:10px;
+	text-align:center;
+	width:100%;
+}
+div.join a{
+	display:block;
+	height:69px;
+	width:108px;
+	background:url(../img/blue/qpoints-buy/buynow.png) no-repeat;
+	margin-left:80px;
+}
+div.coins{
+	width:82px;
+	height:107px;
+	display:block;
+	margin-left:84px;
+}
+div.gold{
+	background:url(../img/blue/qpoints-buy/points-gold.png) no-repeat;
+}
+div.silver{
+	background:url(../img/blue/qpoints-buy/points-silver.png) no-repeat;
+}
+div.bronze{
+	background:url(../img/blue/qpoints-buy/points-bronze.png) no-repeat;
+}
+h3.gold{
+	color:#FF7F00;
+	font-size:24px;
+}
+h3.silver{
+	color:#9FCC1A;
+	font-size:24px;	
+}
+h3.bronze{
+	color:#666666;
+	font-size:24px;	
+}
+
+h3.price{
+	color:#000;
+	font-size:24px;	
+}
+div.control-pay{
+	width:842px;
+	display:block;
+	margin-left:10px;
+}
+
+.select-method{
+	width:824px;
+	overflow:hidden;
+	text-align:center;
+	margin-bottom:16px;
+}
+.select-method p{
+	margin:0;
+	padding:0;
+	color:#ff8000;
+	font-weight:bold;
+	font-size:20px;
+}
+.arrow-back{
+	width:30px;
+	height:36px;
+	display:block;
+	overflow:hidden;
+	background:url(../img/blue/subscribe/gray-back.png) no-repeat;
+	margin:64px 70px 0 10px;
+	cursor:pointer;
+}
+.paypal-pay{
+	width:302px;
+	height:173px;
+	display:block;
+	background:url(../img/blue/subscribe/paypal.png) no-repeat;
+	margin-right:82px;
+	cursor:pointer;
+}
+.cc-pay{
+	width:302px;
+	height:174px;
+	display:block;
+	background:url(../img/blue/subscribe/cc_card_pay.png) no-repeat;
+	cursor:pointer;
+}
+

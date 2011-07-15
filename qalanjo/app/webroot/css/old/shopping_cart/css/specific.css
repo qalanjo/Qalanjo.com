@@ -1,0 +1,695 @@
+/*############################## UPDATABLE DIV ##############################*/
+/* near footer items*/
+#updatable_div {
+	overflow: hidden;
+    position: relative;
+}
+
+#updatable_div .topFooterItem {
+	background: url("../images/topFooterItem.png") no-repeat scroll 0 0 transparent;
+    height: 35px;
+    position: relative;
+    width: 960px;
+    z-index: 1;
+}
+
+#updatable_div .topFooterItem2 {
+	background: url("../images/topFooterItem2.png") no-repeat scroll 4px 0 transparent;
+    height: 35px;
+    position: relative;
+    width: 733px;
+}
+
+#updatable_div .contentFooterItem {
+	background: url("../images/contentFooterItems.png") repeat;
+    margin-top: -4px;
+    position: relative;
+    width: 960px;
+    z-index: 0;
+}
+
+.contentFooterItem .column1 {
+	float: left;
+    margin: 0 0 0.5% 1.3%;
+    padding: 0.5%;
+    width: auto;
+}
+
+.bottomFooterItem {
+	background: url("../images/bottomFooterItem.png") no-repeat scroll 0 0 transparent;
+    height: 35px;
+    margin-top: -10px;
+    position: relative;
+    width: 960px;
+    z-index: 2;
+}
+
+.bottomFooterItem2 {
+	background: url("../images/bottomFooterItem2.png") no-repeat scroll 4px 0 transparent;
+    height: 35px;
+    margin-top: -22px;
+    position: relative;
+    width: 733px;
+}
+
+.column1 h3 {
+	color: #3667b6;
+}
+
+.column1 p {
+	color: #2B5290;
+    font-size: 82%;
+}
+
+.column1 img {
+	border: none;
+	float: left;
+}
+
+.column1 .column1Anchor {
+	color: #072453;
+    float: left;
+    font-size: 84%;
+    margin: 4% 0 0 4%;
+    text-decoration: none;
+}
+
+.column1 .column1Anchor2 {
+	color: #072453;
+    float: left;
+    font-size: 84%;
+    margin: -2% 0 0 0 ;
+    text-decoration: none;
+	font-weight: bold;
+}
+
+.column1 a.column1Anchor2:hover {
+	color: #06F;
+}
+
+#updatable_div .contentFooterItem .column2 {
+	float: left;
+    width: auto;
+	margin-left: -0.3%;
+}
+
+.column2 p {
+	color: #2B5290;
+    font-size: 82%;
+	margin-top: 1.4%;
+}
+
+.column2 .leftP {
+}
+
+.column2 .rightP {
+	margin-left: 73px;
+}
+
+.column2 .leftArrow {
+	background: url(../images/arrowLeft.png) no-repeat;
+	width: 34px;
+	height: 40px;
+	display: block;
+	float: left;
+	margin-top: 15%;
+}
+
+.column2 .leftArrow:hover {
+	background-position: -36px 0%
+}
+
+.column2 .rightArrow {
+	background: url("../images/arrowRight.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 40px;
+    left: 95%;
+    margin-top: 15%;
+    position: relative;
+    width: 34px;
+}
+
+.column2 .rightArrow:hover {
+	background-position: -36px 0%
+}
+
+.column2 .items b{
+	color: #0050C7;
+	font-size:90%;
+}
+
+.column2 .items {
+	text-align: center;
+    width: 122px;
+	float: left;
+	margin: 6% 0.62% 0 0;
+}
+
+.column2 .items img {
+}
+
+.column2 .items a.totalRaters {
+	color: #0050C7;
+    font-size: 87%;
+    font-weight: bold;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.column2 .items a.totalRaters:hover {
+	border-bottom: 1px dashed;
+}
+
+.column2 .items a.titleItem {
+	color: #0050C7;
+    text-decoration: none;
+}
+
+.column2 .items a.titleItem:hover {
+	border-bottom: 1px dashed;
+}
+
+.column2 .items .btCart {
+	background: url("../images/addtoCart.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 33px;
+    margin: 0 auto;
+    width: 93px;
+    border:0px;
+    cursor:pointer;
+}
+
+.column2 .items .btCart:hover {
+	background-position: -96px 0%;
+	border:0px;
+	cursor:pointer;
+}
+
+/*Main Items here*/
+#updatable_div .contentFooterItemMain {
+	background: url("../images/contentFooterItems.png") repeat;
+    margin-top: -4px;
+    position: relative;
+    width: 960px;
+    z-index: 0;
+}
+
+#updatable_div .contentFooterItemMain2 {
+	background: url("../images/contentFooterItem2.png") repeat scroll 0 0 transparent;
+    left: 0.6%;
+    margin-top: -1%;
+    position: relative;
+    width: 731px;
+}
+
+.addedItemText {
+	color: #3A8C02;
+    font-size: 146%;
+}
+
+#updatable_div .contentFooterItemMain .column2 {
+	background: url("../images/bgSubtotal.png") no-repeat scroll 7% 2px transparent;
+    float: right;
+    height: 145px;
+    margin-left: 1%;
+    width: 688px;
+}
+
+.contentFooterItemMain .column2 p {
+	color: #2B5290;
+    float: left;
+    font-size: 90%;
+    margin: 3% 0 0 3.5%;
+    width: 180px;
+}
+
+.contentFooterItemMain .column2 a.editCart {
+	background: url("../images/editCart.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: right;
+    height: 44px;
+    margin: 2.5% 1% 0 0;
+    width: 136px;
+}
+
+.contentFooterItemMain .column2 a.editCart:hover {
+	background-position: -137px 0;
+}
+
+.contentFooterItemMain .column2 a.btCheckout {
+	background: url(../images/btCheckout.png) no-repeat;
+	height: 44px;
+    width: 184px;
+	display: block;
+	float:right;
+	margin: 2.5% 4% 0 0;
+}
+
+.contentFooterItemMain .column2 a.btCheckout:hover {
+	background-position: -186px 0;
+}
+
+.contentFooterItemMain .column2 .fixFooterTextofColumn2 {
+	margin-top: 4.5%;
+    width: 490px;
+}
+
+.column22 {
+	color: #2B5290;
+    font-size: 82%;
+}
+.column22 p {
+	color: #2B5290;
+}
+
+.column22 p.items {
+	text-align: center;
+    width: 122px;
+	float: left;
+	margin: 3% 1.1% 0 2.6%;
+}
+
+.column22 .items a.ratingforViewPink2 {
+	background: url("../images/ratings.png") no-repeat 0 -37px;
+    display: block;
+    float: left;
+    height: 17px;
+    width: 100px;
+}
+
+.column22 .items a.titleItem {
+	color: #0050C7;
+    text-decoration: none;
+}
+
+.column22 .items a.titleItem:hover {
+	border-bottom: 1px dashed;
+}
+
+.column22 .items a.btCart {
+	background: url("../images/addtoCart.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 33px;
+    margin: 0 auto;
+    width: 93px;
+    border:0px;
+}
+
+.column22 .items a.btCart:hover {
+	background-position: -96px 0%;
+	border:0px;
+}
+
+.column22 .items a.totalRaters {
+	color: #0050C7;
+    font-size: 87%;
+    font-weight: bold;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.column22 .items a.totalRaters:hover {
+	border-bottom: 1px dashed;
+}
+
+.addMargin {
+	clear: both;
+    height: 10.2px;
+    padding: 0;
+}
+
+.fixIt {
+	padding: 9px 0 0;
+}
+
+/*RATING MODIFICATION AREA HERE*/
+
+.column2 .items a.ratingforViewPink1 {
+	background: url("../images/ratings.png") no-repeat 0 -19px;
+    display: block;
+    float: left;
+    height: 17px;
+    width: 100px;
+}
+
+.column2 .items a.ratingforViewPink2 {
+	background: url("../images/ratings.png") no-repeat 0 -37px;
+    display: block;
+    float: left;
+    height: 17px;
+    width: 100px;
+}
+
+.column2 .items a.ratingforViewPink3 {
+	background: url("../images/ratings.png") no-repeat 0px -19px;
+    display: block;
+    float: left;
+    height: 17px;
+    width: 100px;
+}
+
+.column2 .items a.ratingforViewPink4 {
+	background: url("../images/ratings.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 17px;
+    width: 100px;
+}
+
+.column2 .items a.ratingforViewPink5 {
+	background: url("../images/ratings.png") no-repeat 0 -56px;
+    display: block;
+    float: left;
+    height: 17px;
+    width: 100px;
+}
+
+.clearer {
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+
+/*##################################### Main Contents here #####################################*/
+#wrapContent {
+	position: relative;
+}
+
+#wrapThisMainContent {
+	float: left;
+    width: 731px;
+} 
+
+#bgHeading {
+	background: url(../images/bgSubtotal.png) no-repeat;
+	width: 712px;
+	height: 145px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#bgHeading img{
+	float: left;
+    margin: 2.5% 0 0 1.7%;
+}
+
+#bgHeading p {
+	color: #061E69;
+    float: left;
+    font-size: 87%;
+    width: 543px;
+	margin-top: 3.1%;
+}
+
+#bgHeading p.secondP {
+	margin-top: 1.1%;
+	font-size: 76%;
+	margin-bottom: 0.6%;
+}
+
+#bgHeading a.signUpNow {
+	background: url("../images/signUpNow.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 27px;
+    margin: 0 auto 0 29%;
+    width: 88px;
+}
+
+#bgHeading a.signUpNow:hover {
+	background-position: -96px 0;
+}
+
+#shoppingCart {
+	position: relative;
+}
+
+#shoppingCart img {
+	float: left;
+}
+
+#shoppingCart p {
+	color: #2B5290;
+    float: right;
+    font-size: 100%;
+    font-weight: bold;
+    margin: 2% 2% 0 0;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+.bgHeaderCart {
+	background: url(../images/bgHeaderCart.png) no-repeat;
+	width: 714px;
+	height: 47px;
+	margin: 0 auto;
+}
+
+.bgHeaderCart .p1 {
+	float: left;
+    margin: 1.7% 0 0 3%;
+    text-shadow: 1px 1px 2px #626262;
+	font-weight: bold;
+}
+
+.bgHeaderCart .p2 {
+	float: right;
+	margin: 1.7% 4% 0 0;
+	text-shadow: 1px 1px 2px #626262;
+	font-weight: bold;
+}
+
+.bgHeaderCart .p3 {
+	float: right;
+	margin: 1.7% 4% 0 0;
+	text-shadow: 1px 1px 2px #626262;
+	font-weight: bold;
+}
+
+.addHeightHere {
+	margin: 10px;
+    padding: 1px;
+}
+/*######################### ITEM DESCRIPTION AREA HERE #########################*/
+/**/
+.item_Description_Wrapper {
+	height: 100px;
+    left: 1.6%;
+    position: relative;
+    width: 705px;
+}
+
+.item_Description_Wrapper .descriptiveColumn_1 {
+    float: left;
+    height: 100px;
+    width: 120px;
+}
+
+.descriptiveColumn_1 p {
+	color: #2B5290;
+    font-size: 82%;
+    margin: 2% 0;
+    text-align: center;
+}
+
+.descriptiveColumn_1 .saveForLater {
+	background: url("../images/saveForLater.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 27px;
+    margin: 3% auto 4%;
+    width: 88px;
+    border:0px;
+    cursor:pointer;
+}
+
+.descriptiveColumn_1 .saveForLater:hover {
+	background-position: -96px 0;
+	border:0px;
+	cursor:pointer;
+}
+
+.descriptiveColumn_1 a.delete {
+	background: url(../images/delete.png) no-repeat;
+	display: block;
+    height: 27px;
+    margin: 0 auto;
+    width: 88px;
+}
+
+.descriptiveColumn_1 a.delete:hover {
+	background-position: -96px 0;
+}
+
+.item_Description_Wrapper .descriptiveColumn_2 {
+    float: left;
+    width: 417px;
+}
+
+.descriptiveColumn_2 p {
+	color: #2B5290;
+    font-size: 100%;
+    margin-left: 16%;
+    width:82%;
+}
+
+.item_Description_Wrapper .descriptiveColumn_3 {
+    float: left;
+    height: 100px;
+    margin-right: 26px;
+    width: 60px;
+}
+
+.descriptiveColumn_3 p {
+	color: #2B5290;
+    font-size: 87%;
+    margin: 66% 0 0;
+    width: 50px;
+}
+
+.item_Description_Wrapper .descriptiveColumn_4 {
+    float: left;
+    height: 100px;
+    width: 40px;
+}
+
+.descriptiveColumn_4 input[type=text] {
+	margin-top: 90%;
+    width: 50px;
+}
+
+.lineSeperator {
+	background: url(../images/lineEffects.png)  no-repeat;
+	width: 695px;
+	height: 16px;
+	margin: 0 auto;
+}
+
+.aboutCart {
+	color: #2B5290;
+    font-size: 89%;
+    margin-left: 4%;
+}
+
+.contentFooterItemMain2 .column2 {
+	float: left;
+    width: 692px;
+	margin-left: 2.39%;
+}
+
+.contentFooterItemMain2 .column2 .items {
+    float: left;
+    margin: 1% 0.62% 0 0;
+    text-align: center;
+    width: 122px;
+}
+
+.contentFooterItemMain2 .column2 p.fixP {
+    color: #2B5290;
+    font-size: 82%;
+    margin: 0.4% 0 0 6.2%;
+	width: 657px;
+	float: left;
+}
+
+.contentFooterItemMain2 .column2 p.fixP .rightP {
+	margin-left: 117px;
+	float:right;
+}
+
+.contentFooterItemMain2 .column2 .clearer {
+	clear: both;
+	padding: 0;
+	margin: 0;
+}
+/*SIDE MENU*/
+#sideMenu {
+    float: left;
+    width: 220px;
+}
+
+.topbgSidemenu {
+	background: url(../images/topbgSideMenu.png) no-repeat;
+	width: 219px;
+	height: 30px;
+}
+
+.bottombgSidemenu {
+	background: url(../images/bottombgSideMenu.png) no-repeat;
+	width: 219px;
+	height: 29px;
+	margin: -1% 0 0 0;
+}
+
+.contentbgSidemenu {
+	background: url(../images/contentbgSideMenu.png) repeat;
+	width: 220px;
+	margin: -1% 0 0 0;
+}
+
+.contentbgSidemenu p {
+	color: #2B5290;
+	text-align: center;
+}
+
+.titleSideBox {
+	padding-top: 3%;
+}
+
+.contentbgSidemenu p.fontSize {
+	font-size: 87%;
+}
+
+.contentbgSidemenu a.btCheckout {
+	background: url(../images/btCheckout.png) no-repeat;
+	height: 44px;
+    width: 184px;
+	display: block;
+	margin: 0 auto;
+}
+
+.contentbgSidemenu a.btCheckout:hover {
+	background-position: -186px 0;
+}
+
+.contentbgSidemenu a.learnMore {
+	color: #0050C7;
+    display: block;
+    font-size: 82%;
+    margin: 0 auto;
+    text-decoration: none;
+    width: 68px;
+}
+
+.contentbgSidemenu a.learnMore:hover {
+	text-decoration: blink;
+}
+
+.contentbgSidemenu .image {
+	float: left;
+    margin-left: 4%;
+}
+
+.contentbgSidemenu .floatIt {
+	float: left;
+    font-size: 87%;
+    margin: 3% 0 0 3%;
+    text-align: left;
+    width: 150px;
+} 
+
+.contentbgSidemenu .featuredImg {
+	margin: 2% 0 2% 20.6%;
+}
+
+a.viewAndedit {
+	color: #0050C7;
+    display: block;
+    font-size: 82%;
+    margin: 0 auto;
+    text-decoration: none;
+	width: 198px;
+}
+
+a.viewAndedit:hover {
+	text-decoration: blink;
+}
+

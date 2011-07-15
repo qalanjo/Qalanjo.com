@@ -1,0 +1,91 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head> 
+	 	<title>Qalanjo.com - Account Information</title> 	 	
+		<?php echo $this->Html->css("globals/core")?>
+		<?php echo $this->Html->css("redmond/jquery.ui.core")?>
+		<?php echo $this->Html->css("redmond/jquery.ui.theme")?>
+		<?php echo $this->Html->css("redmond/jquery.ui.all")?>
+		<?php echo $this->Html->css("members/completion/completion")?>
+		<?php echo $this->Html->css("globals/ui-form")?>
+		<?php echo $this->Javascript->link(array("jquery", "ui/jquery-ui-1.8.10.custom", "validate/jquery.validate.min"))?>
+		<?php 
+		
+			if (isset($signup_process)){
+				echo $this->Javascript->link("custom/signup_process");
+			}else if (isset($profile_completion)){
+				echo $this->Javascript->link("custom/profile_completion".$page);
+				echo $this->Html->css("members/completion/profile_completion");
+			}else if ($this->action=="signup_upload"){
+				echo $this->Javascript->link("uploader/swfobject");
+				echo $this->Html->css("uploadify.css");
+				echo $this->Html->css("members/completion/signup_upload.css");	
+				echo $this->Javascript->link("uploader/jquery.uploadify.v2.1.4.min");
+				echo $this->element("scripts/signup_upload", array("member_id"=>$member_id, "progress"=>$progress));				
+			}else if ($this->action=="signup_upload_crop"){
+				echo $this->Javascript->link("jcrop/jquery.Jcrop.min");
+				echo $this->Html->css("jquery.Jcrop");
+				echo $this->Javascript->link("custom/signup_crop");
+			}else if ($this->action=="questionnaire"){
+				echo $this->Html->css("attributes/questionnaire.css");
+			}
+		
+		?>
+		<?php if (!isset($action)){?>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					var options = {
+							value:<?php 
+							if (isset($progress)){
+								echo $progress;
+							}else {
+								echo 0;
+								
+							}?>
+					};
+	
+					<?php 
+						if (isset($signup_process)){
+					?>
+						signup_validation();
+					<?php 
+						}
+					?>
+					$("#progress").progressbar(options);
+					
+				});
+			</script>
+		<?php }?>
+	
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+			</div> 
+	        <div id="content">  
+	        	<div id="top_info">
+	        		<div class="right">
+	        			<span class="progress">
+	        			<?php 
+							if (isset($progress)){
+								echo $progress;
+							}else {
+								echo 0;
+								
+							}?>%
+	        			</span>
+	        		
+		        		<div id="progress">
+							
+						</div>
+					</div>
+					<h1><?php echo $step?></h1>
+				</div>  	
+		    	<?php echo $content_for_layout;?>
+			</div>
+			<?php echo $this->element("footer")?>
+		</div>
+	
+	</body>
+</html>

@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+
+#items{
+	list-style-type:none;
+	padding:0px;
+}
+
+.search-result-list{
+	list-style-type:none;
+}
+
+.search-result-list li{
+	overflow:hidden;
+	border-bottom:1px solid #E6E7E8;
+}
+
+#search-result-list{
+	padding:0px;
+}
+
+.match-scroller{
+	display:block;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	width:400px;
+	height:300px;
+	padding-top:.5em;
+}
+.match-item-selected{
+	background-color:#DFFFF7;
+}

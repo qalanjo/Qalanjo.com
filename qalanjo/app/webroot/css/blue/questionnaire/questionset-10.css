@@ -1,0 +1,26 @@
+.item-1{
+	background:url(../../img/blue/questionnaire/questionset10/man1.png) no-repeat bottom right #F3F3F3;
+}
+
+.item-3{
+	background:url(../../img/blue/questionnaire/questionset10/books1.png) no-repeat bottom right #F3F3F3;
+}
+
+.sectioncut{
+	margin:0 0 16px 0;
+	padding:0;
+	font-size:18px;
+	font-weight:bold;
+	color:#054A80;
+	overflow:hidden;
+}
+.sectioncut span{
+	float:left;
+}
+.sectioncut span.line{
+	background-color:#054A80;
+	width:741px;
+	height:1px;
+	display:block;
+	margin:14px 0 0 14px;
+}

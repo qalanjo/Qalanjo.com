@@ -1,0 +1,202 @@
+@import url(form.css);
+
+/*
+ * Subscription
+ */
+
+span.card{
+	padding:.2em;
+}
+span.card img{
+	cursor:pointer;
+}
+
+span.active{
+	background-color:#E8E8E8;
+	border:1px dotted #DDDDDD;
+}
+#summary{
+	width:600px;
+	margin-left:15px;
+}
+span.light{
+	color:#BBBBBB;
+}
+
+p.strong{
+	font-weight:bold;
+	font-size:120%;	
+}
+
+div.instruction p{
+	margin:.5em;
+}
+abbr{
+	color:red;
+	border:none;
+}
+.required{
+	color:red;
+	font-size:11px;
+}
+#container{	
+    margin: 0 auto;
+    width: 630px;
+
+}
+
+.content-container{
+	height:auto;
+	padding:20px 0;
+}
+
+#subscription{
+	border:1px solid #8CB9D6;
+	border-radius:10px 10px 0 0;
+	margin-left:20px;
+}
+
+#subscription h1{
+	border-radius:10px 10px 0 0;
+ 	background-color:#045D9F;
+	border-bottom:3px solid #8CB9D6;
+	font-size:140%;
+	overflow:hidden;
+	font-weight:bold;
+	color:#fff;
+	padding:10px 5px 10px 5px;
+	margin:0px;
+	width:620px;
+}
+#subscription h2{
+	font-size:125%;
+	overflow:hidden;
+	font-weight:bold;
+	padding:0 5px 10px 5px;
+	margin:0px;
+ }
+ #subscription h1 span.step{
+ 	font-size:90%;
+ }
+ 
+#subscription label{
+	font-weight:bold;
+}
+
+#subscription fieldset{
+	padding:0px;
+	padding:1.2em 0 0 0;
+	width:100%;
+	border:none;
+	border-bottom:1px solid #CCCCCC;
+	margin:0px;
+	
+}
+
+#subscription fieldset div{
+	margin-left:1.2em;
+}
+
+/**
+ * The credit form
+ */
+#basic-inf{
+	background:url(../img/blue/subscription_transactions/checkout/EmptyCart.png) no-repeat right bottom;
+}
+
+#creditcard{
+	background-color:#e3f4ff;;
+}
+
+#next{
+	padding:20px 5px;
+}
+
+
+.button{
+	background:url(../img/blue/subscription_transactions/checkout/process.png) no-repeat;
+	width:153px;
+	height:26px;
+	cursor:pointer;
+	border:none;
+	color:#fff;
+}
+
+.button p{
+	padding:2px 0;
+	text-align:center;
+	color:#fff;
+}
+
+.button:hover{
+	background-position:0px -25px;
+}
+
+.button:active{
+	color:#fff;
+	background-position:0px -51px;
+}
+
+.button p:active{
+	color:#000;
+}
+
+
+
+/**
+ * Sidebar related
+ */
+
+#sidebar{
+	height:auto;
+	margin-left:5px;
+    border-radius: 10px 10px;
+	border: 1px solid #8CB9D6;	
+}
+
+#sidebar h3{
+	background:#045D9F;
+	text-align:center;
+	padding:10px 0;
+	border-radius: 10px 10px 0 0;
+	color:#fff;
+}
+
+span#time {
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+span#price {
+    color:#8CB9D6;
+    font-size: 30px;
+	font-weight:bold;
+}
+
+span#permonth {
+    color: #666666;
+    font-size: 15px;
+	margin-bottom:10px;
+}
+
+span#offered-price{
+	color:#c0c0c0;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+#sidebar p{
+	padding:0px 10px;
+	text-align:center;
+}
+
+.t-center {
+	width:100%;
+	text-align:center;
+}
+
+
+

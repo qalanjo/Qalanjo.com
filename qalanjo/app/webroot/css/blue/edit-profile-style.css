@@ -1,0 +1,801 @@
+li {
+	list-style: none;
+}
+
+fieldset, img {
+	border: 0;
+}
+
+fieldset, input, select {
+	margin: 0!important;
+	padding: 0!important;
+}
+
+textarea {
+	resize: none;
+	margin: 0;
+	padding: 0;
+}
+
+.profile-wizard-header {
+	display: block;
+	float: left;
+	width: 876px;
+	padding: 20px;
+}
+
+.profile-wizard-header h1 {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 0px;
+	float: left;
+}
+
+.profile-wizard-progress {
+	float: left;
+	margin: 0px 0px 0px 15px;
+}
+
+.profile-wizard-progress .progress-bar-container {
+	float: left;
+	height: 14px;
+	width: 119px;
+	border: 1px solid #82c7ea;
+	padding: 2px;
+}
+
+.profile-wizard-progress .progress-bar-container .progress-bar-background,
+.profile-wizard-progress .progress-bar-container .progress-bar {
+	background-color: #fff;
+	background-image: url(../img/blue/edit-profile-page/progress.png);
+	background-repeat: repeat-x;
+}
+
+.profile-wizard-progress .progress-bar-container .progress-bar-background {
+	width: 100%;
+	display: block;
+	height: 14px;
+	background-position: 0px -24px;
+}
+
+.profile-wizard-progress .progress-bar-container .progress-bar {
+	width: 22%;
+	display: block;
+	height: 14px;
+	background-position: 0px 0px;
+}
+
+.profile-wizard-progress .progress-label {
+	display: block;
+	float: left;
+	margin-left: 5px;
+}
+
+.profile-upload-photo-tab {
+	float: right;
+	cursor: pointer;
+}
+
+.profile-upload-photo-image {
+	background: url(../img/blue/edit-profile-page/stta-icon-sprite.png) no-repeat -65px 0px;
+	width: 194px;
+	height: 50px;
+}
+
+.profile-view-tabs {
+	display: block;
+	float: left;
+	width: 876px;
+	height: 43px;
+	background-color: transparent;
+	margin-left: 20px;
+}
+
+.profile-view-tabs ul {
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.profile-view-tabs ul li {
+	display: block;
+	float: left;
+}
+
+.profile-view-tabs ul li a {
+	display: block;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	background-color: transparent;
+	font-size: 14px;
+	color: #045d9f;
+	font-weight: bold;
+	margin-right: 2px;
+	cursor: pointer;
+}
+
+.profile-view-tabs ul li a span {
+	display: inline-block;
+	float: left;
+	background-image: url(../img/blue/match/matches-tab-center-normal.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	padding: 0px 5px;
+}
+
+.profile-view-tabs ul li a span.tab-left {
+	width: 5px;
+	height: 36px;
+	background-image: url(../img/blue/match/matches-tab-left-normal.png);
+	padding: 0px;
+}
+
+.profile-view-tabs ul li a span.tab-right {
+	width: 5px;
+	height: 36px;
+	background-image: url(../img/blue/match/matches-tab-right-normal.png);
+	padding: 0px;
+}
+
+.profile-view-tabs ul li.active a {
+	color: #fff;
+}
+
+.profile-view-tabs ul li.active a span {
+	background-image: url(../img/blue/match/matches-tab-center-active.png);
+}
+
+.profile-view-tabs ul li.active a span.tab-left {
+	background-image: url(../img/blue/match/matches-tab-left-active.png);
+}
+
+.profile-view-tabs ul li.active a span.tab-right {
+	background-image: url(../img/blue/match/matches-tab-right-active.png);
+}
+
+.profile-view-tabs .bottom-line {
+	display: block;
+	float: left;
+	width: 876px;
+	height: 7px;
+	background-color: #045d9f;
+	-webkit-border-top-right-radius: 7px;
+	-moz-border-radius-topright: 7px;
+	border-top-right-radius: 7px;
+}
+
+.profile-wizard {
+	display: block;
+	float: left;
+	margin: 0px 0px 20px 20px;
+	width: 874px;
+	border: 1px solid #8CB9D7;
+	border-top: none;
+	background-color: #C7DDE8;
+}
+
+.profile-wizard .wizard-nav {
+	float: left;
+	overflow: visible;
+	width: 184px;
+	background-color: #fff;
+	padding: 10px 0px 10px 10px;
+	margin: 0px;
+	margin-right: -1px;
+	border-style: solid;
+	border-width: 0px 1px 1px 0px;
+	border-color: #8CB9D7;
+}
+
+.profile-wizard .wizard-nav .wizard-sub-nav {
+	padding: 0;
+	margin: 0px 0px 5px 0px;
+}
+
+.wizard-sub-nav li {
+}
+
+.wizard-sub-nav li:hover {
+	background-color: #cceaff;
+}
+
+.wizard-sub-nav li.selected {
+	background-color: #f7f7f7;
+	font-weight: bolder;
+}
+
+.wizard-sub-nav li a {
+	display: block;
+	width: 100%;
+	
+	text-decoration: none;
+	color: #005aa8;
+}
+
+.wizard-sub-nav li a span {
+	padding-left: 30px;
+	height: 30px;
+}
+
+.profile-wizard .wizard-nav li .button, .profile-wizard .wizard-nav li .button span {
+	display: block;
+	background-color: #transparent;
+	background-image: url(../img/blue/edit-profile-page/horizontal-tabs.png);
+	background-repeat: no-repeat;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* wizard-nav button back */
+/* one line button back */
+.profile-wizard .wizard-nav li .button {
+	margin-bottom: 5px;
+	float: none;
+	height: 28px;
+	width: 163px;
+	padding-right: 12px;
+	background-position: right 0;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+
+.profile-wizard .wizard-nav li .button:hover {
+	background-position: right -38px;
+}
+
+.profile-wizard .wizard-nav li.selected .button {
+	background-position: right -76px;
+	width: 170px;
+	padding-right: 23px;
+	cursor: default;
+}
+
+.profile-wizard .wizard-nav li.complete .button {
+	background-position: right -114px;
+}
+
+.profile-wizard .wizard-nav li.complete .button:hover {
+	background-position: right -152px;
+}
+
+.profile-wizard .wizard-nav li.selected.complete .button {
+	background-position: right -190px;
+}
+
+/* two line button back */
+.profile-wizard .wizard-nav li.twoline .button {
+	height: 42px;
+	background-position: right -228px;
+	width: 163px;
+}
+
+.profile-wizard .wizard-nav li.twoline .button:hover {
+	background-position: right -280px;
+}
+
+.profile-wizard .wizard-nav li.twoline.complete .button {
+	background-position: right -384px;
+}
+
+.profile-wizard .wizard-nav li.twoline.selected .button {
+	background-position: right -332px;
+	width: 170px;
+	padding-right: 23px;
+	cursor: default;
+}
+
+.profile-wizard .wizard-nav li.twoline.selected.complete .button {
+	background-position: right -488px;
+}
+
+/* wizard-nav button front */
+/* one line button front */
+.profile-wizard .wizard-nav li .button span {
+	padding-left: 30px;
+	white-space: nowrap;
+	line-height: 28px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #005A9C;
+}
+
+.profile-wizard .wizard-nav li .button:hover span {
+	background-position: 0 -38px;
+}
+
+.profile-wizard .wizard-nav li.complete .button span {
+	background-position: 0 -114px;
+}
+
+.profile-wizard .wizard-nav li.complete .button:hover span {
+	background-position: 0 -152px;
+}
+
+.profile-wizard .wizard-nav li.selected .button span {
+	background-position: 0 -76px;
+	color: #fff;
+}
+
+.profile-wizard .wizard-nav li.selected.complete .button span {
+	background-position: 0 -190px;
+}
+
+/* two line button front */
+.profile-wizard .wizard-nav li.twoline .button span {
+	line-height: 18px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-position: 0 -228px;
+}
+
+.profile-wizard .wizard-nav li.twoline .button:hover span {
+	background-position: 0 -280px;
+}
+
+.profile-wizard .wizard-nav li.twoline.complete .button span {
+	background-position: 0 -384px;
+}
+
+.profile-wizard .wizard-nav li.twoline.selected .button span {
+	background-position: 0 -332px;
+}
+
+.profile-wizard .wizard-nav li.twoline.selected.complete .button span {
+	background-position: 0 -488px;
+}
+
+.profile-wizard .wizard-content {
+	display: block;
+	float: left;
+	width: 678px;
+	min-height: 500px;
+	background-color: #fff;
+	border-left: 1px solid #8cb9d7;
+}
+
+/*
+ * Wizard Content
+ */
+
+.profile-wizard-content {
+	display: block;
+	float: left;
+	width: 467px;
+	padding: 15px;
+	background-color: transparent;
+}
+
+.profile-wizard-content.fill {
+	width: 649px;
+}
+
+.profile-wizard-content h2 {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 29px;
+	color: #0060B8;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #c9dce3;
+}
+
+.profile-wizard-content .basics dl {
+	overflow: hidden;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.profile-wizard-content .basics dl dt {
+	display: block;
+	float: left;
+	clear: both;
+	width: 80px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+.profile-wizard-content .basics dl .twoline {
+	display: block;
+	float: left;
+	clear: both;
+	margin-bottom: 15px;
+	margin-left: 108px;
+}
+
+.profile-wizard-content .basics dl .twoline dt, .profile-wizard-content .basics dl .twoline dd {
+	float: none;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.profile-wizard-content .basics dl dd {
+	display: block;
+	float: left;
+}
+
+.profile-wizard-content .in-my-own-words dl {
+	overflow: hidden;
+	margin-bottom: 0;
+}
+
+
+.profile-wizard-content .in-my-own-words dl dt {
+	display: block;
+	float: left;
+	clear: both;
+	margin-bottom: 5px;
+}
+
+.profile-wizard-content .in-my-own-words dl dd {
+	display: block;
+	float: left;
+	padding: 0;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #d0d0d0;
+	margin: 0;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.profile-wizard-content .in-my-own-words dl dd .friends-say, .profile-wizard-content .in-my-own-words dl dd .best-descriptions {
+	padding: 0;
+	margin: 0;
+}
+
+
+.profile-wizard-content .in-my-own-words dl dd .friends-say li, .profile-wizard-content .in-my-own-words dl dd .friends-say div.checkbox {
+	display: block;
+	float: left;
+	width: 31%;
+	background-color: #ececec;
+	margin: 0px 0px 5px 10px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+.profile-wizard-content .in-my-own-words dl dd .friends-say div.checkbox {
+	padding:9px 5px;
+	width:29%;
+}
+.profile-wizard-content .in-my-own-words dl dd .friends-say div.checkbox label{
+	margin-left:3px;
+}
+
+.profile-wizard-content .in-my-own-words dl dd .best-descriptions li {
+	clear: none;
+	border: none;
+	background-color: #ececec;
+	margin: 0px 0px 5px 10px;
+	padding: 0;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+.profile-wizard-content .in-my-own-words dl dd .best-descriptions li label {
+	display: block;
+	padding: 9px 5px;
+	margin: 0 0 8px;
+	float: none;
+	width: auto;
+}
+
+.profile-wizard-content .in-my-own-words dl dd .friends-say li label {
+	display: block;
+	float: none;
+	width: auto;
+	margin: 0 0 8px;
+	padding: 9px 5px;
+}
+
+.profile-wizard-content .in-my-own-words dl dd textarea {
+	display: block;
+	float: left;
+	width: 99%;
+	height: 60px;
+	padding: 0;
+	margin: 0px;
+	resize: none;
+}
+
+.profile-wizard-content .in-my-own-words dl dd ol {
+	margin: 0;
+}
+
+.profile-wizard-content .in-my-own-words dl dd ol li {
+	list-style: decimal;
+	margin-bottom: 5px;
+}
+
+.profile-wizard-content .in-my-own-words dl dd ol li input {
+	width: 99%;
+}
+
+.profile-wizard-content .in-my-own-words dl dd .countdown-status {
+	display: block;
+	float: none;
+	padding: 0;
+	margin: 0;
+	font-size: 93%;
+	line-height: 1;
+}
+
+.profile-wizard-content .image-based dl {
+	overflow: hidden;
+	margin-bottom: 0;
+}
+
+
+.profile-wizard-content .image-based dl dt {
+	display: block;
+	float: left;
+	clear: both;
+	margin-bottom: 5px;
+}
+
+
+.profile-wizard-content .image-based dl dd {
+	display: block;
+	float: left;
+	padding: 0;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #d0d0d0;
+	margin: 0;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+
+.profile-wizard-content .image-based dl dd ul.image-list {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li {
+	float: left;
+	background-color: #ebebeb;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding-bottom: 5px;
+	width: 159px;
+	margin: 0px 9px 5px 0px;
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li label {
+	display: block;
+	height: 165px;
+	margin-left: 5px;
+	padding: 7px  10px 0 2px;
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list.pets li label, 
+.profile-wizard-content .image-based dl dd ul.image-list.books li label,
+.profile-wizard-content .image-based dl dd ul.image-list.television li label,
+.profile-wizard-content .image-based dl dd ul.image-list.dining-out li label,
+.profile-wizard-content .image-based dl dd ul.image-list.lifestyles li label {
+	height: 180px;
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list.movies li label {
+	height: 202px;
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li label em {
+	display: block;
+	width: 145px;
+	height: 145px;
+	margin-bottom: 5px;
+	background-color: #transparent;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list.watch-sports li label em {
+	background-image: url(../img/blue/edit-profile-page/sports.jpg);
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list.pets li label em {
+	background-image: url(../img/blue/edit-profile-page/pets.jpg);
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list.books li label em {
+	background-image: url(../img/blue/edit-profile-page/books.jpg);
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list.television li label em {
+	background-image: url(../img/blue/edit-profile-page/television.jpg);
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list.dining-out li label em {
+	background-image: url(../img/blue/edit-profile-page/dining-out.jpg);
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list.movies li label em {
+	background-image: url(../img/blue/edit-profile-page/movies.jpg);
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list.lifestyles li label em {
+	background-image: url(../img/blue/edit-profile-page/lifestyles.jpg);
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li.answer2 label em {
+	background-position: 0 -145px;	
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li.answer3 label em {
+	background-position: 0 -290px;	
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li.answer4 label em {
+	background-position: 0 -435px;	
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li.answer5 label em {
+	background-position: 0 -580px;	
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li.answer6 label em {
+	background-position: 0 -725px;	
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li.answer7 label em {
+	background-position: 0 -870px;	
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li.answer8 label em {
+	background-position: 0 -1015px;	
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li.answer9 label em {
+	background-position: 0 -1160px;	
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li.answer10 label em {
+	background-position: 0 -1305px;	
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li.answer11 label em {
+	background-position: 0 -1450px;	
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li.answer12 label em {
+	background-position: 0 -1595px;	
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li.answer13 label em {
+	background-position: 0 -1740px;	
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li.answer14 label em {
+	background-position: 0 -1885px;	
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li.answer15 label em {
+	background-position: 0 -2030px;	
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list li.answer16 label em {
+	background-position: 0 -2175px;	
+}
+
+.profile-wizard-content .image-based dl dd ul.image-list.musics li label em {
+	background-image: url(../img/blue/edit-profile-page/musics.jpg);
+}
+
+.input-list {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.input-list li {
+	width: 202px;
+	height: 30px;
+	background-color: #ebebeb;
+	-max-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	margin: 0px 9px 5px 0px;
+}
+
+.input-list li label {
+	display: block;
+	float: none;
+	padding: 8px 0 0 10px;
+}
+
+.profile-wizard-supplement {
+	display: block;
+	float: left;
+	width: 181px;
+	height: 501px;
+	background-color: #f7f7f7;
+}
+
+.profile-wizard-content .travel dl {
+	overflow: hidden;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.profile-wizard-content .travel dl dt {
+	margin-bottom: 5px;
+}
+
+.profile-wizard-content .travel dl dd {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+.profile-wizard-content .values p {
+	font-size: 12px;
+	font-family: arial, sans-serif;
+}
+
+.values dl {
+	overflow: hidden;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.values dl dt {
+	margin-bottom: 5px;
+}
+
+.values dl dd {
+	overflow: hidden;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.input-list-with-definition {
+	margin: 0;
+	padding: 0;
+}
+
+.input-list-with-definition li.first {
+	border-top: 1px solid #d0d0d0;
+}
+
+.input-list-with-definition li {
+	overflow: hidden;
+	background-color: #f7f7f7;
+	border: 1px solid #d0d0d0;
+	border-top: none;
+	padding: 10px;
+}
+
+.input-list-with-definition li input[type=checkbox], .input-list-with-definition li dt, .input-list-with-definition li dd {
+	display: block;
+	float: left;
+}
+
+.input-list-with-definition li input[type=checkbox] {
+	clear: both;
+	width: 3%;
+}
+
+.input-list-with-definition li dt {
+	width: 30%;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 13px;
+	margin-left: 5px;
+}
+
+.input-list-with-definition li dd {
+	width: 62%;
+}
+
+div.checkbox{
+	display:inline;
+}
+ 

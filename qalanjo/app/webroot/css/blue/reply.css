@@ -1,0 +1,36 @@
+ul.replies li{
+	padding:5px;
+}
+.profile-picture{
+	height:50px;
+	width:50px;
+}
+.name-message{
+	margin-left:5px;
+}
+.name-message .name{
+	font-weight:bold;
+}
+.name-message .message{
+	font-size:10px;
+}
+div.replybox{
+	background-color:#DFFFF7;
+	width:100%;
+	padding:2em;
+}
+
+#replybox{
+	border-color: #899BC1;
+	font-size: 11px;
+	height: 14px;
+	margin-right: 6px;
+	overflow: hidden;
+	white-space: normal;
+	width: 342px;
+}
+
+span.instruction{
+	font-size:10px;
+}
+

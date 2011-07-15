@@ -1,0 +1,9 @@
+@CHARSET "ISO-8859-1";
+
+p.image_set_top .right{
+    margin: 40px 25px 10px 0px;
+}
+
+span.button button{
+	margin-top:0px;
+}

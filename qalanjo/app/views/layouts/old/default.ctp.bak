@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Qalanjo.com</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<?php 
+	     echo $this->Html->css("globals/globals");
+	     if (isset($home)){
+	     	echo $this->Html->css("home");
+	     }else if (isset($profile_completion)){
+	     	echo $this->Html->css("profile_completion");
+	     }
+	?>
+</head>
+
+
+<body>
+	
+	<div id="wrapper">
+
+		<?php echo $this->element("home_header")?>
+	
+		<?php echo $content_for_layout;?>
+	
+		<?php echo $this->element("footer")?>
+		
+	</div>
+</body>
+</html>
+
+

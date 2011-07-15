@@ -1,0 +1,42 @@
+.col-container-wrap{
+	width:100%;
+	height:auto;
+}
+
+.col-left{
+	width:30%;
+	height:auto;
+	padding-bottom:20px;
+}
+
+
+.col-right{
+	width:65%;
+	height:auto;
+	padding-bottom:20px;
+}
+
+.p-top{
+	padding-top:20px;
+}
+
+.age{
+	width:35px;
+	margin:0 3px;
+}
+
+
+.row-chkbx{
+	width:33%;
+	height:auto;
+}
+
+
+
+.row-chkbx li {
+    display: block;
+    list-style: none outside none;
+    text-indent: -20px;
+}
+
+

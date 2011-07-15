@@ -1,0 +1,37 @@
+@CHARSET "ISO-8859-1";
+.ui-form .ui-corner-all {
+	margin-bottom:.5em;
+}
+div.slider.ui-widget-content{
+	padding:0px;
+}
+
+div.ui-corner-all label{
+	display:block;
+	float:right;
+}
+
+div.ui-corner-all div.radio_list input[type=radio]{
+	clear:both;
+	float:left;
+}
+
+div.ui-corner-all div.radio_list label{
+	float:right;
+	width:350px;
+	margin-top:-10px;
+}
+div.ui-corner-all label.inline{
+	float:left;
+	width:auto;
+	display:inline;
+	margin-top:-5px;	
+}
+
+div.date select{
+	float:none;
+}
+
+input[type=text].numerics{
+	width:50px;
+}

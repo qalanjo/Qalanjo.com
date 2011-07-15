@@ -1,0 +1,169 @@
+
+h1, h2, h3, h4, h5, h6 { margin:0px; }
+
+#qpoints-avail-wrap {
+	text-align:center;
+	margin-top:110px;
+	border:2px solid #dedede;	
+	clear:both;
+}
+
+#qpoints-avail {
+	width:700px;
+}
+#order {
+	margin:20px;
+	height:130px;
+	width:660px;
+	border-radius:20px;
+	border:1px solid red;
+	background: url(../img/avail/top-bg.png) repeat-x;
+}
+
+#order .sentence {
+	font-style: italic;
+	width:100%;
+	vertical-align:middle!important;
+	line-height:3em;
+}
+
+#order-left {
+	float:left;
+	margin:10px 20px;
+	height:110px;
+}
+
+#order-arrow {
+	clear:left;
+	float:left;
+}
+
+#order-content {
+	background: url(../img/avail/innerbg.png) repeat-x;
+	float:right;
+	height:105px;
+	width:460px;
+	border:1px solid blue;
+	border-radius:20px;
+	margin:12px 35px 12px 0px;
+}
+
+#qpoints {
+	width:200px;
+	height:50px;
+	float:left;
+}
+
+#qpoints span {
+	font-size:2em;
+	font-weight:bold;
+	width:120px;
+	line-height:2em;
+	vertical-align:top;
+}
+
+#price {
+	float:right;
+	width:140px;
+}
+
+#price span:first-child {
+	font-weight:bold;
+	font-size:2.8em;
+}
+
+#qform {
+	margin:15px;
+}
+
+#instruction {
+	text-align:left;
+}
+
+#instruction span {
+	margin-left:15px;
+}
+
+#fillup-info-wrap {
+	border:1px solid #dedede;
+	overflow:hidden;
+}
+/**
+ * blocks inside of form wrappers 
+ */
+#fillup-info { 
+	width:350px;
+	float:left;
+	margin:15px 0px;
+}
+
+.field-info-wrap {
+	width:200px;
+	float:left;
+	margin:15px 0px;
+}
+
+.field-info-wrap .form-row label {
+	line-height:3em;
+	vertical-align:baseline;
+	text-align:left;
+	font-style:italic;
+	font-weight:bold;
+	color:#666;
+	width:100px;
+}
+#fillup-info-wrap .form-row label {
+	text-align:left;
+	margin:0 30px;
+	width:200px!important;
+}
+
+.form-row input {
+	width:150px;
+	padding:5px;
+}
+.form-row {
+	text-align:left;
+	float:left;
+	display:block;
+	width:370px;
+	margin:0px 5px;
+}
+#fillup-ccard-wrap {
+	border:2px solid #dedede;
+	background-color:#dedede;
+	overflow:hidden;
+}
+#ccard-header {
+	overflow:hidden;
+	height:50px;
+	margin:20px 15px;
+}
+#ccard-header .lock { 
+	float:left;
+}
+#ccard-header .span-group {
+	height:60px;
+	float:left;
+	margin-left:15px;
+}
+#ccard-header span.first {
+	font-weight:bold;
+	font-size:1.5em;
+	float:left;
+}
+
+#ccard-header span.second {
+	font-weight:bold;
+	font-size:.8em;
+	color:#666;
+	float:left;
+	clear:left;
+}
+#fillup-ccard {
+	width:290px;
+	float:left;
+	margin:15px 0px;
+}
+
+

@@ -1,0 +1,37 @@
+@CHARSET "ISO-8859-1";
+
+.ui-dialog div#composer{
+	padding:0;
+}
+.dialog-content{
+	width:350px;
+	min-height:300px;
+	margin:5px 15px 5px 15px;
+	border:none;
+	padding:0px;
+}
+
+.to-member{
+	padding:.1em 0px;
+	height:30px;
+	width:250px;
+}
+
+.subject-text{
+	padding:.1em 0px;	
+	width:320px;
+	height:30px;
+}
+
+.tinymce{
+	padding:.1em 0px;	
+	width:320px;
+	height:123px;
+}
+.message-writer{
+	overflow:hidden;
+	margin-bottom:10px;
+}
+.buttonpane-message{
+	width:96%
+}

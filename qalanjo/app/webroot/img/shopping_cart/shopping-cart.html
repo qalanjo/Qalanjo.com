@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" media="screen, print, projection"  href="css/global.css"></link>
+<link rel="stylesheet" type="text/css" media="screen, print, projection"  href="css/specific.css"></link>
+<script type="text/javascript" src="js/bw-browser.js"></script>
+<script type="text/javascript">
+    <!--
+        if( browserInfo.browser == 'Chrome' )
+            document.write('<link rel="stylesheet" type="text/css" href="css/specificChrome.css" />');
+    // -->
+</script>
+<title>Shopping Cart</title>
+</head>
+<body>
+<div id="top">
+	<div id="top_header">
+    	<div id="logoQalanjo">
+            	<a href="#" title="Qalanjo" class="qalanjoLogo"><img src="images/Qalanjo.png" height="123" width="221" alt="Qalanjo" /></a>
+        </div>
+    	<div id="leftAreaheader">
+        	<div id="leftDesigns"></div>
+            <p>Hello Jed. We have recommendtions for you.</p>
+            <p class="removeFloat2">
+                <img src="images/gift.png" height="23" width="20" />
+                <a href="#">Today's Deal</a> | <a href="#">Gifts and Wish Lists</a> | <a href="#">Gift Cards</a>
+            </p>
+        </div>
+        <div id="rightAreaheader">
+        	<div id="rightDesigns"></div>
+        	<p>New: Kindle with Special Offers - $114</p><br/>
+            <p class="removeFloat"><a href="#">Your Digital Items</a> | <a href="#">Your Account</a> | <a href="#">Help</a></p>
+        </div>
+        <p class="clearer"></p>
+    </div><!--/top_header-->
+    
+    <div id="bgtop"></div>
+    
+     <!--search area-->
+     <div id="bgSearch">
+       <div id="wrapIt">
+            <div id="rightBgsearch">
+              <div id="contentBgsearch">
+              	<p class="bgMenuTop"><a href="#" class="menuTopFullNavigation">Shop All Departments</a><a href="#" class="menuTopNavigationalStyle"></a></p>
+                <p class="searchText">Search:</p>
+                <p class="fixWidthSearch">
+                    <select id="searchDropdownBox" class="searchSelect" style="min-width:185px;" title="Search in" name="url">
+                        <option selected="selected" value="search-alias=aps">All Departments</option>
+                        <option value="search-alias=amazontv">Amazon Instant Video</option>
+                        <option value="search-alias=appliances">Appliances</option>
+                        <option value="search-alias=mobile-apps">Appstore for Android</option>
+                        <option value="search-alias=arts-crafts">Arts, Crafts &amp; Sewing</option>
+                        <option value="search-alias=automotive">Automotive</option>
+                        <option value="search-alias=baby-products">Baby</option>
+                        <option value="search-alias=beauty">Beauty</option>
+                        <option value="search-alias=stripbooks">Books</option>
+                        <option value="search-alias=mobile">Cell Phones &amp; Accessories</option>
+                        <option value="search-alias=apparel">Clothing &amp; Accessories</option>
+                        <option value="search-alias=electronics">Electronics</option>
+                        <option value="search-alias=grocery">Grocery &amp; Gourmet Food</option>
+                        <option value="search-alias=hpc">Health &amp; Personal Care</option>
+                        <option value="search-alias=garden">Home, Garden &amp; Pets</option>
+                        <option value="search-alias=industrial">Industrial &amp; Scientific</option>
+                        <option value="search-alias=jewelry">Jewelry</option>
+                        <option value="search-alias=digital-text">Kindle Store</option>
+                        <option value="search-alias=magazines">Magazine Subscriptions</option>
+                        <option value="search-alias=dvd">Movies &amp; TV</option>
+                        <option value="search-alias=digital-music">MP3 Downloads</option>
+                        <option value="search-alias=popular">Music</option>
+                        <option value="search-alias=mi">Musical Instruments</option>
+                        <option value="search-alias=office-products">Office Products &amp; Supplies</option>
+                        <option value="search-alias=shoes">Shoes</option>
+                        <option value="search-alias=software">Software</option>
+                        <option value="search-alias=sporting">Sports &amp; Outdoors</option>
+                        <option value="search-alias=tools">Tools &amp; Home Improvement</option>
+                        <option value="search-alias=toys-and-games">Toys &amp; Games</option>
+                        <option value="search-alias=vhs">VHS</option>
+                        <option value="search-alias=videogames">Video Games</option>
+                        <option value="search-alias=watches">Watches</option>
+                     </select>
+                 </p>
+                 <p class="fixWidthSearch"><input type="text" name="search" id="search" /></p>
+                 <p class="bgMenuTopWishy"><a href="#" class="menuTopWish">Wish List</a><a href="#" class="menuTopNavigationalStyleWishy"></a></p>
+                 <p class="bgMenuTopCart"><a href="#" class="menuTopCart">Cart</a></p>
+                 <div id="totalCart">2</div>                 
+              </div>
+            </div> 
+       </div>
+     </div>
+     <!--/search area-->
+       <div id="page">     
+       	  <!--######################## UPDATBLE DIV ########################--> 
+          <div id="updatable_div">
+          	 <div id="wrapContent">
+             <!--## MAIN CONTENT AREA HERE ##-->
+             	 <div id="wrapThisMainContent">
+                     <div class="topFooterItem2"></div>
+                        <div class="contentFooterItemMain2">
+                            <div id="bgHeading">
+                            	<img src="images/6monthFinancing.png" height="108" width="142" />
+                                <p>
+                                	Your cart is eligible for a financing offer
+                                    No Interest for 6 Months if paid in full within 6 Months with the Amazon.com Store Card on any purchase totaling $149 or more.
+                                </p>
+                                <p class="secondP">
+                                    Interest will be charged to your account from the purchase date if the promotional balance is not paid in full within 6 months.
+                                    Subject to credit approval. Minimum monthly payments required.
+                                </p>
+                                <a href="#" title="sign up now" class="signUpNow"></a>
+                            </div>                            
+                            <div id="shoppingCart">
+                            	<img src="images/shoppingCart.png" height="45" width="245" />
+                                <p>SubTotal = $300.00</p>                                
+                            </div>
+                            <p class="clearer"></p>
+                            <div class="bgHeaderCart">
+                            	<p class="p1">Shopping Cart Items</p>
+                                <p class="p2">Quantity:</p>
+                                <p class="p3">Price:</p>
+                            </div>
+                            <!--############################## ITEM DESCRIPTIONS PER DIV HERE ##############################-->
+                            <div class="item_Description_Wrapper">
+                            	<div class="descriptiveColumn_1">
+                                	<p>Item added on<br/>April 18, 2011</p>
+                                    <a href="#" class="saveForLater"></a>
+                                    <a href="#" class="delete"></a>
+                                </div>
+                                <div class="descriptiveColumn_2">
+                                	<p>Pink Flower with Diamonds</p>
+                                </div>
+                                <div class="descriptiveColumn_3">
+                                	<p>$100.00</p>
+                                </div>
+                                <div class="descriptiveColumn_4">
+                                	<input type="text" />
+                                </div>
+                            </div>
+                            
+                            <div class="lineSeperator"></div>
+                            
+                            <div class="item_Description_Wrapper">
+                            	<div class="descriptiveColumn_1">
+                                	<p>Item added on<br/>April 18, 2011</p>
+                                    <a href="#" class="saveForLater"></a>
+                                    <a href="#" class="delete"></a>
+                                </div>
+                                <div class="descriptiveColumn_2">
+                                	<p>Pink Flower with Diamonds</p>
+                                </div>
+                                <div class="descriptiveColumn_3">
+                                	<p>$100.00</p>
+                                </div>
+                                <div class="descriptiveColumn_4">
+                                	<input type="text" />
+                                </div>
+                            </div>
+                            
+                            <div class="lineSeperator"></div>
+                            
+                            <div class="item_Description_Wrapper">
+                            	<div class="descriptiveColumn_1">
+                                	<p>Item added on<br/>April 18, 2011</p>
+                                    <a href="#" class="saveForLater"></a>
+                                    <a href="#" class="delete"></a>
+                                </div>
+                                <div class="descriptiveColumn_2">
+                                	<p>Pink Flower with Diamonds</p>
+                                </div>
+                                <div class="descriptiveColumn_3">
+                                	<p>$100.00</p>
+                                </div>
+                                <div class="descriptiveColumn_4">
+                                	<input type="text" />
+                                </div>
+                            </div>
+                            <div class="bgHeaderCart">
+                            	<p class="p1">About the Shopping Cart</p>
+                            </div>
+                            <p class="aboutCart">
+                                1. Items in your Shopping Cart always reflect the most recent price displayed on their product pages.<br/>
+                                2. Learn more about the Shopping Cart and how to buy items at Amazon.com
+                            </p>
+                            <div class="lineSeperator"></div>
+                            	<div class="column2">     
+                                	<p class="fixP"><b>Customers Who Bought Items in Your Shopping Cart Also Bought</b>
+                                    <span class="rightP">
+                                    Page 1 of 10
+                               		 </span>
+                                    </p>
+                                    <p class="clearer"></p>
+                                    <a href="#" class="leftArrow"></a>
+                                    <p class="items">
+                                        <img src="images/viewpink1.jpg" height="100" />
+                                        <a class="ratingforViewPink1"></a><a href="#" class="totalRaters">(83)</a>
+                                        <a href="#" class="titleItem">Pink Flower with Diamonds</b></a><br/>
+                                        <b>$21.00</b><br/>
+                                        <a href="#" class="btCart"></a>                            
+                                    </p>
+                                    
+                                    <p class="items">
+                                        <img src="images/viewpink2.jpg" height="100" />
+                                        <a class="ratingforViewPink2"></a><a href="#" class="totalRaters">(83)</a>
+                                        <a href="#" class="titleItem">Pink Flower with Diamonds</b></a><br/>
+                                        <b>$21.00</b><br/>
+                                        <a href="#" class="btCart"></a> 
+                                    </p>
+                                    
+                                    <p class="items">
+                                        <img src="images/viewpink3.jpg" height="100" />
+                                        <a class="ratingforViewPink3"></a><a href="#" class="totalRaters">(83)</a>
+                                        <a href="#" class="titleItem">Pink Flower with Diamonds</b></a><br/>
+                                        <b>$21.00</b><br/>
+                                        <a href="#" class="btCart"></a> 
+                                    </p>
+                                    
+                                    <p class="items">
+                                        <img src="images/viewpink4.jpg" height="100" />
+                                        <a class="ratingforViewPink4"></a><a href="#" class="totalRaters">(83)</a>
+                                        <a href="#" class="titleItem">Pink Flower with Diamonds</b></a><br/>
+                                        <b>$21.00</b><br/>
+                                        <a href="#" class="btCart"></a> 
+                                    </p>
+                                    
+                                    <p class="items">
+                                        <img src="images/viewpink5.jpg" height="100" />
+                                        <a class="ratingforViewPink5"></a><a href="#" class="totalRaters">(83)</a>
+                                        <a href="#" class="titleItem">Pink Flower with Diamonds</b></a><br/>
+                                        <b>$21.00</b><br/>
+                                        <a href="#" class="btCart"></a> 
+                                    </p>
+                                    <a href="#" class="rightArrow"></a>
+                                    <p class="clearer"></p>
+                       		  </div>
+                              <p class="clearer"></p>
+                            <div class="lineSeperator"></div>
+                            <p class="addHeightHere"></p>
+                        </div>
+                     <div class="bottomFooterItem2"></div>
+                 </div>   
+                 <!--## SIDE MENU AREA HERE ##-->
+                 <div id="sideMenu">
+                 	<!--FIRST SIDE BOX-->
+                 	<div class="topbgSidemenu"></div>
+                    	<div class="contentbgSidemenu">
+                        	<p class="titleSideBox"><b>Ready to order?</b></p>
+                            <p class="fontSize">
+                            	Add $3.02 of eligible items to your order to qualify for FREE Super Saver Shipping.<br/>                               
+                            </p>
+                            <a href="#" class="learnMore">See details</a>
+                            <a href="#" class="btCheckout"></a>
+                            <p class="fontSize">Sign in to turn on 1-Click ordering. </p>
+                            <p class="fontSize"><input type="checkbox" /><b>This will be a gift</b></p>
+                            <a href="#" class="learnMore">Learn More</a>
+                            <p class="addMargin"></p>
+                        </div>
+                    <div class="bottombgSidemenu"></div>
+                    <!--SECOND SIDE BOX-->
+                    <div class="topbgSidemenu"></div>
+                    	<div class="contentbgSidemenu">
+                        	<p class="titleSideBox"><b>Recently Viewed Items</b></p>
+                            <img src="images/viewpink1.jpg" height="50" class="image" />
+                            <p class="floatIt">Pink Flowers with some Diamonds</p>
+                            
+                            <br/><br/><br/>
+                            
+                            <img src="images/viewpink1.jpg" height="50" class="image" />
+                            <p class="floatIt">Pink Flowers with some Diamonds</p>
+                            
+                            <br/><br/><br/>
+                            
+                            <img src="images/viewpink1.jpg" height="50" class="image" />
+                            <p class="floatIt">Pink Flowers with some Diamonds</p>
+                            
+                            <br/><br/><br/>
+                            
+                            <img src="images/viewpink1.jpg" height="50" class="image" />
+                            <p class="floatIt">Pink Flowers with some Diamonds</p>
+                            
+                            <br/><br/><br/>
+                            
+                            <img src="images/viewpink1.jpg" height="50" class="image" />
+                            <p class="floatIt">Pink Flowers with some Diamonds</p>
+                            
+                            <br/><br/><br/>
+                            
+                            <img src="images/viewpink1.jpg" height="50" class="image" />
+                            <p class="floatIt">Pink Flowers with some Diamonds</p>
+                            
+                            <br/><br/><br/>
+                            
+                            <a href="#"  class="viewAndedit">View & edit Your Browsing History</a>
+                            
+                            <p class="clearer"></p>
+                            <p class="addMargin"></p>
+                        </div>                        
+                    <div class="bottombgSidemenu"></div>
+                    <!--THIRD SIDE BOX-->
+                    <div class="topbgSidemenu"></div>
+                    	<div class="contentbgSidemenu">
+                        	<p class="titleSideBox"><b>Featured Item</b></p>
+                            <img src="images/viewpink4.jpg" height="129" class="featuredImg" />
+                            <p class="fontSize">Pink Flower with Diamonds</p>
+                            <p class="addMargin"></p>
+                        </div>
+                    <div class="bottombgSidemenu"></div>
+                 </div>              
+                 <p class="clearer"></p>
+             </div>
+                <!--recent history area-->
+                <div class="topFooterItem"></div>
+                    <div class="contentFooterItem">
+                        <div class="column1">
+                            <h3>Your Recent History</h3>
+                            <p>Recently Viewed Items</p>
+                            <img src="images/fifthRow2.png" height="43" /><a href="#" class="column1Anchor">Box of Chocolates</a>
+                            <br/><br/><br/>
+                            <img class="img1" src="images/fifthRow3.png" height="43" /><a href="#" class="column1Anchor">Box of Chocolates</a>
+                            <br/><br/><br/>
+                            <img class="img2" src="images/fifthRow4.png" height="43" /><a href="#" class="column1Anchor">Chocolates w/ Goodies</a>
+                            <br/><br/><br/>
+                            <img class="img3" src="images/fifthRow5.png" height="43" /><a href="#" class="column1Anchor">Box of Chocolates</a>
+                            <br/><br/><br/>
+                            <a href="#" class="column1Anchor2">View and edit your browsing history</a>
+                            <p class="clearer"></p>
+                        </div>
+                        <div class="column2">
+                            <p><b>
+                                <span class="leftP">
+                                    Continue Shopping: Customers Who Bought Items in Your Recent History Also Bought
+                                </span></b>
+                                <span class="rightP">
+                                    Page 1 of 10
+                                </span>
+                            </p>
+                            <a href="#" class="leftArrow"></a>
+                            <p class="items">
+                                <img src="images/viewpink1.jpg" height="100" />
+                                <a class="ratingforViewPink1"></a><a href="#" class="totalRaters">(83)</a>
+                                <a href="#" class="titleItem">Pink Flower with Diamonds</b></a><br/>
+                                <b>$21.00</b><br/>
+                                <a href="#" class="btCart"></a>                            
+                            </p>
+                            
+                            <p class="items">
+                                <img src="images/viewpink2.jpg" height="100" />
+                                <a class="ratingforViewPink2"></a><a href="#" class="totalRaters">(83)</a>
+                                <a href="#" class="titleItem">Pink Flower with Diamonds</b></a><br/>
+                                <b>$21.00</b><br/>
+                                <a href="#" class="btCart"></a> 
+                            </p>
+                            
+                            <p class="items">
+                                <img src="images/viewpink3.jpg" height="100" />
+                                <a class="ratingforViewPink3"></a><a href="#" class="totalRaters">(83)</a>
+                                <a href="#" class="titleItem">Pink Flower with Diamonds</b></a><br/>
+                                <b>$21.00</b><br/>
+                                <a href="#" class="btCart"></a> 
+                            </p>
+                            
+                            <p class="items">
+                                <img src="images/viewpink4.jpg" height="100" />
+                                <a class="ratingforViewPink4"></a><a href="#" class="totalRaters">(83)</a>
+                                <a href="#" class="titleItem">Pink Flower with Diamonds</b></a><br/>
+                                <b>$21.00</b><br/>
+                                <a href="#" class="btCart"></a> 
+                            </p>
+                            
+                            <p class="items">
+                                <img src="images/viewpink5.jpg" height="100" />
+                                <a class="ratingforViewPink5"></a><a href="#" class="totalRaters">(83)</a>
+                                <a href="#" class="titleItem">Pink Flower with Diamonds</b></a><br/>
+                                <b>$21.00</b><br/>
+                                <a href="#" class="btCart"></a> 
+                            </p>
+                            <a href="#" class="rightArrow"></a>
+                            <p class="clearer"></p>
+                        </div>
+                        <p class="clearer"></p>
+                    </div>
+                <div class="bottomFooterItem"></div>
+          </div><!--/updatable_div-->
+       </div><!-- /page -->
+	
+<div id="footer">
+	<div id="innerFooter">
+        <ul>
+            <li id="AU">
+                <a href="#" title="About Us">About Us</a>
+            </li>   
+            <li>
+                <a href="#" title="Why Qalanjo">Why Qalanjo</a>
+            </li>
+            <li>
+                <a href="#" title="Career">Career</a>
+            </li>
+            <li>
+                <a href="#" title="Privacy">Privacy</a>
+            </li>
+            <li>
+                <a href="#" title="Terms and Services">Terms and Services</a>
+            </li>
+            <li>
+                <a href="#" title="Feedback">Feedback</a>
+            </li>
+            <li>
+                <a href="#" title="Contact Us">Contact Us</a>
+            </li>
+            <li>
+                <a href="#" title="Site Map">Site Map</a>
+            </li>
+            <li id="HIW">
+                <a href="#" title="How It Works">How It Works</a>
+            </li>
+            <li>
+                <a href="#" title="Media Center">Media Center</a>
+            </li>
+            <li>
+                <a href="#" title="Affiliates">Affiliates</a>
+            </li>
+            <li>
+                <a href="#" title="Online Dating Safety Tips">Online Dating Safety Tips</a>
+            </li>
+            <li>
+                <a href="#" title="Local">Local</a>
+            </li>
+            <li>
+                <a href="#" title="Help">Help</a>
+            </li>
+        </ul>
+    </div>
+</div><!--/footer-->
+</div><!-- /top -->
+</body>
+</html>

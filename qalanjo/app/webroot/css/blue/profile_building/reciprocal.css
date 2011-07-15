@@ -1,0 +1,105 @@
+.item-set-blue {
+	background: #EDF7FE;
+	min-height: 360px;
+	width: 802px;
+}
+
+.item-set-financial {
+	background: #EDF7FE;
+	min-height: 160px;
+	width: 802px;
+}
+
+.item-set-sexuality {
+	background: #ffffff;
+	min-height: 160px;
+	width: 802px;
+}
+
+.item-set-spirituality {
+	background: #EDF7FE;
+	min-height: 120px;
+	width: 802px;
+}
+
+.picture-select-set-item {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.picture-select-set-item li {
+	float: left;
+	margin-right: 9px;
+	width: 80px;
+}
+
+.picture-select-set-item span {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	font-size: 9px;
+	font-weight: bold;
+}
+
+.picture-select-set-item hover {
+	background: #48ABF3;
+}
+
+.picture-select-set-item active {
+	background: #B9E1F7;
+}
+
+.picture-select-set dd {
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+
+.picture-container {
+	border-radius: 5px;
+	border: 1px solid #999999;
+	height: 80px;
+	width: 80px;
+}
+
+.reciprocal-header {
+	width: 819px;
+	height: 24px;
+	margin: 0;
+	background:
+		url(../../img/blue/questionnaire/questionset/reciprocalheader.jpg)
+		repeat-x #ccc;
+	padding: 7px 7px 7px 16px;
+	border: 1px solid #ccc;
+	border-left: 1px solid #c0c0c0;
+	border-right: 1px solid #c0c0c0;
+	margin-bottom: 10px;
+}
+
+.radio-set div {
+	padding-top: 20px;
+}
+
+.spacing li {
+	padding-top: 6px;
+}
+
+.spacing div {
+	padding-top: 3px;
+}
+
+.spacing label {
+	margin-left: 40px;
+}
+
+.yesorno {
+	font-size: 12px;
+	font-weight: bold;
+	color: #666666;
+	padding: 4px 10px 0 40px;
+}
+.titlereciprocal{
+    font-size:16px;
+    font-weight:bold;
+    color:#666;
+}

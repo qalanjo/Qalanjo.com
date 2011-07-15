@@ -1,0 +1,204 @@
+.settings-container{
+	overflow:visible;
+	border-radius:5px;
+	border:1px solid #666666;
+	width:876px;
+	margin:20px;
+	background-image:url(../img/settings/top.gif);
+	background-repeat:repeat-x;
+	padding-top:44px;
+	min-height:750px;
+}
+.error{
+	width:800px;
+	margin:15px 28px 15px 28px;
+}
+.settings-container h1{
+	font-size:20px;
+	font-weight:bolder;
+	color:#005F9D;
+	margin:0px;
+}
+.settings-container .settings-header{
+	margin:0 36px 0 36px;
+	width:816px;
+}
+.settings-container .controls{
+	list-style-type:none;
+	font-size:10px;
+	overflow:hidden;
+}
+.settings-container .controls li{
+	float:left;
+	margin-right:11px;
+}
+.settings-container .controls li a{
+	text-decoration:none;
+	color:#00406C;
+}
+.settings-container .controls li.active a{
+	color:#000;
+}
+.settings-content-container{
+	width:810px;
+	min-height:600px;
+	background-color:#F0F0F0;
+	border:1px solid #999;
+	margin:12px 34px;
+}
+.left-navigation{
+	width:280px;
+	padding-top:20px;
+}
+.left-navigation ul{
+	list-style-type:none;
+}
+.left-navigation ul li{
+	width:250px;
+	height:100px;
+	background:url(../img/settings/mysettings_menu_line.gif) no-repeat 0px 80px;
+}
+.left-navigation ul li a{
+	font-size:16px;
+	color:#999;
+	text-decoration:none;
+	margin:0 20px;
+	display:block;
+	font-weight:bold;
+	padding-top:36px;
+	padding-bottom:36px;
+}
+.left-navigation ul li.active{
+	background:url(../img/settings/mysettings_menu_line.gif) no-repeat 0px 80px, url(../img/settings/my_settings_arrow.gif) no-repeat 169px 0px;
+}
+.left-navigation ul li.active a{
+	color:#005F9D;
+}
+
+.account-settings-content{
+	width:530px;
+	min-height:600px;
+	padding-top:20px;
+}
+.account-settings-content-header h1{
+	border-bottom:1px solid #ccc;
+	width:384px;
+	font-size:12px;
+}
+.account-settings-content-header .note{
+	font-size:10px;
+	color:#666666;
+}
+.form{
+	border:none;
+	padding:20px;
+}
+.form ul{
+	list-style-type:none;
+}
+.form .small-sized{
+	width:56px;
+	text-align:center;
+	padding:.3em;
+}
+.only-have-controls{
+	margin-right:-30px;
+}
+.only-have-controls .controls{
+	font-size:12px;
+}
+.only-have-controls .controls li a{
+	text-decoration:underline;
+	color:#999;
+}
+.subscribe{
+	margin:50px 0 0 85px;
+}
+.subscribe-button{
+	border:none;
+	background:url(../img/settings/subscribe.png) no-repeat;
+	width:232px;
+	height:43px;
+}
+.subscribe-button:hover{
+	background-position:0 -99px;
+}
+.subscribe-button:active{
+	background-position:0 -48px;
+}
+.submit{
+	margin:83px -20px 0 0;	
+}
+.submit-condense{
+	margin:10px -20px 0 0;
+}
+.submit-button{
+	border:none;
+	background:url(../img/settings/save.png) no-repeat;
+	width:61px;
+	height:25px;
+}
+.submit-button:hover{
+	background-position:0 -55px;	
+}
+.submit-button:active{
+	background-position:0 -27px;	
+}
+.form-set dd, .form-set dt{
+	float:left;
+}
+.form-set input[type=text], .form-set input[type=password], .form-set select{
+	padding:.3em;
+	width:206px;
+}
+.form-set select{
+	width:215px;
+}
+.form-set dt{
+	clear:both;
+	width:115px;
+	text-align:right;
+}
+.form-set dt span{
+	margin-top:10px;
+	display:block;
+	text-align:right;
+	float:right;
+}
+.form-set abbr{
+	color:#ff0000;
+	text-decoration:none;
+}
+.spinner{
+	background:url(../img/settings/spinner.gif) no-repeat;
+	position:relative;
+	height:31px;
+	width:31px;
+}
+.profile-picture-container{
+	overflow:hidden;
+	text-align:center;
+	width:100%;
+}
+.profile-picture-container img{
+	margin:auto;
+}
+
+.image-uploader{
+	width:100%;
+	text-align:center;
+}
+.image-uploader .instruction{
+	display:block;
+	width:100%;
+}
+.agreement{
+	width:100%;
+	text-align:center;
+}
+.agreement .instruction{
+	width:391px;
+	display:block;
+	text-align:center;
+	margin:auto;
+}

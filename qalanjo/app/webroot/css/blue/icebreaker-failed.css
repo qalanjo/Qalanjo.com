@@ -1,0 +1,19 @@
+@CHARSET "ISO-8859-1";
+
+#message_result{
+	background-color:#efefef;
+}
+.icebreaker-failed{
+	background:url(../img/blue/icebreaker/x.png) no-repeat 0 30px, url(../img/blue/icebreaker/ice-melt.png) no-repeat 248px 60px;
+	height:150px;
+	width:320px;
+}
+
+.icebreaker-failed h2{
+	color:#005F9D;
+	font-size:14px;
+	margin:30px 0 0 10px;
+}
+.icebreaker-failed strong{
+	color:#AC2626;
+}

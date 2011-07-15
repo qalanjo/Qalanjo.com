@@ -1,0 +1,259 @@
+body {
+	background-color: #009;
+	background-repeat: repeat;
+	background:url(../img/blue/aboutus/repeat-bg_s1.png) repeat;
+}
+
+/**
+ * Overrides
+ */
+.container{
+	width:934px;
+	margin-top:18px;
+}
+.container-main{
+	width:914px;
+	overflow:visible;
+	min-height:1100px;
+	position:relative;
+	margin-bottom:31px;
+	background-color:#fff;
+	box-shadow:0px 5px 10px #0D293B;
+}
+.shadow{
+	height:1118px;
+	width:10px;
+	display:block;
+	background:url(../img/blue/aboutus/dropshadow.png) no-repeat transparent;
+}
+.shadow-last{
+	background-position:-9px 0;
+}
+
+.header{
+	background:url(../img/blue/aboutus/header-bg.jpg) no-repeat;
+	width:914px;
+	height:113px;
+	display:block;
+}
+.logo{
+	width:299px;
+	height:106px;
+	display:block;
+	background:url(../img/blue/aboutus/qalanjo-logo.png) no-repeat;
+	margin:20px 0 0 0;
+}
+.couple-top{
+	background:url(../img/blue/aboutus/couple_top.png) no-repeat;
+	width:226px;
+	height:93px;
+	margin:20px 0 0 0;
+}
+.icon-set-button{
+	margin-top:10px;
+	margin:10px 10px 0 0;
+}
+.find-my-match{
+	background:url(../img/blue/aboutus/find-my-match.png) no-repeat;
+	width:154px;
+	height:40px;
+	display:block;
+	margin-top:27px;
+}
+.about-us-menu{
+	background:url(../img/blue/aboutus/gradient-menu.png) repeat-x;
+	height:55px;
+	width:100%;
+	z-index:100;
+	position:relative;
+}
+.about-us-menu ul{
+	list-style-type:none;
+	margin:5px 0 0 14px;
+	padding:0;
+	height:48px;
+	overflow:visible;
+}
+.about-us-menu li.active{
+	background: url(../img/blue/aboutus/aboutus_selected.png) repeat-x top left,
+		url(../img/blue/aboutus/about-us-leaf.png) no-repeat bottom center;
+	height:34px;
+}
+.about-us-menu li.active a{
+	color:#fff;
+}
+.about-us-menu li{
+	float:left;
+	margin-right:10px;
+	padding:14px 20px;
+}
+.about-us-menu li a{
+	font-size:18px;
+	color:#666666;
+	text-decoration: none;
+}
+.about-us{
+	background: url(../img/blue/aboutus/about-us.png) no-repeat 0 0, 
+		url(../img/blue/aboutus/aboutus-right.png) no-repeat 755px 0;
+	width:100%;
+	min-height:815px;
+	z-index: 95;
+	position:relative;
+}
+.about-us h1{
+	font-size:33px;
+	margin:0;
+	text-shadow:0 0 100px transparent;
+	color:#005F9D;
+}
+.about-us h2{
+	font-size:14px;
+	color:#005F9D;
+}
+.about-us .underline{
+	background: url(../img/blue/aboutus/header-line.png) no-repeat;
+	width:600px;
+	height:4px;
+	display:block;
+	margin-bottom:19px;
+}
+.left-container{
+	width:583px;
+	padding:41px 21px 0 21px;
+	margin:0 0 54px 51px;
+	margin-bottom:54px;
+	background: url(../img/blue/aboutus/about-us-content-gradient.png) repeat-x bottom left;
+}
+.right-container{
+	padding:41px 0 0 0;
+}
+.right-container .couple-right{
+	width:230px;
+	height:155px;
+	background: url(../img/blue/aboutus/couple_fade.png) no-repeat;
+	margin-bottom:42px;
+}
+
+.fb-find{
+	color:#3F5E99;
+	font-size:14px;
+	font-weight:bolder;
+	margin:-3px 0 0 14px;
+}
+.fb-find img{
+	margin-right:5px;
+}
+.fb-find .fb-name{
+	font-size:18px;
+	margin-top:-8px;
+}
+.footer{
+	width:914px;
+	background-color:#fff;
+	display:block;
+}
+.call-qalanjo{
+	background:url(../img/blue/aboutus/call_qalanjo.png) no-repeat transparent;
+	height:65px;
+	width:70px;
+	margin-left:14px;
+}
+.mail-qalanjo{
+	margin:0 0 0 30px;
+}
+h2.qalanjo{
+	font-size:20px;
+	font-weight:bold;
+	color:#005F9D;
+	margin:0;
+	padding:0;
+}
+p.call{
+	color:#666666;
+	font-size:13px;
+	margin:0;
+}
+.gradient-bottom{
+	background:url(../img/blue/aboutus/gradient-bottom.jpg) repeat-x transparent;
+	height:19px;
+	width:100%;
+}
+.footer-left{
+	margin-left:27px;
+	height:50px;
+}
+.footer-link-set{
+	margin-left:54px;
+	overflow:hidden;
+}
+.footer-links{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+.footer-links li{
+	float:left;
+	margin-left:25px;
+}
+.footer-links a{
+	text-decoration:none;
+	color:#005F9D;
+}
+
+.top-links{
+	margin-left:36px;
+}
+.center-links{
+	margin-left:120px;
+}
+.name-company{
+	overflow:hidden;
+	text-align:center;
+	color:#666666;
+}
+.spinner{
+	background:url("../img/spinner.gif") no-repeat center center;
+	height:100%;
+	width:100%;
+}
+.find-us{
+	position:relative;
+	top:-60px;
+	left:200px;
+	width:83px;
+	height:42px;
+	font-weight:bolder;
+	color:#666666;
+	font-size:13px;
+}
+.find-us a{
+	margin-right:2px;
+}
+.fb{
+	display:block;
+	height:22px;
+	width:22px;
+	background:url(../img/blue/homepage/fb.png) no-repeat;
+}
+.fb:hover{
+	background-position:0 -22px;
+}
+.twitter{
+	display:block;
+	height:22px;
+	width:22px;
+	background:url(../img/blue/homepage/twitter.png) no-repeat;
+}
+.twitter:hover{
+	background-position:0 -22px;
+}
+.rss{
+	display:block;
+	height:22px;
+	width:22px;
+	background:url(../img/blue/homepage/rss.png) no-repeat;
+}
+.rss:hover{
+	background-position:0 -22px;
+}
+

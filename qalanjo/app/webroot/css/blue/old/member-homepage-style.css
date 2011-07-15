@@ -1,0 +1,620 @@
+.homebox-header {
+	display: block;
+	float: left;
+	width: 876px;
+	height: 106px;
+	background-color: #00f;
+	margin: 20px;
+	background-color: transparent;
+	background-image: url(../img/blue/homebox-header-banner.jpg);
+	background-repeat: no-repeat;
+}
+
+.left-container {
+	display: block;
+	float: left;
+	width: 248px;
+	height: auto;
+	background-color: transparent;
+	margin: 0px 20px;
+}
+
+.details-container {
+	display: block;
+	float: left;
+	background-color: transparent;
+	margin-bottom: 20px;
+}
+
+.profile-image-container {
+	display: block;
+	float: left;
+}
+
+.profile-details {
+	display: inline-block;
+	float: left;
+	width: 108px;
+	margin-left: 10px;
+	background-color: transparent;
+}
+
+.profile-controls {
+	display: block;
+	float: left;
+	clear: both;
+}
+
+.profile-progress {
+	display: block;
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+.profile-progress-label {
+	display: block;
+	float: left;
+	clear: both;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.profile-progress-container {
+	display: block;
+	clear: both;
+	position: relative;
+	width: 244px;
+	height: 28px;
+	background-color: #f7f7f7;
+	border: 2px solid #f7f7f7;
+}
+
+.profile-progress-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 22%;
+	height: 100%;
+	background-color: transparent;
+	background-image: url(../img/blue/progress-bar-bg.png);
+	background-repeat: repeat-x;
+}
+
+.profile-progress-divider {
+	position: absolute;
+	top: 0; 
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/blue/progress-divider.png);
+	background-repeat: no-repeat;
+}
+
+.profile-controls a {
+}
+
+.user-firstname {
+	display: block;
+}
+
+.user-firstname span {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.user-address {
+	display: block;
+}
+
+.user-address span {
+	font-size: 14px;
+}
+
+.communication-advice {
+	display: block;
+	float: left;
+	width: 238px;
+	background-color: #fff;
+	border: 1px solid #c0c0c0;
+	border-top: none;
+	margin: 0px 5px;
+}
+
+.communication-advice h2 {
+	display: block;
+	width: 248px;
+	height: 58px;
+	margin-left: -5px;
+	background-image: url(../img/blue/communication-advice-header-bg.png);
+	background-repeat: no-repeat;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.communication-advice h2 span {
+	float: left;
+	margin-top: 13px;
+	margin-left: 13px;
+}
+
+.communication-advice ul {
+	list-style: none;
+}
+
+.communication-advice ul li {
+	text-align: center;
+	border-bottom: 1px solid #c0c0c0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.communication-advice ul li.last {
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+
+.communication-advice .post-image {
+	margin-bottom: 10px;
+}
+
+.communication-advice .post-title {
+	margin-bottom: 10px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.communication-advice .post-content {
+	margin-bottom: 10px;
+}
+
+.communication-advice .post-content p {
+	margin: 0;
+	line-height: 1.5;
+}
+
+.right-container {
+	display: block;
+	float: left;
+	width: 608px;
+	background-color: transparent;
+	margin-right: 20px;
+}
+
+.activity {
+	display: block;
+	float: left;
+	width: 598px;
+	margin: 0px 5px;
+	background-color: #fff;
+	border: 1px solid #c0c0c0;
+	border-top: none;
+}
+
+.activity h2 {
+	display: block;
+	width: 582px;
+	height: 32px;
+	padding: 13px;
+	margin-left: -5px;
+	background-image: url(../img/blue/activity-header-bg.png);
+	background-repeat: no-repeat;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.activity h2 span {
+	float: left;
+}
+
+.activity h2 span.header-label {
+	display: block;
+	float: right;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 23px;
+	vertical-align: middle;
+}
+
+.activity h2 a.header-button {
+	display: block;
+	float: right;
+	height: 23px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #175d92;
+	background-image: url(../img/blue/activity-header-bg.jpg);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	text-decoration: none;
+	line-height: 23px;
+	vertical-align: middle;
+	padding: 0px 4px;
+	margin-left: 2px;
+	color: #fff;
+	cursor:pointer;
+}
+
+.activity h2 a.header-button img {
+	display: block;
+	float: left;
+}
+
+.activity h2 a.header-button span {
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+}
+
+.activity h2 a.header-button:hover {
+	background-image: url(../img/blue/activity-header-bg-hover.jpg);
+}
+
+.activity h2 a.header-button.active {
+	color: #000;
+	background-image: url(../img/blue/activity-header-bg-active.jpg);
+}
+
+#activity-communication-button {
+}
+
+#activity-photo-updates-button {
+}
+
+#activity-profile-updates-button {
+}
+
+#activity-who-viewed-me-button {
+}
+
+a#activity-group-button {
+	margin-left: 5px;
+	display: block;
+	float: left;
+	width: 23px;
+	height: 23px;
+	background-color: transparent;
+	background-image: url(../img/blue/group-buttons.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat; 
+}
+
+a#activity-group-button:hover {
+	background-position: -23px 0px;
+}
+
+a#activity-group-button.active {
+	background-position: -46px 0px;
+}
+
+a#activity-list-button {
+	margin-left: 2px;
+	display: block;
+	float: left;
+	width: 23px;
+	height: 23px;
+	background-color: transparent;
+	background-image: url(../img/blue/list-buttons.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat; 
+}
+
+a#activity-list-button:hover {
+	background-position: -23px 0px;
+}
+
+a#activity-list-button.active {
+	background-position: -46px 0px;
+}
+
+.matches {
+	display: block;
+	float: left;
+	width: 578px;
+	height: 50px;
+	background-color: #ff0;
+	background-image: url(../img/blue/matches-bg.jpg);
+	background-repeat: repeat-x;
+	margin-top: -2px;
+	padding: 20px 10px;
+}
+
+.activity h3 {
+	display: block;
+	float: left;
+	width: 608px;
+	height: 31px;
+	margin-bottom: 0px;
+	margin-left: -5px;
+	background-image: url(../img/blue/subheader-bg.jpg);
+	background-repeat: no-repeat;
+}
+
+.activity h3 img {
+	display: block;
+	float: left;
+	padding-top: 3px;
+	padding-left: 3px;
+}
+
+.activity h3 span {
+	float: left;
+	margin-top: 6px;
+	margin-left: 5px;
+}
+
+.accordion-item-content {
+	display: block;
+	float: left;
+	width: 598px;
+}
+
+.communications {
+	display: block;
+	float: left;
+	width: 598px;
+	background-color: #fff;
+}
+
+.photo-updates {
+	display: block;
+	float: left;
+	width: 598px;
+	background-color: #fff;
+}
+
+.profile-updates {
+	display: block;
+	float: left;
+	width: 598px;
+	background-color: #fff;
+}
+
+.who-viewed-me {
+	display: block;
+	float: left;
+	width: 598px;
+	background-color: #fff;
+}
+
+.activity ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.activity ul li {
+	display: block;
+	float: left;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.activity .content-list-item {
+	display: block;
+	float: left;
+	width: 598px;
+	background-color: transparent;
+}
+
+.content-image-holder {
+	display: block;
+	float: left;
+	padding: 10px;
+	padding-bottom: 5px;
+}
+
+.content-list-item .content-image-holder a {
+	display: block;
+	float: left;
+}
+.content-list-item .content-image-holder a img{
+	height:65px;
+	width:65px;
+}
+
+.content-list-item-details {
+	display: block;
+	float: left;
+	width: 498px;
+	background-color: transparent;
+}
+
+.content-info-container {
+	display: block;
+	float: left;
+	width: 254px;
+	height: 55px;
+	background-color: transparent;
+	background-image: url(../img/blue/pointer.png);
+	background-position: 30px bottom;
+	background-repeat: no-repeat;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+
+.content-info-container-no-pointer{
+	padding-top: 15px;
+	padding-left: 10px;
+	display: block;
+	float: left;
+	width: 254px;
+	height: 55px;
+}
+
+.content-info-container h4, .content-info-container-no-pointer h4 {
+	font-size: 14px;
+	margin-bottom: 0px;
+}
+
+.content-info-container h5,  .content-info-container-no-pointer h5{
+	font-size: 10px;
+	margin-bottom: 0px;
+	color: #333;
+}
+
+.content-controls-container {
+	display: block;
+	float: left;
+	width: 224px;
+	height: 35px;
+	background-color: transparent;
+	padding-top: 35px;
+	padding-right: 10px;
+}
+
+.content-controls-container span.date-send {
+	display: block;
+	float: right;
+	font-size: 10px;
+	color: #888;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+a.activity-content-listitem-button {
+	display: block;
+	float: right;
+	width: 161px;
+	height: 32px;
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: 14px;
+	color: #1a6aa7;
+	background-image: url(../img/blue/activity-content-listitem-button.png);
+	background-position: 0px 0px;
+}
+
+a.activity-content-listitem-button:hover {
+	background-position: -161px 0px;
+}
+
+.content-shoutbox-container {
+	display: block;
+	float: left;
+	width: 498px;
+	background-color: transparent;
+}
+
+.content-shoutbox {
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	width: 458px;
+	margin: 0px 5px 5px 10px;
+	background-color: #9cc9e6;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.activity .view-all {
+	display: block;
+	float: left;
+	width: 598px;
+	height: 40px;
+}
+
+.activity .view-all a {
+	display: block;
+	float: left;
+	font-size: 12px;
+	line-height: 40px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.photo-updates .content-info-container,
+.who-viewed-me .content-info-container,
+.gifts .content-info-container
+{
+	background-image: none;
+}
+
+.matches img {
+	display: block;
+	float: left;
+}
+
+.matches span {
+	display: block;
+	float: left;
+	font-size: 16px;
+	line-height: 50px;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+
+.matches .activity-content-listitem-button {
+	margin-top: 9px;
+}
+
+.homebox-header img {
+	display: block;
+	float: left;
+	padding-left: 10px;
+}
+
+.homebox-header span {
+	display: block;
+	float: left;
+	font-size: 18px;
+	margin-top: 33px;
+}
+
+.homebox-header a.subscribe-button {
+	display: block;
+	float: left;
+	width: 160px;
+	height: 32px;
+	background-color: transparent;
+	background-image: url(../img/blue/subscribe-button.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 17px;
+	line-height: 31px;
+	text-align: center;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-top: 30px;
+}
+
+.homebox-header a.subscribe-button:hover {
+	background-position: -160px 0px;
+}
+
+
+#communication-advice{
+	margin-top:20px;
+	border:1px solid #6666CC;
+	border-radius:5px;
+	overflow:hidden;
+	display:block;
+	float:left;
+}
+
+
+#communication-list{
+	list-style-type:none;
+}
+#communication-list li{
+	float:left;
+}
+
+.post-image{
+	padding:10px;
+}
+.post-title, .post-content{
+	margin-left:10px;
+}
+

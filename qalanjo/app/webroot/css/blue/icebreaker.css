@@ -1,0 +1,66 @@
+@CHARSET "ISO-8859-1";
+@import "icebreaker-failed.css";
+@import "icebreaker-success.css";
+.icebreaker-profile-info{
+	height:83px;
+	width:353px;
+	padding:10px;
+	background-color:#E8F6FD;
+	border-radius:10px;
+}
+
+#icebreaker{
+	background:url(../img/blue/icebreaker/ice.png) no-repeat 0 119px;
+}
+.profile-picture-bg{
+	height:91px;
+	width:85px;
+	background:url(../img/blue/icebreaker/frame.png) no-repeat;
+}
+.profile-picture-bg img{
+	width:70px;
+	height:76px;
+	margin:3px;
+	position:relative;
+	left:5px;
+	top:5px;
+}
+.profile-info{
+	margin-left:11px;
+}
+.profile-info span{
+	font-size:12px;
+	color:#666666;
+}
+.profile-info h4{
+	font-size:14px;
+	color:#1E4B8C;
+	margin:0;
+}
+.icebreaker-form{
+	width:340px;
+	overflow:hidden;
+}
+.icebreaker-form label{
+	margin-right:5px;
+	display:block;
+	margin-top:7px;
+	font-weight:normal;
+	color:#333;
+}
+.icebreaker-form select{
+	width:238px;
+	height:22px;
+	font-weight:normal;
+	color:#333;
+}
+.icebreaker-form select option{
+	word-wrap:break-word;
+	width:238px;
+	font-weight:normal;
+	color:#333;
+}
+.breaker-result{
+	width:230px;
+	height:150px;
+}

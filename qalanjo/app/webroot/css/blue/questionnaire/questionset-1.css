@@ -1,0 +1,30 @@
+.item-set-1{
+	background: url(../../img/blue/questionnaire/questionset1/female-side.jpg) top right no-repeat;
+	min-height:300px;
+}
+.picture-select-set-item{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+.picture-select-set-item li{
+	float:left;
+	margin-right:9px;
+	width:80px;
+}
+.picture-select-set-item span{
+	width:100%;
+	text-align: center;
+	display:inline-block;
+	font-weight:bold;
+}
+.picture-select-set dd{
+	margin-bottom:25px;
+	overflow:hidden;
+}
+.picture-container{
+	border-radius:5px;
+	border:1px solid #999999;
+	height:80px;
+	width:80px;
+}

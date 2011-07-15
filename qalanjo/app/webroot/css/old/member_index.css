@@ -1,0 +1,12 @@
+@CHARSET "ISO-8859-1";
+/*Right content*/
+
+#right_content{
+	float:right;
+	width:72%;
+	border-right:1px solid #f4f4f4;
+}
+#right_content h1{
+	color:#0066CC;
+	font-size:18px;
+}

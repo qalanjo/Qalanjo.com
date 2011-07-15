@@ -1,0 +1,129 @@
+/* BASIC */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font: 62.7% Verdana, Arial, Helvetica, sans-serif;
+	background-color: #080e1a;
+	text-align: center;
+}
+
+h1, h2, h3, h4, p, ul, ol {
+	margin: 0px;
+	padding: 0px;
+}
+
+a img { 
+	border: none;
+}
+
+/* LAYOUT */
+#wrapper {
+	width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+
+#header {
+	width: 1024px;
+	height: 87px;
+	background-image: url("images/banner.jpg");
+	background-repeat:no-repeat;
+}
+
+#body {
+	width: 1024px;
+	height: 621px;
+	background-image: url("images/login_page_couple.png");
+	background-repeat:no-repeat;
+}
+
+#footer {
+	width: 1024px;
+	height: 148px;
+	background-color: #a7d9ff;
+}
+
+#login {
+	width: 33%;
+	float: right;
+	padding: 100px 50px 100px 50px;
+}
+
+#login fieldset {
+	text-align: right;
+	border: 0;
+}
+
+#login p.legend {
+	text-align: left;
+	color: #1e3964;
+	font-size: 25px;
+	font-weight: bold;
+	border-bottom: 2px solid #1e3964;
+	margin-bottom: 15px;
+}
+
+#login label {
+	color: #1e3964;
+	font-size: 18px;
+}
+
+#login input[type=submit]{
+	background-image:url("images/login_button.png");
+	background-repeat:no-repeat;
+	background-color:transparent;
+	width:117px;
+	height:33px;
+	border:none;
+}
+
+#forgotpassword {
+	padding-right: 43px;
+	margin-bottom: 15px;
+}
+
+#loginbutton {
+	text-align: center;
+}
+
+#signupbottom {
+	margin-top: 15px;
+	font-size: 12px;
+	text-align: right;
+}
+
+#facebook {
+	width: 100px;
+	height: 40px;
+	float: left;
+}
+
+#registernow {
+	font-size: 12px;
+	float: left;
+}
+
+A:link {
+	text-decoration: none; 
+	font-size: 12px;
+	color: #1e3964;
+}
+
+A:visited {
+	text-decoration: none
+	font-size: 12px;
+	color: #1e3964;
+}
+
+A:active {
+	text-decoration: none
+	font-size: 12px;
+	color: #1e3964;
+}
+A:hover {
+	text-decoration: underline;
+	font-size: 12px;	
+	color:  #080e1a;
+}

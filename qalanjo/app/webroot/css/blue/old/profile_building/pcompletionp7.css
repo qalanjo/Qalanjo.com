@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+#content_main {
+	padding-bottom: 0;
+	margin-bottom: 0;	
+}
+
+.instruction {
+	font-size: 14px;
+	padding-left: 20px
+}
+
+#profile_completion_box {
+	border: 1px solid #cdcdcd;
+	background: #f3f3f3;
+	-moz-border-radius: 10px;
+  	-webkit-border-radius: 10px;
+  	border-radius: 10px;
+	width: 632px;
+	margin: 10px 0 45px 25px;
+	padding: 20px 12px 50px 12px;
+}
+
+ul.background_list {
+	padding: 0 40px 0 15px;
+	margin: 0;
+}
+
+ul.background_list li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.background_list li span {
+	margin: 0;
+	padding: 0;
+}
+
+ul.background_list li.last {
+	margin: 0;
+	padding: 0 0 30px 0;
+}
+
+input.checkbox{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+label {
+	padding: 0;
+	margin: 0;	
+}
+
+button {
+	margin: 0 0 0 25px;
+	padding: 0;	
+}
+
+
+
+p.image_set_top .right {
+	padding: 0;
+	margin: 0;	
+}
+
+p.image_set_bottom .left {
+	padding: 0;
+	margin: 0;	
+}
+
+p.image_set_bottom .left {
+	padding: 0;
+	margin: 0 0 40px 0;
+}
+
+#profile_completion_box p {
+	padding: 0 0 10px 15px;
+	margin: 0;	
+}

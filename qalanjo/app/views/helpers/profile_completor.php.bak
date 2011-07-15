@@ -1,0 +1,287 @@
+<?php
+/**
+ * 
+ * Creation of profile completion ...
+ * @author Josef Balisalisa and Allanaire Tapion
+ *
+ */
+class ProfileCompletorHelper extends AppHelper{
+	var $helpers = array('Html','Ajax','Session','Form');
+	/**
+	 * 
+	 * rendering for page one(1), 
+	 *		$marital = all marital statuses, 
+	 *		$educ = all educational levels
+	 * @params array $marital
+	 * @params array $educ
+	 */
+	function page1($statuses,$educationalLevels){
+		$out ="<h2>Section 1: General Information</h2>";
+		
+		//Render Birth date
+		
+		$out .="<div class='input'>";
+		
+			$out.=$this->Form->label("MemberProfileAttributeWeight.birthdate", "1. Birthdate");
+			$out.="<div class='sets'>";
+			$out .= $this->Form->input('MemberProfileAttributeWeight.birthdate',array(
+					'label'=>false,'div'=>false,
+					'minYear' => date('Y') - 70,
+					'maxYear' => date('Y') - 18,
+					"type"=>"text",
+					"class"=>"date"
+					));
+			$out.="</div>";
+		$out .= '</div>';
+		
+		/*
+		*
+		* put the slider for "#2. How important is your match's age?" here
+		*
+		*/
+		
+		$out .=	$this->_radio_through(
+					'MemberProfile.marital_status_id',
+					'3. What is your current Marital Status?',
+					$statuses,
+					'MaritalStatus'
+				);
+				
+		$out .=	$this->_radio_through(
+					'MemberProfileAttributeWeight.educational_level_id',
+					'4. Highest Educational attainment',
+					$educationalLevels,
+					'EducationalLevel'
+				);
+				
+		return $out;
+	}
+	
+	
+	
+	
+	/**
+	 * 
+	 * rendering for page two(2), 
+	 *		$income = all Personal incomes, 
+	 *		$eth = all Ethnicities
+	 * @params array $income
+	 * @params array $eth
+	 */
+	function page2($income){
+		$out = '';
+			$out .=	$this->_radio_through(
+							'MemberProfileAttributeWeight.personal_income_id',
+							'1. What is your personal Income?',
+							$income,
+							'PersonalIncome'
+						);
+				/*
+				*
+				* put the slider for "#2. How important is your match's income?" here
+				*
+				*/
+				
+			$out .= "<div class='input'>";
+				$out.=$this->Form->label("MemberProfile.occupation", "3. Describe your occupation");
+				$out.="<div class='sets'>";
+				$out .= $this->Form->input('MemberProfile.occupation',array('label'=>false,'div'=>false));
+				$out.="</div>";
+			$out .= '</div>';
+			
+			
+			$out .= '<div>';
+			
+			
+			
+			//Select a height
+			$ft = array(2,3,4,5,6,7,8,9,10,11,12);
+			$inch = array(0,1,2,3,4,5,6,7,8,9,10,11);
+			
+			$out .= "<div class='input'>";
+			$out .= $this->Form->label('','4. How tall are you?',array('div'=>false));
+			$out.="<div class='sets'>";
+			$out .= $this->Form->select('MemberProfile.height_ft',$ft,null,array('div'=>false));
+			$out .= $this->Form->label('MemberProfile.height_ft','ft ', array("style"=>"float:none;display:inline"));
+			$out .= $this->Form->select('MemberProfile.height_inch',$inch,null,array('div'=>false));
+			$out .= $this->Form->label('MemberProfile.height_inch','inch ', array("style"=>"float:none;display:inline"));
+			$out.="</div>";
+			$ft_error = $this->Form->error('MemberProfile.height_ft');
+			$inch_error = $this->Form->error('MemberProfile.height_inch');
+			
+			
+			if($ft_error != ''){
+				$out .= $ft_error;	
+			} else{
+				$out .= $inch_error;	
+			}
+			$out .= '</div>';
+			
+			// array of all the attributes to be rated + the Message or question
+			$attribute = array(
+						'message'=>'How well do the following words describe your physical appearance?',
+						'fields'=>array(
+								'stylish',
+								'athletic',
+								'overweight',
+								'plain',
+								'healthy',
+								'sexy',
+						),
+					);
+			
+			$out .= '<div>';
+				$out .= '<div>';
+				$out .= $this->Form->label('',$attribute['message'],array('div'=>false));
+				$out .= '</div>';
+				
+				
+				$out .= $this->_label_for_rate();
+				$x = 9;
+				foreach($attribute['fields'] as $a){
+					$out .= $this->_rate_through(
+							'MemberProfile.'.$a,
+							$x++.'. '.$a
+							);	
+				}
+				$out .= $this->_label_for_rate();
+			$out .= '</div>';
+			
+			
+			
+			// another attribute for the personal satisfaction questions
+			$attribute = array(
+					'message'=>'Use the scale below to rate the following questions',
+					'fields'=>array(
+						array(
+							'physical_appearance_satisfaction'=>'15. How satisfied are you with your physical appearance?'
+						),
+						array(
+							'physical_appearance_satisfaction_weight'=>'16. How important is that your match will be physically attractive?'
+						),
+					),
+			);
+			$out .= '<div>';
+				$out .= '<div>';
+				$out .= $this->Form->label('',$attribute['message'],array('div'=>false));
+				$out .= '</div>';
+				
+				
+				$out .= $this->_label_for_rate();
+				foreach($attribute['fields'] as $a){
+					$key = array_keys($a);
+					$key = $key[0]; //extract the key from the attribute
+					$value = $a[$key];
+					$out .= $this->_rate_through(
+							'MemberProfileAttributeWeight.'.$key,
+							$value
+							);	
+				}
+				$out .= $this->_label_for_rate();
+			$out .= '</div>';
+			
+		return $out;
+	}
+	
+	function pageN($attributes=array(), $member_id, $page){
+		$out = $this->Form->create("MemberAttributeWeight", array("url"=>"/attributes/questionnaire/".$page));
+		$options = array();
+		for($i=1;$i<=7;$i++){
+			$options[] = $i;	
+		}
+		$i=0;
+		$out.="<ol>";
+		foreach($attributes as $attribute){
+			$out.="<li>";
+			$out.=$this->Form->label("MemberAttributeWeight.$i.weight", $attribute["Attribute"]["question"]);			
+			$out.="<div class='radio_set'>";
+			$out.=$this->Form->radio("MemberAttributeWeight.$i.weight", $options, array("legend"=>false));
+			$out.="</div>";
+			$out.=$this->Form->input("MemberAttributeWeight.$i.attribute_id", array("type"=>"hidden", "value"=>$attribute["Attribute"]["id"]));
+			$out.=$this->Form->input("MemberAttributeWeight.$i.member_id", array("type"=>"hidden", "value"=>$member_id));
+			$i++;
+			$out.="</li>";
+		}
+		$out.="</ol>";
+		$out.="<div class='submit'>";
+			$out.= $this->Form->submit(" ", array("div"=>false));
+			$out.= $this->Html->link("Skip", "/", array("class"=>"back"));
+		$out.= "</div>";	
+		$out.=$this->Form->end();
+		return $out;
+	}
+	
+	
+	/**
+	 * 
+	 * creates radio buttons based on the values of $data
+	 *		$model_field = the current model plus the field separeted by a dot ex: MemberProfile.ethnicity_id,
+	 *		$message = the message or question to stated,
+	 *		$model = the model in which $data is derived from,
+	 * @params array $model_field
+	 * @params array $message
+	 * @params array $data
+	 * @params array $model
+	 */
+	function _radio_through($model_field = null, $message = null, $data = null, $model = null){
+		$out ="<div class='input'>";
+				$out .= $this->Form->label($model_field,$message);
+				
+				$out.="<div class='sets'>";
+				$out .= $this->Form->input($model_field,array('type'=>'hidden'));
+					foreach($data as $d){
+						$out.="<div class='radio'>";
+						$out .= $this->Form->radio($model_field,array(
+								$d[$model]['id'] => $d[$model]['value']
+								),
+							array('hiddenField'=>false,'div'=>false));
+						$out.="</div>";
+					}
+				$out.="</div>";
+				$out .=$this->Form->error($model_field);
+				
+			$out .='</div>';
+		return $out;	
+	}
+	
+	
+	
+	
+	/**
+	 * 
+	 * creates radio buttons for rating, scale of 1-7
+	 *		$model_field = the current model plus the field separeted by a dot ex: MemberProfile.ethnicity_id,
+	 *		$value = the value that is being rated,
+	 * @params array $model_field
+	 * @params string $value
+	 */
+	function _rate_through($model_field = null, $value = null){
+		$out = '<div>';
+			
+			$out .= $this->Form->input($model_field,array('type'=>'hidden'));
+			$out .= $this->Form->label($model_field,$value);
+			for($x = 1;$x<8;$x++){
+				$out .= $this->Form->radio($model_field,array($x=>''),
+							array('hiddenField'=>false,'div'=>false));
+			}
+			$out .= $this->Form->error($model_field);
+		
+		$out .= '</div>';
+		return $out;
+	}
+	
+	
+	/*
+	* creates labels for rates
+	*/
+	function _label_for_rate(){
+		$out = '<div>';
+		$out .= $this->Form->label('','Not at all');
+		$out .= $this->Form->label('','Somewhat');
+		$out .= $this->Form->label('','Very well');
+		$out .= '</div>';	
+		return $out;
+	}
+	
+}
+?>

@@ -1,0 +1,15 @@
+@CHARSET "ISO-8859-1";
+#questions {
+    margin-top: 20px;
+}
+
+p.image_set_bottom img{
+	margin:10px 25px 10px 0;
+}
+
+p.image_set_bottom .left {
+    margin:-40px 0 0 10px;
+	position:relative;
+	top:290px;
+	z-index:1;
+}
